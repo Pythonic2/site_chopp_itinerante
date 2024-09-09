@@ -51,6 +51,8 @@
         } else {
             $dropdown.off("mouseenter mouseleave");
         }
+
+     
     });
     
     
@@ -116,4 +118,3 @@
     });
     
 })(jQuery);
-
