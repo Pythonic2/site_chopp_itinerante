@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  site-chopp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    pull_policy: build
+    restart: always
+    ports:
+      - "8003:8003"
+    # env_file:
+    #   - stack.env
+    networks:
+      - cloudflare_default
+#     volumes:
+#       - postgres_db2_data:/var/lib/postgresql/data
+#       - user_photos:/app/media
+
+# volumes:
+#   postgres_db2_data:
+#   user_photos:
+
+networks:
+  cloudflare_default:
+    external: true

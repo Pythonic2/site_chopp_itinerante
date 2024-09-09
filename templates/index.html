@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include 'parciais/head.html'%}
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        
+        {% include 'parciais/loading.html'%}
+
+        <!-- Navbar & Hero Start -->
+        {% include 'parciais/nav_bar.html'%}
+
+        {% include 'parciais/header.html'%}
+        <!-- Service Start -->
+        {% comment %} {% include 'parciais/services.html'%} {% endcomment %}
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        {% include 'parciais/about.html'%}
+        <!-- About End -->
+
+
+        <!-- Menu Start -->
+        {% include 'parciais/cardapio.html'%}
+        <!-- Menu End -->
+
+
+        <!-- Reservation Start -->
+        {% include 'parciais/contact.html'%}
+        <!-- Reservation Start -->
+
+
+        <!-- Team Start -->
+        {% include 'parciais/team.html'%}
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        {% include 'parciais/testimonial.html'%}
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        {% include 'parciais/footer.html'%}
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    {% include 'parciais/js.html'%}
+    <!-- end js -->
+</body>
+
+</html>
