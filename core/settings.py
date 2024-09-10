@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,9 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+MERCADOPAGO_ACCESS_TOKEN = 'TEST-1760381132114687-090312-969ed10bb8987a4c2f15dd151d4b76be-162016798'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
