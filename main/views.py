@@ -225,28 +225,41 @@ def remover_do_carrinho(request, produto_id):
 
 @csrf_exempt
 def simple_test(request):
-  
-    if request.method == 'POST':
+    if request.method == "POST":
         try:
-            data = json.loads(request.body)
-            external_reference = data.get('data', {}).get('external_reference')
-            payment_id = data.get('data', {}).get('id')
-            payment_type = data.get('type')
+            # Carregar dados do webhook
+            webhook_data = json.loads(request.body.decode('utf-8'))
+            print("Webhook Recebido:", webhook_data)
+            
+            pagamento_id = webhook_data.get('data', {}).get('id', '')
+            status = webhook_data.get('action', '')
+            external_reference = webhook_data.get('data', {}).get('external_reference', '')
 
-            if payment_type == 'payment':
-                # Encontrar o pedido ou usuário usando a external_reference
+            # Atualizar status da transação
+            transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
+            if transacao:
+                transacao.status = status
+                transacao.save()
+                
+                # Verificar se a external_reference corresponde a um pedido ou usuário
                 try:
                     pedido = Pedido.objects.get(id=external_reference)
-                    pedido.status = 'pago'
+                    pedido.status = status  # Atualizar status do pedido com base no pagamento
                     pedido.save()
+
                     # Notifique o usuário ou tome outras ações necessárias
+                    usuario = Usuario.objects.get(id=pedido.usuario.id)
+                    # Exemplo: Enviar um e-mail para o usuário notificando sobre o pagamento
+                    # send_payment_notification_email(usuario, pedido)
+
                 except Pedido.DoesNotExist:
                     print(f"Pedido com ID {external_reference} não encontrado")
 
-            return HttpResponse(status=200)
+            return JsonResponse({'status': 'success'})
         except json.JSONDecodeError:
-            return HttpResponse("Erro ao processar dados", status=400)
-    return HttpResponse("Método não permitido", status=405)
+            return JsonResponse({'status': 'error', 'message': 'Erro ao processar dados'}, status=400)
+    else:
+        return JsonResponse({'status': 'method_not_allowed'}, status=405)
 
 def listar_transacoes(request):
     transacoes = Transacao.objects.all()
