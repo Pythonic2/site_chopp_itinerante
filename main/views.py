@@ -223,29 +223,10 @@ def remover_do_carrinho(request, produto_id):
     return redirect('pagina_carrinho')
 
 
-@csrf_exempt
-def simple_test(request):
-  
-    if request.method == "POST":
-        
-        webhook_data = json.loads(request.body.decode('utf-8'))
-        print("Webhook Recebido:", webhook_data)
 
-        
-        pagamento_id = webhook_data.get('data', {}).get('id', '')
-        status = webhook_data.get('action', '')
-
-       
-        transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
-        if transacao:
-            transacao.status = status
-            transacao.save()
-
-        return JsonResponse({'status': 'success'})
-    else:import json
 from django.http import JsonResponse
 from .models import Transacao, Usuario
-
+@csrf_exempt
 def simple_test(request):
     if request.method == "POST":
         try:
