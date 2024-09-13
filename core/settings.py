@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-bg)ybva($%u6l_^eoc!xkwffy2hqh&%^&t_@@wzik%ao6(89gn
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 LOGIN_REDIRECT_URL = 'pagina_carrinho'
 LOGIN_URL = 'login'
 AUTH_USER_MODEL = 'main.Usuario'
