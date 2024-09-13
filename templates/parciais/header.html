@@ -2,39 +2,56 @@
     <div class="container my-5 py-5">
         <div class="row align-items-center g-5">
             <div class="col-lg-6 text-center text-lg-start">
-                <h1 class="display-3 text-white animated slideInLeft">Chopp Gelado<br>Na Sua Festa!</h1>
-                <p class="text-white animated slideInLeft mb-4 pb-2">Precisa de Chopp para animar sua festa? Nós levamos até você! Seja para festas, aniversários, casamentos, churrascos ou qualquer comemoração, garantimos o chopp gelado e a diversão. É só chamar e a gente cuida do resto!</p>
-                <a href="https://api.whatsapp.com/send/?phone=5521965373333&text&type=phone_number&app_absent=0" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft" target="blank">Fale Conosco</a>
+                <h1 class="display-3 text-white animated slideInLeft">Inove Seu Evento<br>E Surpreenda Seus Amigos!</h1>
+                <p class="text-white animated slideInLeft mb-4 pb-2">Pontualidade e excelência para abastecer você e seus convidados em nossa bomba retrô, com os melhores choppes de Jampa. 
+                  Aqui você sai de tanque cheio literalmente. 
+                  E aí, vamos abastecer?!</p>
+                <a href="{% url 'cardapio'%}" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft" target="blank">Ver Chopps</a>
             </div>
             <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                    <div class="carousel-indicators">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                  <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="static/img/1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="static/img/2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="static/img/3.jpg" class="d-block w-100" alt="...">
+                        <img src="static/img/IMG_7775.jpg" class="d-block w-100 carousel-image" alt="...">
                       </div>
                      
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <div class="carousel-item">
+                          <img src="static/img/IMG_7119.png" class="d-block w-100 carousel-image" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="static/img/IMG_7692.png" class="d-block w-100 carousel-image" alt="...">
+                      </div>
+                   
+                      <div class="carousel-item">
+                          <img src="static/img/IMG_7115.png" class="d-block w-100 carousel-image" alt="...">
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </div>
+                  </button>
+              </div>
+          </div>
+          
+          <!-- CSS -->
+          <style>
+          .carousel-image {
+              width: 100%; /* Define a largura para 100% do contêiner */
+              height: 400px; /* Altura fixa */
+              object-fit: cover; /* Preenche o contêiner e corta o excesso */
+          }
+          </style>
+          
         </div>
     </div>
 </div>

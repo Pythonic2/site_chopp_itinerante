@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+LOGIN_REDIRECT_URL = 'pagina_carrinho'
+LOGIN_URL = 'login'
+AUTH_USER_MODEL = 'main.Usuario'
 
 INSTALLED_APPS = [
     'django.contrib.admin',

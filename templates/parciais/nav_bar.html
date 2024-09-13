@@ -21,8 +21,11 @@
                     </div>
                 </div> {% endcomment %}
                 <a href="#contato" class="nav-item nav-link">Contato</a>
+                <a href="{% url 'cardapio' %}" class="nav-item nav-link">Cardapio</a>
             </div>
-            <a href="#cardapio" class="btn btn-primary py-2 px-4">Produtos</a>
+            <a href="{% url 'login'%}" class="btn btn-primary py-2 px-4">{% if not request.user.username%} login {% else%} {{request.user.username}} {%endif%}</a>
+            <a href="{% url 'logout'%}" class="nav-item nav-link">sair</a>
+
         </div>
     </nav>
 
