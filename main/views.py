@@ -10,7 +10,7 @@ from django.views.generic import TemplateView
 from django.utils.decorators import method_decorator
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
-from .models import Usuario, Transacao, Produto
+from .models import Usuario, Transacao, Produto, Carrinho, ItemCarrinho
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from .forms import SignUpForm
@@ -19,12 +19,15 @@ from django.utils.translation import gettext_lazy
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate
 from django.contrib.auth import logout
+from django.views.generic import TemplateView
+from .models import Produto, Carrinho, ItemCarrinho, Usuario
 
 logger = logging.getLogger(__name__)
 User = Usuario
 
 def gerar_pagamento(cliente, valor):
     sdk = mercadopago.SDK('TEST-7847881527057924-091116-0ccb25f4e7a8318b77ae79bcb1f4c205-162016798')
+    valor_float = float(valor)
 
     preference_data = {
         "items": [
@@ -33,17 +36,17 @@ def gerar_pagamento(cliente, valor):
                 "title": "Alguem de Chopps",
                 "quantity": 1,
                 "currency_id": "BRL",
-                "unit_price": valor
+                "unit_price": valor_float
             }
         ],
-        "external_reference": cliente,
+        "external_reference": f'{cliente}',
         "back_urls": {
             "success": "http://127.0.0.1:8000/carrinho/",
             "failure": "http://127.0.0.1:8000/carrinho/",
             "pending": "http://127.0.0.1:8000/carrinho/"
         },
         "auto_return": "approved",  # Esta opção é opcional
-        "notification_url": "https://webhook.site/51705b86-2cad-48f3-9228-04ed1b6c9a72"  
+        "notification_url": "https://choppitinerante.cloudboosterlab.org/pag/"  
     }
 
     result = sdk.preference().create(preference_data)
@@ -59,146 +62,195 @@ def home(request):
 def pagina_carrinho(request):
     """ Renderiza a pagina do carrinho, e carrega as informaçoes descritas no dict context """
     
-    carrinho = request.session.get('carrinho', {})
-    total = sum(item.get('preco_total', 0) for item in carrinho.values())
-    quantidade_total = sum(item.get('quantidade', 0) for item in carrinho.values())
-    total = round(total, 2)
-    
-    # Obtendo os produtos do carrinho com suas fotos
-    produtos_com_fotos = []
-    for produto_id, item in carrinho.items():
-        produto = Produto.objects.get(pk=produto_id)
-        produto_com_foto = {
-            'produto': produto,
-            'valor': item['preco'],
-            'quantidade': item['quantidade'],
-            'preco_total': item['preco_total'],
+    usuario = request.user.username
 
-        }
-        produtos_com_fotos.append(produto_com_foto)
+    # Obtém o usuário atual
+    user = Usuario.objects.get(username=usuario)
+
+    # Obtém o carrinho do usuário
+    carrinho = Carrinho.objects.filter(usuario=user).first()  # Considera apenas o primeiro carrinho, ajuste se necessário
+    if not carrinho:
+        return render(request, 'cart.html', {'produtos': [], 'valor_total': 0})
+
+    # Obtém os itens do carrinho
+    itens = ItemCarrinho.objects.filter(carrinho=carrinho)
+
+    produtos_no_carrinho = [(item.produto, item.quantidade) for item in itens]
+
+    # Calcula o valor total
+    valor_total = sum(item.produto.valor * item.quantidade for item in itens)
     
     context = {
-        'carrinho': produtos_com_fotos,  # Agora passamos os produtos com suas fotos
-        'total': total,
-        'quantidade_carrinho': quantidade_total
+        'carrinho': produtos_no_carrinho,  # Agora passamos os produtos com suas fotos
+        'total': valor_total,
     }
-    # usuario = request.user.username
-    # cliente = Usuario.objects.get(username=usuario)
-    # valor = total
-    # print(cliente.nome)
-    # pag = gerar_pagamento(valor=valor, cliente=cliente.nome)
-    # print(pag)
-    # print(pag['init_point'])
+    print(valor_total)
+    pag = gerar_pagamento(user.username, valor_total)
+    print(pag)
     return render(request, 'cart.html', context)
 
+
 class CardapioView(TemplateView):
-    
-    """ Renderiza o template do cardápio  e retona a quantidade de itens no carrinho : `quantidade_carrinho`"""
+    """Renderiza o template do cardápio e retorna a quantidade de itens no carrinho"""
     
     template_name = 'menu.html'
 
     def get(self, request, **kwargs):
-
         context = super().get_context_data(**kwargs)
-       
+        
         context['produtos'] = Produto.objects.all()
-        context['quantidade_carrinho'] = self.obter_quantidade_carrinho(request)
+        usuario = request.user.username
+        
+        # Obtém o usuário atual
+        user = get_object_or_404(Usuario, username=usuario)
+        
+        # Obtém o carrinho do usuário ou cria um novo se não existir
+        carrinho, created = Carrinho.objects.get_or_create(usuario=user)
+        
+        # Se o carrinho foi criado, inicialize o valor
+        if created:
+            carrinho.valor = 0
+            carrinho.save()
+
+        # Obtém os itens do carrinho
+        itens = ItemCarrinho.objects.filter(carrinho=carrinho)
+        
+        # Calcula a quantidade total de todos os itens no carrinho
+        quantidade_total = sum(item.quantidade for item in itens)
+        context['quantidade_carrinho'] = quantidade_total
+        
         return render(request, self.template_name, context)
 
 
-    def obter_quantidade_carrinho(self, request):
-        carrinho = request.session.get('carrinho', {})
-        quantidade_total = sum(item['quantidade'] for item in carrinho.values())
-        return quantidade_total
+def obter_quantidade_carrinho_htmx(request):
+    usuario = request.user.username
 
+    # Obtém o usuário atual
+    user = Usuario.objects.get(username=usuario)
 
-def quantidade_carrinho(request):
-    carrinho = request.session.get('carrinho', {})
-    quantidade_total = sum(item['quantidade'] for item in carrinho.values())
+    # Obtém o carrinho do usuário
+    carrinho = Carrinho.objects.filter(usuario=user).first()  # Considera apenas o primeiro carrinho, ajuste se necessário
+    print(carrinho)
+    if not carrinho:
+        return 0  # Retorna 0 se não houver carrinho
+
+    # Obtém os itens do carrinho
+    itens = ItemCarrinho.objects.filter(carrinho=carrinho)
+
+    # Calcula a quantidade total de todos os itens no carrinho
+    quantidade_total = sum(item.quantidade for item in itens)
+    
     return render(request, 'parciais/qtd_carrinho.html',{'quantidade_carrinho':quantidade_total})
 
 
 def adicionar_ao_carrinho(request, produto_id):
-    """Utiliza sessão para criar o 'carrinho', e adiciona sempre que o valor do input for > 0"""
-    produto = get_object_or_404(Produto, pk=produto_id)
-    quantidade = int(request.POST.get('quantidade', 0))
+    # Verifica se o usuário está autenticado
+    if request.user.is_authenticated:
+        usuario = request.user.username
+        print(f"Usuário autenticado: {usuario}")
 
-    if quantidade >= 1:
-        carrinho = request.session.get('carrinho', {})
+        # Obtém o usuário atual
+        user = Usuario.objects.get(username=usuario)
 
-        if produto_id in carrinho:
-            carrinho[produto_id]['quantidade'] += quantidade 
-            carrinho[produto_id]['preco_total'] += quantidade * float(produto.valor)
-        else:
-            carrinho[produto_id] = {
-                'produto': produto.nome,
-                'preco': float(produto.valor),
-                'quantidade': quantidade,
-                'preco_total': quantidade * float(produto.valor)
-            }
+        # Tenta obter o carrinho do usuário, cria um novo se não existir
+        carrinho, created = Carrinho.objects.get_or_create(usuario=user)
 
-        request.session['carrinho'] = carrinho
+        print(f"Carrinho: {carrinho}, Criado agora? {created}")
+        
+        # Obtém o produto
+        produto = get_object_or_404(Produto, pk=produto_id)
+        quantidade = int(request.POST.get('quantidade', 0))
 
-        # Retorna a mensagem de sucesso para o HTMX
-        mensagem = f'''
-            <span class="text-success">{quantidade} Unidade(s) do Produto "{produto.nome}" adicionado ao carrinho!</span>
-            <script>removerMensagem('mensagem-produto-{produto.id}');</script>
-        '''
-        return HttpResponse(mensagem)
+        if quantidade >= 1:
+            # Verifica se o produto já está no carrinho
+            item_carrinho, created = ItemCarrinho.objects.get_or_create(
+                carrinho=carrinho, 
+                produto=produto,
+                defaults={'quantidade': quantidade}  # Define a quantidade na criação
+            )
 
-    # Caso a quantidade seja inválida ou não haja ação a ser tomada
-    mensagem = '<span class="text-danger">Por favor, selecione uma quantidade válida para adicionar ao carrinho.</span>'
-    return HttpResponse(mensagem, status=400)
+            if not created:
+                # Se o produto já estiver no carrinho, atualiza a quantidade
+                item_carrinho.quantidade += quantidade
+                item_carrinho.save()
 
+            # Atualiza o valor total do carrinho
+            carrinho.valor += produto.valor * quantidade
+            carrinho.save()
 
-def limpar_carrinho(request):
-    if 'carrinho' in request.session:
-        del request.session['carrinho']
-        request.session.save()
-    return redirect('cardapio')
+            # Mensagem de sucesso para o HTMX
+            mensagem = f'''
+                <span class="text-success">{quantidade} Unidade(s) do Produto "{produto.nome}" adicionado ao carrinho!</span>
+                <script>removerMensagem('mensagem-produto-{produto.id}');</script>
+            '''
+            return HttpResponse(mensagem)
+
+        return HttpResponse(status=400)
+    
+    else:
+        return HttpResponse("Usuário não autenticado", status=403)
 
 
 def remover_do_carrinho(request, produto_id):
-    print(f"Produto ID para remover: {produto_id}")
-    carrinho = request.session.get('carrinho', {})
-    print(f"Carrinho atual: {carrinho}")
-    if str(produto_id) in carrinho:
-        del carrinho[str(produto_id)]
-        request.session['carrinho'] = carrinho
-        request.session.save()
-        print(f"Item {produto_id} removido. Novo carrinho: {carrinho}")
+    """Remove ou diminui a quantidade de um item no carrinho"""
+    usuario = request.user.username
+    user = get_object_or_404(Usuario, username=usuario)
+
+    # Obtém o carrinho do usuário
+    carrinho = Carrinho.objects.filter(usuario=user).first()
+    if not carrinho:
+        return HttpResponse("Carrinho não encontrado", status=404)
+
+    produto = get_object_or_404(Produto, pk=produto_id)
+    
+    # Verifica se o item existe no carrinho
+    item_carrinho = ItemCarrinho.objects.filter(carrinho=carrinho, produto=produto).first()
+    if not item_carrinho:
+        return HttpResponse("Item não encontrado no carrinho", status=404)
+    
+    # Diminui a quantidade ou remove o item se a quantidade for menor ou igual a 1
+    if item_carrinho.quantidade > 1:
+        item_carrinho.quantidade -= 1
+        item_carrinho.save()
     else:
-        print(f"Item {produto_id} não encontrado no carrinho.")
+        item_carrinho.delete()
+
+    # Atualiza o valor total do carrinho
+    carrinho.valor = sum(item.produto.valor * item.quantidade for item in carrinho.itens.all())
+    carrinho.save()
+
+    # Redireciona para a página do carrinho
     return redirect('pagina_carrinho')
 
 
 @csrf_exempt
 def simple_test(request):
   
-    if request.method == "POST":
-        
-        webhook_data = json.loads(request.body.decode('utf-8'))
-        print("Webhook Recebido:", webhook_data)
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            external_reference = data.get('data', {}).get('external_reference')
+            payment_id = data.get('data', {}).get('id')
+            payment_type = data.get('type')
 
-        
-        pagamento_id = webhook_data.get('data', {}).get('id', '')
-        status = webhook_data.get('action', '')
+            if payment_type == 'payment':
+                # Encontrar o pedido ou usuário usando a external_reference
+                try:
+                    pedido = Pedido.objects.get(id=external_reference)
+                    pedido.status = 'pago'
+                    pedido.save()
+                    # Notifique o usuário ou tome outras ações necessárias
+                except Pedido.DoesNotExist:
+                    print(f"Pedido com ID {external_reference} não encontrado")
 
-       
-        transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
-        if transacao:
-            transacao.status = status
-            transacao.save()
-
-        return JsonResponse({'status': 'success'})
-    else:
-        return JsonResponse({'status': 'method_not_allowed'})
-
+            return HttpResponse(status=200)
+        except json.JSONDecodeError:
+            return HttpResponse("Erro ao processar dados", status=400)
+    return HttpResponse("Método não permitido", status=405)
 
 def listar_transacoes(request):
     transacoes = Transacao.objects.all()
     return render(request, 'transacoes.html', {'transacoes': transacoes})
-
 
 
 def logout_view(request):

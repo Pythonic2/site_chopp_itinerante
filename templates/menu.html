@@ -69,52 +69,78 @@
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
-                                {% for produto in produtos %}
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        {% comment %} <img class="flex-shrink-0 img-fluid rounded" src="{{ produto.imagem.url }}" alt="" style="width: 80px;"> {% endcomment %}
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>{{ produto.nome }} - {{ produto.litros }} L</span>
-                                                <span class="text-primary">{{ produto.valor }}</span>
-                                            </h5>
-                                            <!-- Botão Adicionar ao Carrinho -->
-                                            <div class="produto-item">
-                                                <!-- Formulário para adicionar ao carrinho -->
-                                                <form hx-post="{% url 'adicionar_ao_carrinho' produto.id %}" 
-                                                    hx-target="#mensagem-produto-{{ produto.id }}" 
-                                                    hx-swap="innerHTML" 
-                                                    hx-trigger="submit" 
-                                                    hx-on="htmx:afterRequest: atualizarQuantidadeCarrinho" 
-                                                    method="post">
-                                                    {% csrf_token %}
-                                                    <input type="hidden" name="produto_id" value="{{ produto.id }}">
-                                                    <label for="quantidade_{{ produto.id }}">Quantidade:</label>
-                                                    <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="0" min="1" class="form-control mb-2" style="width: 10%;">
-                                                    <button type="submit" class="btn btn-primary add-to-cart">Adicionar ao Carrinho</button>
-                                                </form>
+                                {% if produtos%}
+                                    {% for produto in produtos %}
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            {% comment %} <img class="flex-shrink-0 img-fluid rounded" src="{{ produto.imagem.url }}" alt="" style="width: 80px;"> {% endcomment %}
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>{{ produto.nome }} - {{ produto.litros }} L</span>
+                                                    <span class="text-primary">{{ produto.valor }}</span>
+                                                </h5>
+                                                <!-- Botão Adicionar ao Carrinho -->
+                                                <div class="produto-item">
+                                                    <!-- Formulário para adicionar ao carrinho -->
+                                                    <form hx-post="{% url 'adicionar_ao_carrinho' produto.id %}" 
+                                                        hx-target="#mensagem-produto-{{ produto.id }}" 
+                                                        hx-swap="innerHTML" 
+                                                        hx-trigger="submit" 
+                                                        hx-on="htmx:afterRequest: atualizarQuantidadeCarrinho" 
+                                                        method="post" class="d-flex align-items-center">
+                                                        {% csrf_token %}
+                                                        <input type="hidden" name="produto_id" value="{{ produto.id }}">
+                                                        <label for="quantidade_{{ produto.id }}" class="visually-hidden">Quantidade:</label>
+                                                        <div class="input-group" style="width: 150px;">
+                                                            <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
+                                                                <i class="fas fa-minus"></i>
+                                                            </button>
+                                                            <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
+                                                            <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
+                                                                <i class="fas fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary ms-2">Adicionar</button>
+                                                    </form>
 
-                                                <!-- Div para mostrar a mensagem de sucesso -->
-                                                <div id="mensagem-produto-{{ produto.id }}" class="mensagem-produto"></div>
-                                            </div>
-                                            
-                                            <!-- Script para remover mensagens após um tempo -->
-                                            <script>
-                                                function removerMensagem(id) {
-                                                    const mensagemElemento = document.getElementById(id);
-                                                    if (mensagemElemento) {
-                                                        setTimeout(() => {
-                                                            mensagemElemento.innerHTML = '';
-                                                        }, 2000);  // 3000 milissegundos = 3 segundos
+                                                    <script>
+                                                        function incrementar(id) {
+                                                            let input = document.getElementById('quantidade_' + id);
+                                                            input.value = parseInt(input.value) + 1;
+                                                        }
+
+                                                        function decrementar(id) {
+                                                            let input = document.getElementById('quantidade_' + id);
+                                                            if (parseInt(input.value) > 1) {
+                                                                input.value = parseInt(input.value) - 1;
+                                                            }
+                                                        }
+                                                    </script>
+
+                                                    <!-- Div para mostrar a mensagem de sucesso -->
+                                                    <div id="mensagem-produto-{{ produto.id }}" class="mensagem-produto"></div>
+                                                </div>
+                                                
+                                                <!-- Script para remover mensagens após um tempo -->
+                                                <script>
+                                                    function removerMensagem(id) {
+                                                        const mensagemElemento = document.getElementById(id);
+                                                        if (mensagemElemento) {
+                                                            setTimeout(() => {
+                                                                mensagemElemento.innerHTML = '';
+                                                            }, 2000);  // 3000 milissegundos = 3 segundos
+                                                        }
                                                     }
-                                                }
-                                            </script>
-                                            
-                                            
+                                                </script>
+                                                
+                                                
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                {% endfor %}
+                                    {% endfor %}
+                                {%else%}
+                                    sem produto
+                                {%endif%}
                             </div>
                         </div>
                     </div>
@@ -123,7 +149,7 @@
         </div>
         <!-- Menu End -->
         <!-- Exibir a quantidade de itens no carrinho -->
-        <div class="col-lg-6" hx-get="{% url 'qtdcar'%}" hx-trigger="every 1s" hx-target="#quantidade-carrinho" hx-swap="innerHTML">
+        <div class="col-lg-6">
             <div class="d-flex align-items-center">
                 <div class="w-100 d-flex flex-column text-start ps-4" id="quantidade-carrinho">
                     {% include 'parciais/qtd_carrinho.html' %}
@@ -200,7 +226,15 @@
         </div>
         <!-- Footer End -->
 
-
+        <script>
+            function alterarQuantidade(produtoId, ajuste) {
+                const input = document.getElementById(`quantidade_${produtoId}`);
+                let quantidade = parseInt(input.value, 10);
+                quantidade += ajuste;
+                if (quantidade < 1) quantidade = 1; // Garantir que a quantidade não seja menor que 1
+                input.value = quantidade;
+            }
+        </script>
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
