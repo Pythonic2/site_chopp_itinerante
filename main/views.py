@@ -225,41 +225,68 @@ def remover_do_carrinho(request, produto_id):
 
 @csrf_exempt
 def simple_test(request):
+  
+    if request.method == "POST":
+        
+        webhook_data = json.loads(request.body.decode('utf-8'))
+        print("Webhook Recebido:", webhook_data)
+
+        
+        pagamento_id = webhook_data.get('data', {}).get('id', '')
+        status = webhook_data.get('action', '')
+
+       
+        transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
+        if transacao:
+            transacao.status = status
+            transacao.save()
+
+        return JsonResponse({'status': 'success'})
+    else:import json
+from django.http import JsonResponse
+from .models import Transacao, Usuario
+
+def simple_test(request):
     if request.method == "POST":
         try:
-            # Carregar dados do webhook
             webhook_data = json.loads(request.body.decode('utf-8'))
             print("Webhook Recebido:", webhook_data)
-            
+
             pagamento_id = webhook_data.get('data', {}).get('id', '')
             status = webhook_data.get('action', '')
-            external_reference = webhook_data.get('data', {}).get('external_reference', '')
+            print(f"ID do Pagamento: {pagamento_id}")
+            print(f"Status: {status}")
 
-            # Atualizar status da transação
+            # Encontrar a transação correspondente
             transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
             if transacao:
+                # Se a transação for encontrada, atualizar o status
                 transacao.status = status
                 transacao.save()
-                
-                # Verificar se a external_reference corresponde a um pedido ou usuário
+                print(f"Transação Atualizada: {transacao}")
+            else:
+                print(f"Transação não encontrada para ID: {pagamento_id}")
+
+            # Verificar o usuário associado ao pagamento (se disponível)
+            collector_id = webhook_data.get('data', {}).get('collector_id', '')
+            if collector_id:
                 try:
-                    pedido = Pedido.objects.get(id=external_reference)
-                    pedido.status = status  # Atualizar status do pedido com base no pagamento
-                    pedido.save()
-
-                    # Notifique o usuário ou tome outras ações necessárias
-                    usuario = Usuario.objects.get(id=pedido.usuario.id)
-                    # Exemplo: Enviar um e-mail para o usuário notificando sobre o pagamento
-                    # send_payment_notification_email(usuario, pedido)
-
-                except Pedido.DoesNotExist:
-                    print(f"Pedido com ID {external_reference} não encontrado")
+                    usuario = Usuario.objects.get(collector_id=collector_id)  # Ajuste o campo conforme sua necessidade
+                    print(f"Usuário associado ao pagamento: {usuario}")
+                except Usuario.DoesNotExist:
+                    print(f"Usuário não encontrado para o collector_id: {collector_id}")
 
             return JsonResponse({'status': 'success'})
         except json.JSONDecodeError:
-            return JsonResponse({'status': 'error', 'message': 'Erro ao processar dados'}, status=400)
+            print("Erro ao decodificar JSON")
+            return JsonResponse({'status': 'invalid_data'})
+        except Exception as e:
+            print(f"Erro inesperado: {str(e)}")
+            return JsonResponse({'status': 'error'})
     else:
-        return JsonResponse({'status': 'method_not_allowed'}, status=405)
+        return JsonResponse({'status': 'method_not_allowed'})
+
+        return JsonResponse({'status': 'method_not_allowed'})
 
 def listar_transacoes(request):
     transacoes = Transacao.objects.all()
