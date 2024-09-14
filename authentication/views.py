@@ -30,13 +30,10 @@ class RegisterUser(CreateView):
         if form.is_valid():
             username = form.cleaned_data.get("username")
             
-            # Verifica se o usuário já existe
             if get_user_model().objects.filter(username=username).exists():
-                # Adiciona erro no formulário informando que o usuário já existe
                 form.add_error('username', 'Este nome de usuário já está em uso.')
                 return render(request, "register.html", {"form": form})
             
-            # Se o usuário não existir, o cadastro continua
             form.save()
             
             raw_password = form.cleaned_data.get("password1")
