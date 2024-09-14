@@ -133,13 +133,6 @@
     }
     
 }
-/* Controla o tamanho da logo na barra de navegação */
-/* Define o tamanho da logo */
-.logo-header{
-    display: none !important;
-}
-
-
 
 /* Certifica-se de que a logo e o nome da empresa fiquem alinhados horizontalmente */
 .navbar-brand {
