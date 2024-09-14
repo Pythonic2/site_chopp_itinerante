@@ -37,10 +37,7 @@
     
         <!-- Spinner End -->
 
-
         {% include 'parciais/nav_bar.html'%}
-
-
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
@@ -69,7 +66,7 @@
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
-                                {% if produtos%}
+                                {% if produtos %}
                                     {% for produto in produtos %}
                                     <div class="col-lg-6">
                                         <div class="d-flex align-items-center">
@@ -82,27 +79,45 @@
                                                 <!-- Botão Adicionar ao Carrinho -->
                                                 <div class="produto-item">
                                                     <!-- Formulário para adicionar ao carrinho -->
-                                                    <form hx-post="{% url 'adicionar_ao_carrinho' produto.id %}" 
-                                                        hx-target="#mensagem-produto-{{ produto.id }}" 
-                                                        hx-swap="innerHTML" 
-                                                        hx-trigger="submit" 
-                                                        hx-on="htmx:afterRequest: atualizarQuantidadeCarrinho" 
-                                                        method="post" class="d-flex align-items-center">
-                                                        {% csrf_token %}
-                                                        <input type="hidden" name="produto_id" value="{{ produto.id }}">
-                                                        <label for="quantidade_{{ produto.id }}" class="visually-hidden">Quantidade:</label>
-                                                        <div class="input-group" style="width: 150px;">
-                                                            <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
-                                                                <i class="fas fa-minus"></i>
-                                                            </button>
-                                                            <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
-                                                            <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
-                                                                <i class="fas fa-plus"></i>
-                                                            </button>
+                                                    {% if request.user.is_authenticated%}
+                                                        <form hx-post="{% url 'adicionar_ao_carrinho' produto.id %}" 
+                                                            hx-target="#mensagem-produto-{{ produto.id }}" 
+                                                            hx-swap="innerHTML" 
+                                                            hx-trigger="submit" 
+                                                            hx-on="htmx:afterRequest: atualizarQuantidadeCarrinho" 
+                                                            method="post" class="d-flex align-items-center">
+                                                            {% csrf_token %}
+                                                            <input type="hidden" name="produto_id" value="{{ produto.id }}">
+                                                            <label for="quantidade_{{ produto.id }}" class="visually-hidden">Quantidade:</label>
+                                                            <div class="input-group" style="width: 150px;">
+                                                                <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                                <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
+                                                                <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary ms-2">Adicionar</button>
+                                                        </form>
+                                                    {%else%}
+                                                        <form method='POST' action="{% url 'login'  %}" 
+                                                            method="post" class="d-flex align-items-center">
+                                                            {% csrf_token %}
+                                                            <input type="hidden" name="produto_id" value="{{ produto.id }}">
+                                                            <label for="quantidade_{{ produto.id }}" class="visually-hidden">Quantidade:</label>
+                                                            <div class="input-group" style="width: 150px;">
+                                                                <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
+                                                                    <i class="fas fa-minus"></i>
+                                                                </button>
+                                                                <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
+                                                                <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
                                                         </div>
                                                         <button type="submit" class="btn btn-primary ms-2">Adicionar</button>
-                                                    </form>
-
+                                                        </form>
+                                                    {%endif%}
                                                     <script>
                                                         function incrementar(id) {
                                                             let input = document.getElementById('quantidade_' + id);
@@ -139,7 +154,7 @@
                                     </div>
                                     {% endfor %}
                                 {%else%}
-                                    sem produto
+                                    Sem Produtos ainda
                                 {%endif%}
                             </div>
                         </div>
@@ -152,7 +167,7 @@
         <div class="col-lg-6">
             <div class="d-flex align-items-center">
                 <div class="w-100 d-flex flex-column text-start ps-4" id="quantidade-carrinho">
-                    {% include 'parciais/qtd_carrinho.html' %}
+                    <a href="{% url 'pagina_carrinho' %}"type="submit" class="btn btn-primary add-to-cart">Pagar</a>    
                     
 
                 </div>

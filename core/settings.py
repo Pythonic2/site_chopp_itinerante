@@ -29,9 +29,11 @@ ALLOWED_HOSTS = ['*']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
-LOGIN_REDIRECT_URL = 'pagina_carrinho'
+LOGIN_REDIRECT_URL = 'cardapio'
 LOGIN_URL = 'login'
-AUTH_USER_MODEL = 'main.Usuario'
+AUTH_USER_MODEL = 'authentication.Usuario'
+CSRF_COOKIE_AGE = 31449600  # 1 ano em segundos
+CSRF_COOKIE_SECURE = True  # Garante que o CSRF cookie só será enviado sobre HTTPS
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,6 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'authentication',
+    'produto',
+    'carrinho',
+    'pagamento',
 ]
 
 MIDDLEWARE = [
