@@ -136,22 +136,13 @@
 /* Controla o tamanho da logo na barra de navegação */
 /* Define o tamanho da logo */
 .logo-header{
-    display: none;
-}
-.logo {
-    height: 50px; /* Ajuste a altura conforme necessário */
-    width: auto; /* Mantém a proporção da imagem */
+    display: none !important;
 }
 
-/* Estiliza o nome da empresa ao lado da logo */
-.company-name {
-    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
-    color: #fff; /* Cor do texto */
-}
+
 
 /* Certifica-se de que a logo e o nome da empresa fiquem alinhados horizontalmente */
 .navbar-brand {
-    display: flex;
     align-items: center; /* Alinha verticalmente a logo e o nome */
 }
 
@@ -161,11 +152,11 @@
         display: none !important;
     }
    .logo-header {
-    display: flex;
-    width: 50%;
-    text-align: center;
-    margin-top: -10%;
-    margin-bottom: -20%;
+        display: flex !important;
+        width: 50%;
+        text-align: center;
+        margin-top: -10%;
+        margin-bottom: -20%;
 
    }
 }
