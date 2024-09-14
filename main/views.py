@@ -25,7 +25,7 @@ from .models import Produto, Carrinho, ItemCarrinho, Usuario
 logger = logging.getLogger(__name__)
 User = Usuario
 
-def gerar_pagamento(cliente, valor):
+def gerar_pagamento(cliente_id, valor):
     sdk = mercadopago.SDK('TEST-7847881527057924-091116-0ccb25f4e7a8318b77ae79bcb1f4c205-162016798')
     valor_float = float(valor)
 
@@ -38,22 +38,22 @@ def gerar_pagamento(cliente, valor):
                 "currency_id": "BRL",
                 "unit_price": valor_float
             }
-           
         ],
-        "external_reference": f'{cliente}',
+        "external_reference": f'{cliente_id}',
         "back_urls": {
             "success": "http://127.0.0.1:8000/carrinho/",
             "failure": "http://127.0.0.1:8000/carrinho/",
             "pending": "http://127.0.0.1:8000/carrinho/"
         },
-        "auto_return": "approved",  # Esta opção é opcional
-        "notification_url": "https:///webhook.site/51705b86-2cad-48f3-9228-04ed1b6c9a72"  
+        "auto_return": "approved",
+        "notification_url": "https:///webhook.site/51705b86-2cad-48f3-9228-04ed1b6c9a72"
     }
 
     result = sdk.preference().create(preference_data)
     preference = result['response']
 
     return preference
+
 
 def home(request):
     produtos = Produto.objects.filter(disponivel=True)
@@ -234,38 +234,31 @@ from django.http import JsonResponse
 @csrf_exempt
 def simple_test(request):
     if request.method == "POST":
-        print("---- AUI __------")
-        # Decodifica o corpo da requisição (JSON)
-        webhook_data = json.loads(request.body.decode('utf-8'))
+        if not request.body:
+            return JsonResponse({'error': 'Corpo da requisição vazio'}, status=400)
 
-        # Imprime o JSON completo recebido
-        print("Webhook Recebido (JSON Completo):", json.dumps(webhook_data, indent=4))
+        try:
+            webhook_data = json.loads(request.body.decode('utf-8'))
+            print("Webhook Recebido:", webhook_data)
 
-        # Imprime valores específicos do JSON
-        pagamento_id = webhook_data.get('data', {}).get('id', '')
-        live_mode = webhook_data.get('live_mode', '')
-        tipo = webhook_data.get('type', '')
-        date_created = webhook_data.get('date_created', '')
-        user_id = webhook_data.get('user_id', '')
-        action = webhook_data.get('action', '')
+            pagamento_id = webhook_data.get('data', {}).get('id', '')
+            status = webhook_data.get('action', '')
+            external_reference = webhook_data.get('data', {}).get('external_reference', '')
 
-        print(f"Pagamento ID: {pagamento_id}")
-        print(f"Live Mode: {live_mode}")
-        print(f"Tipo: {tipo}")
-        print(f"Data de Criação: {date_created}")
-        print(f"User ID: {user_id}")
-        print(f"Ação: {action}")
+            # Seu código para lidar com a transação
+            transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
+            if transacao:
+                transacao.status = status
+                transacao.cliente_id = external_reference  # Atualize o cliente_id
+                transacao.save()
 
-        # Acessa transação e atualiza status (se aplicável)
-        transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
-        if transacao:
-            transacao.status = action
-            transacao.save()
-            print(f"Status da transação atualizado para: {action}")
+            return JsonResponse({'status': 'success'})
+        
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
+    
+    return JsonResponse({'status': 'method_not_allowed'}, status=405)
 
-        return JsonResponse({'status': 'success'})
-    else:
-        return JsonResponse({'status': 'method_not_allowed'})
 
 
 def listar_transacoes(request):
