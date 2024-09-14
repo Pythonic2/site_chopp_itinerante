@@ -6,12 +6,13 @@ from .models import Produto
 class CardapioView(TemplateView):
     """Renderiza o template do cardápio e retorna a quantidade de itens no carrinho"""
 
-    template_name = 'menu.html'
+    template_name = 'produtos.html'
 
     def get(self, request, **kwargs):
         context = super().get_context_data(**kwargs)
         
         context['produtos'] = Produto.objects.all()
+        context['title'] = 'Produtos'
 
 
         return render(request, self.template_name, context)

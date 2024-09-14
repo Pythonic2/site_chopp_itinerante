@@ -131,6 +131,7 @@
     .navbar-dark .navbar-brand img {
         max-height: 45px;
     }
+    .logo{width: 150% !important;}
 }
 
 @media (min-width: 992px) {

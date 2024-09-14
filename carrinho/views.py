@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import Carrinho
 from authentication.models import Usuario
@@ -7,7 +7,8 @@ from pagamento.views import gerar_pagamento
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
 from produto.models import Produto
-
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 @login_required
 def pagina_carrinho(request):
@@ -21,7 +22,7 @@ def pagina_carrinho(request):
     # Obtém o carrinho do usuário
     carrinho = Carrinho.objects.filter(usuario=user).first()  # Considera apenas o primeiro carrinho, ajuste se necessário
     if not carrinho:
-        return render(request, 'cart.html', {'produtos': [], 'valor_total': 0})
+        return render(request, 'cart.html', {'produtos': [], 'valor_total': 0,'title':'Carrinho'})
 
     # Obtém os itens do carrinho
     itens = ItemCarrinho.objects.filter(carrinho=carrinho)
@@ -34,6 +35,7 @@ def pagina_carrinho(request):
     context = {
         'carrinho': produtos_no_carrinho,  # Agora passamos os produtos com suas fotos
         'total': valor_total,
+        'title':'Carrinho'
     }
     print(valor_total)
     pag = gerar_pagamento(user.username, valor_total)
@@ -139,5 +141,5 @@ def remover_do_carrinho(request, produto_id):
     carrinho.save()
 
     # Redireciona para a página do carrinho
-    return redirect('pagina_carrinho')
+    return HttpResponseRedirect(reverse('pagina_carrinho') + '#id_do_elemento')
 

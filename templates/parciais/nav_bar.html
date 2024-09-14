@@ -1,8 +1,13 @@
 <div class="container-xxl position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
         <a href="" class="navbar-brand p-0">
-            <h5 class="text-primary m-0"><img src="static/img/logo_chopp-removebg.png" alt="Logo">
-            </a><i class="fa fa-beer me-3"></i>Chopp Itinerante</h5>
+            
+                <img class="logo" src="/static/img/logo_chopp-removebg.png" alt="Logo" style="width:120%;">
+            </a>
+        
+    <h5 class="text-primary m-0" >
+        <i class="fa fa-beer me-3"></i>Chopp Itinerante
+    </h5>
             
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
@@ -10,22 +15,21 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4">
                 <a href="{% url 'home'%}" class="nav-item nav-link active">Início</a>
-                <a href="#about" class="nav-item nav-link">Sobre</a>
-                {% comment %} <a href="menu.html" class="nav-item nav-link">Menu</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="booking.html" class="dropdown-item">Booking</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div> {% endcomment %}
-                <a href="#contato" class="nav-item nav-link">Contato</a>
-                <a href="{% url 'cardapio' %}" class="nav-item nav-link">Cardapio</a>
-            </div>
-            <a href="{% url 'login'%}" class="btn btn-primary py-2 px-4">{% if not request.user.username%} login {% else%} {{request.user.username}} {%endif%}</a>
-            <a href="{% url 'logout'%}" class="nav-item nav-link">sair</a>
+                
+                <a href="{% url 'cardapio' %}" class="nav-item nav-link">Chopp</a>
+                {% if not request.user.username%}
+                    <a href="{% url 'register'%}" class="nav-item nav-link"> 
+                        REGISTRAR 
+                    </a>
+                    {% else %}
+                        <a href="#" class="nav-item nav-link">Minhas compras</a>
+                    {%endif%}
+                    <a href="{% url 'login'%}" class="nav-item nav-link">{% if not request.user.username%} login {% else%} {{request.user.username}} {%endif%}</a>
 
+                    <a href="{% url 'logout'%}" class="nav-item nav-link">{% if not request.user.username%}  {% else%} SAIR {%endif%}</a>
+
+            </div>
+            
         </div>
     </nav>
 

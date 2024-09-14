@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% include 'parciais/head.html'%}
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        
+        {% include 'parciais/nav_bar.html'%}
+
+        {% block 'content'%}
+
+
+        {%endblock%}
+
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    {% include 'parciais/js.html'%}
+    <!-- end js -->
+</body>
+
+</html>

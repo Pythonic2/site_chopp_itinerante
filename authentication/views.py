@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
-from .forms import SignUpForm
+from .forms import SignUpForm, LoginForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import CreateView
 from django.contrib.auth import authenticate
 from django.contrib.auth.views import LoginView
 from .models import Usuario
@@ -23,7 +23,7 @@ def logout_view(request):
 class RegisterUser(CreateView):
     def get(self, request):
         form = SignUpForm()
-        return render(request, "register.html", {"form": form})
+        return render(request, "register.html", {"form": form,'title':'Registrar'})
 
     def post(self, request):
         form = SignUpForm(request.POST)
@@ -49,7 +49,12 @@ class RegisterUser(CreateView):
 
 class LoginUsuario(LoginView):
     template_name = 'login.html'
+    form_class = LoginForm  # Use o formulário de login personalizado
 
+    def get(self, request):
+        form = SignUpForm()
+        return render(request, "login.html", {"form": self.form_class,'title':'Login'})
+    
     def form_invalid(self, form):
         # Obtem o nome de usuário digitado no formulário
         username = form.cleaned_data.get('username')
@@ -60,14 +65,18 @@ class LoginUsuario(LoginView):
             'invalid_login': gettext_lazy('Verifique o usuário e senha e tente novamente.'),
             'inactive': gettext_lazy('Usuário inativo.'),
         }
+        
         # Atualiza as mensagens de erro no AuthenticationForm
-        AuthenticationForm.error_messages = error_messages
+        form.error_messages.update(error_messages)
         
         # Chama o método pai para lidar com a renderização de um formulário inválido
         response = super().form_invalid(form)
         
-        # Adiciona o erro ao contexto
-        response.context_data['error'] = error_messages['invalid_login'] if not user_exists else error_messages['inactive']
+        # Adiciona o erro ao contexto com base na existência do usuário
+        if not user_exists:
+            response.context_data['error'] = error_messages['invalid_login']
+        else:
+            response.context_data['error'] = error_messages['inactive']
         
         return response
 

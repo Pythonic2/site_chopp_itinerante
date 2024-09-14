@@ -9,4 +9,4 @@ from django.http import HttpResponse
 logger = logging.getLogger(__name__)
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html',{'title':'Chopp Itinerante'})
