@@ -160,6 +160,12 @@
 
    }
 }
+@media (min-width: 768px) {
+    .logo-header {
+      display: none !important;
+    }
+  }
+  
 
 
 
