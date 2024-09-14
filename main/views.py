@@ -234,6 +234,7 @@ from django.http import JsonResponse
 @csrf_exempt
 def simple_test(request):
     if request.method == "POST":
+        print("---- AUI __------")
         # Decodifica o corpo da requisição (JSON)
         webhook_data = json.loads(request.body.decode('utf-8'))
 
