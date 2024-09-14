@@ -38,6 +38,7 @@ def gerar_pagamento(cliente, valor):
                 "currency_id": "BRL",
                 "unit_price": valor_float
             }
+           
         ],
         "external_reference": f'{cliente}',
         "back_urls": {
@@ -46,7 +47,7 @@ def gerar_pagamento(cliente, valor):
             "pending": "http://127.0.0.1:8000/carrinho/"
         },
         "auto_return": "approved",  # Esta opção é opcional
-        "notification_url": "https://choppitinerante.cloudboosterlab.org/pag/"  
+        "notification_url": "https:///webhook.site/51705b86-2cad-48f3-9228-04ed1b6c9a72"  
     }
 
     result = sdk.preference().create(preference_data)
@@ -226,48 +227,45 @@ def remover_do_carrinho(request, produto_id):
 
 from django.http import JsonResponse
 from .models import Transacao, Usuario
+import json
+from django.http import JsonResponse
+
+
 @csrf_exempt
 def simple_test(request):
     if request.method == "POST":
-        try:
-            webhook_data = json.loads(request.body.decode('utf-8'))
-            print("Webhook Recebido:", webhook_data)
+        # Decodifica o corpo da requisição (JSON)
+        webhook_data = json.loads(request.body.decode('utf-8'))
 
-            pagamento_id = webhook_data.get('data', {}).get('id', '')
-            status = webhook_data.get('action', '')
-            print(f"ID do Pagamento: {pagamento_id}")
-            print(f"Status: {status}")
+        # Imprime o JSON completo recebido
+        print("Webhook Recebido (JSON Completo):", json.dumps(webhook_data, indent=4))
 
-            # Encontrar a transação correspondente
-            transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
-            if transacao:
-                # Se a transação for encontrada, atualizar o status
-                transacao.status = status
-                transacao.save()
-                print(f"Transação Atualizada: {transacao}")
-            else:
-                print(f"Transação não encontrada para ID: {pagamento_id}")
+        # Imprime valores específicos do JSON
+        pagamento_id = webhook_data.get('data', {}).get('id', '')
+        live_mode = webhook_data.get('live_mode', '')
+        tipo = webhook_data.get('type', '')
+        date_created = webhook_data.get('date_created', '')
+        user_id = webhook_data.get('user_id', '')
+        action = webhook_data.get('action', '')
 
-            # Verificar o usuário associado ao pagamento (se disponível)
-            collector_id = webhook_data.get('data', {}).get('collector_id', '')
-            if collector_id:
-                try:
-                    usuario = Usuario.objects.get(collector_id=collector_id)  # Ajuste o campo conforme sua necessidade
-                    print(f"Usuário associado ao pagamento: {usuario}")
-                except Usuario.DoesNotExist:
-                    print(f"Usuário não encontrado para o collector_id: {collector_id}")
+        print(f"Pagamento ID: {pagamento_id}")
+        print(f"Live Mode: {live_mode}")
+        print(f"Tipo: {tipo}")
+        print(f"Data de Criação: {date_created}")
+        print(f"User ID: {user_id}")
+        print(f"Ação: {action}")
 
-            return JsonResponse({'status': 'success'})
-        except json.JSONDecodeError:
-            print("Erro ao decodificar JSON")
-            return JsonResponse({'status': 'invalid_data'})
-        except Exception as e:
-            print(f"Erro inesperado: {str(e)}")
-            return JsonResponse({'status': 'error'})
+        # Acessa transação e atualiza status (se aplicável)
+        transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
+        if transacao:
+            transacao.status = action
+            transacao.save()
+            print(f"Status da transação atualizado para: {action}")
+
+        return JsonResponse({'status': 'success'})
     else:
         return JsonResponse({'status': 'method_not_allowed'})
 
-        return JsonResponse({'status': 'method_not_allowed'})
 
 def listar_transacoes(request):
     transacoes = Transacao.objects.all()
