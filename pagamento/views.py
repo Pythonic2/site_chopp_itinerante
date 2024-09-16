@@ -21,7 +21,7 @@ def simple_test(request):
             external_reference = webhook_data.get('data', {}).get('external_reference', '')
 
             # Seu código para lidar com a transação
-            transacao = Transacao.objects.filter(transacao_id=pagamento_id).first()
+            transacao = Transacao.objects.filter(transacao_id=pagamento_id).last()
             if transacao:
                 transacao.status = status
                 transacao.cliente_id = external_reference  # Atualize o cliente_id
@@ -33,7 +33,6 @@ def simple_test(request):
             return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
     
     return JsonResponse({'status': 'method_not_allowed'}, status=405)
-
 
 def gerar_pagamento(cliente_id, valor):
     sdk = mercadopago.SDK('TEST-7847881527057924-091116-0ccb25f4e7a8318b77ae79bcb1f4c205-162016798')

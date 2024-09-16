@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import Carrinho
-from authentication.models import Usuario
+from authentication.models import Usuario, Evento
 from carrinho.models import ItemCarrinho
 from pagamento.views import gerar_pagamento
 from django.shortcuts import get_object_or_404
@@ -20,7 +20,7 @@ def pagina_carrinho(request):
     user = Usuario.objects.get(username=usuario)
 
     # Obtém o carrinho do usuário
-    carrinho = Carrinho.objects.filter(usuario=user).first()  # Considera apenas o primeiro carrinho, ajuste se necessário
+    carrinho = Carrinho.objects.filter(usuario=user).last()  # Considera apenas o primeiro carrinho, ajuste se necessário
     if not carrinho:
         return render(request, 'cart.html', {'produtos': [], 'valor_total': 0,'title':'Carrinho'})
 
@@ -38,8 +38,7 @@ def pagina_carrinho(request):
         'title':'Carrinho'
     }
     print(valor_total)
-    pag = gerar_pagamento(user.username, valor_total)
-    print(pag)
+    
     return render(request, 'cart.html', context)
 
 
@@ -50,7 +49,7 @@ def obter_quantidade_carrinho_htmx(request):
     user = Usuario.objects.get(username=usuario)
 
     # Obtém o carrinho do usuário
-    carrinho = Carrinho.objects.filter(usuario=user).first()  # Considera apenas o primeiro carrinho, ajuste se necessário
+    carrinho = Carrinho.objects.filter(usuario=user).last()  # Considera apenas o primeiro carrinho, ajuste se necessário
     print(carrinho)
     if not carrinho:
         return 0  # Retorna 0 se não houver carrinho
@@ -118,14 +117,14 @@ def remover_do_carrinho(request, produto_id):
     user = get_object_or_404(Usuario, username=usuario)
 
     # Obtém o carrinho do usuário
-    carrinho = Carrinho.objects.filter(usuario=user).first()
+    carrinho = Carrinho.objects.filter(usuario=user).last()
     if not carrinho:
         return HttpResponse("Carrinho não encontrado", status=404)
 
     produto = get_object_or_404(Produto, pk=produto_id)
     
     # Verifica se o item existe no carrinho
-    item_carrinho = ItemCarrinho.objects.filter(carrinho=carrinho, produto=produto).first()
+    item_carrinho = ItemCarrinho.objects.filter(carrinho=carrinho, produto=produto).last()
     if not item_carrinho:
         return HttpResponse("Item não encontrado no carrinho", status=404)
     
@@ -143,3 +142,35 @@ def remover_do_carrinho(request, produto_id):
     # Redireciona para a página do carrinho
     return HttpResponseRedirect(reverse('pagina_carrinho') + '#id_do_elemento')
 
+@login_required
+def finalizar_pagamento(request):
+    """ Renderiza a pagina do carrinho, e carrega as informaçoes descritas no dict context """
+    
+    usuario = request.user.username
+
+    # Obtém o usuário atual
+    user = Usuario.objects.get(username=usuario)
+
+    # Obtém o carrinho do usuário
+    carrinho = Carrinho.objects.filter(usuario=user).last()  # Considera apenas o primeiro carrinho, ajuste se necessário
+    if not carrinho:
+        return render(request, 'cart.html', {'produtos': [], 'valor_total': 0,'title':'Carrinho'})
+
+    # Obtém os itens do carrinho
+    itens = ItemCarrinho.objects.filter(carrinho=carrinho)
+
+    produtos_no_carrinho = [(item.produto, item.quantidade) for item in itens]
+
+    # Calcula o valor total
+    valor_total = sum(item.produto.valor * item.quantidade for item in itens)
+    evento = Evento.objects.filter(usuario=user).last()
+    context = {
+        'carrinho': produtos_no_carrinho,  # Agora passamos os produtos com suas fotos
+        'total': valor_total,
+        'title':'Carrinho',
+        'evento':evento,
+    }
+    print(valor_total)
+    pag = gerar_pagamento(user.username, valor_total)
+    print(pag)
+    return render(request, 'finalizar_pagamento.html', context)

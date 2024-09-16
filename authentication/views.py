@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
-from .forms import SignUpForm, LoginForm
+from .forms import SignUpForm, LoginForm, EventoForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout
-from django.views.generic import CreateView
+from django.views.generic import CreateView, TemplateView
 from django.contrib.auth import authenticate
 from django.contrib.auth.views import LoginView
 from .models import Usuario
@@ -52,7 +52,7 @@ class LoginUsuario(LoginView):
     form_class = LoginForm  # Use o formulário de login personalizado
 
     def get(self, request):
-        form = SignUpForm()
+    
         return render(request, "login.html", {"form": self.form_class,'title':'Login'})
     
     def form_invalid(self, form):
@@ -80,3 +80,22 @@ class LoginUsuario(LoginView):
         
         return response
 
+class EventoView(TemplateView):
+    template_name = 'evento.html'
+    form_class = EventoForm
+
+    def get(self, request):
+        context = {'form':self.form_class}
+        return render(request, self.template_name, context)
+
+
+    def post(self, request):
+        form = EventoForm(request.POST)
+        if form.is_valid():
+            evento = form.save(commit=False)  # Não salva no banco ainda
+            evento.usuario = request.user  # Associa o usuário logado ao evento
+            evento.save()  # Agora salva com o usuário
+            return redirect('finalizar_pagamento')  # Substitua por uma URL válida
+        else:
+            return render(request, "evento.html", {"form": form, "erro": form.errors})
+    

@@ -6,10 +6,10 @@
 
         <div class="container-xxl py-5 bg-dark hero-header mb-5">
             <div class="container text-center my-5 pt-5 pb-4">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Criar Conta</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Detalhe seu Evento</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Registrar-se</a></li>
+                        <li class="breadcrumb-item"><a href="#">Evento</a></li>
                     </ol>
                 </nav>
             </div>
@@ -28,11 +28,11 @@
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <ul>
-                            <li>
-                                Sua senha deve conter pelo menos 8 Caracteres e não pode ser apenas Numérica.
+                            <li class="text-white">
+                                Preencha os detalhes do seu evento para te atendermos da melhor forma.
                             </li>
                         </ul>
-                        <form method="POST" action="" enctype="multipart/form-data">
+                        <form method="POST" action="" enctype="multipart/form-data" id='evento'>
                             {% csrf_token %}
                             {% if erro %}
                                 <div class="alert alert-danger">{{ erro }}</div>
@@ -41,39 +41,39 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        {{form.nome}}
-                                        <label for="name">Seu nome Completo</label>
+                                        {{form.celular}}
+                                        <label for="name">Celular/whatsapp</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        {{form.username}}
-                                        <label for="name">Usuario</label>
+                                        {{form.bairro}}
+                                        <label for="name">Bairro do Evento</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        {{form.email}}
-                                        <label for="email">Email</label>
+                                        {{form.endereco}}
+                                        <label for="email">Endereço Do Evento</label>
                                     </div>
                                 </div>
                                 
                                 <div class="col-md-12">
                                     <div class="form-floating" id="password1" data-target-input="nearest">
-                                        {{form.password1}}
-                                        <label for="datetime">Senha</label>
+                                        {{form.data_evento}}
+                                        <label for="datetime">Data do Evento</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-floating" id="password2" data-target-input="nearest">
-                                        {{form.password2}}
-                                        <label for="datetime">Repita a senha</label>
+                                        {{form.tipo_evento}}
+                                        <label for="datetime">Tido do Evento</label>
                                     </div>
                                 </div>
                                 
                                 
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Salvar</button>
                                 </div>
                             </div>
                         </form>
@@ -100,5 +100,7 @@
                 </div>
             </div>
         </div>
+
+
 
 {%endblock%}
