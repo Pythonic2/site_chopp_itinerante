@@ -13,13 +13,18 @@ def simple_test(request):
             return JsonResponse({'error': 'Corpo da requisição vazio'}, status=400)
 
         try:
+            # Decodificar o corpo da requisição em JSON
             webhook_data = json.loads(request.body.decode('utf-8'))
 
+            # Capturar o pagamento_id e outras informações do webhook
             pagamento_id = webhook_data.get('data', {}).get('id', '')
             status = webhook_data.get('action', '')
-            external_reference = webhook_data.get('data', {}).get('external_reference', '')
-            df = pd.DataFrame(webhook_data)
+            external_reference = webhook_data.get('external_reference', '')
+
+            # Criar um DataFrame do webhook_data e salvar em CSV
+            df = pd.DataFrame([webhook_data])  # Convertendo o dict para DataFrame
             df.to_csv('recibo.csv')
+
             # Seu código para lidar com a transação
             transacao = Transacao.objects.filter(transacao_id=pagamento_id).last()
             if transacao:
@@ -32,7 +37,7 @@ def simple_test(request):
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
     
-    return JsonResponse({'status': 'method_not_allowed'}, status=405)
+    return JsonResponse({'status': 'method_not_allowed'}, status=405)5)
 
 def gerar_pagamento(cliente_id, valor):
     sdk = mercadopago.SDK('TEST-3488797328851277-091614-dbbff0af2658e101ee7f9413497c16fd-162016798')
@@ -67,7 +72,7 @@ def gerar_pagamento(cliente_id, valor):
     },
     "external_reference": f'{cliente_id}',  # Enviando o ID do usuário aqui
     "auto_return": "approved",
-    "notification_url": "https://webhook.site/4466cd58-1c7b-4039-88fb-dc7993ae1acc",
+    "notification_url": "https://choppitinerante.cloudboosterlab.org/pag/",
      # Aqui você pode adicionar qualquer dado extra
     "metadata": {
         "custom_user_id": f"xpto",
