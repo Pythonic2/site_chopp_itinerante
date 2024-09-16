@@ -9,8 +9,6 @@ urlpatterns = [
     path('remover/<int:produto_id>/', remover_do_carrinho, name='remover_do_carrinho'),
     path('quantidade-carrinho/', obter_quantidade_carrinho_htmx, name='qtdcar'),
 
-
-    
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

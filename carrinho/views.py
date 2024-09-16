@@ -40,7 +40,8 @@ def pagina_carrinho(request):
         'evento':evento,
     }
     print(valor_total)
-    
+    pag = gerar_pagamento(user,valor_total)
+    print(pag)
     return render(request, 'cart.html', context)
 
 

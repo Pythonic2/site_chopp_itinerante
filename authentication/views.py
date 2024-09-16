@@ -18,8 +18,6 @@ def logout_view(request):
     return redirect("login")
 
 
-
-
 class RegisterUser(CreateView):
 
     def get(self, request):
@@ -46,7 +44,6 @@ class RegisterUser(CreateView):
         else:
             return render(request, "register.html", {"form": form, "erro": form.errors})
 
-    
 
 class LoginUsuario(LoginView):
     template_name = 'login.html'
@@ -80,6 +77,7 @@ class LoginUsuario(LoginView):
             response.context_data['error'] = error_messages['inactive']
         
         return response
+
 
 class EventoView(TemplateView):
     template_name = 'evento.html'

@@ -35,24 +35,46 @@ def simple_test(request):
     return JsonResponse({'status': 'method_not_allowed'}, status=405)
 
 def gerar_pagamento(cliente_id, valor):
-    sdk = mercadopago.SDK('TEST-7847881527057924-091116-0ccb25f4e7a8318b77ae79bcb1f4c205-162016798')
+    sdk = mercadopago.SDK('TEST-3488797328851277-091614-dbbff0af2658e101ee7f9413497c16fd-162016798')
     valor_float = float(valor)
-
     preference_data = {
-        "items": [
-            {
-                "id": "1",
-                "title": "Alguem de Chopps",
-                "quantity": 1,
-                "currency_id": "BRL",
-                "unit_price": valor_float
-            }
-        ],
-        "external_reference": f'{cliente_id}',
-        
-        "auto_return": "approved",
-        "notification_url": "https:///webhook.site/51705b86-2cad-48f3-9228-04ed1b6c9a72"
+    "items": [
+        {
+            "id": "1",
+            "title": "Alguem de Chopps",
+            "quantity": 1,
+            "currency_id": "BRL",
+            "unit_price": valor_float
+        }
+    ],
+    "payer": {
+        "name": "Test",
+        "surname": "User",
+        "email": "your_test_email@example.com",
+        "phone": {
+            "area_code": "11",
+            "number": "4444-4444",
+        },
+        "identification": {
+            "type": "CPF",
+            "number": "19119119100",
+        }
+    },
+    "back_urls": {
+        "success": "http://test.com/success",
+        "failure": "http://test.com/failure",
+        "pending": "http://test.com/pending",
+    },
+    "external_reference": f'{cliente_id}',  # Enviando o ID do usuário aqui
+    "auto_return": "approved",
+    "notification_url": "https://webhook.site/4466cd58-1c7b-4039-88fb-dc7993ae1acc",
+     # Aqui você pode adicionar qualquer dado extra
+    "metadata": {
+        "custom_user_id": f"xpto",
+        "other_info": "alguma informação personalizada"
     }
+}
+
 
     result = sdk.preference().create(preference_data)
     preference = result['response']
