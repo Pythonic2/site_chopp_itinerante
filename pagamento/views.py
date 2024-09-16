@@ -4,12 +4,34 @@ from django.http import JsonResponse, HttpResponse
 import json
 from .models import Transacao
 import mercadopago
-
+import pandas as pd
 
 @csrf_exempt
 def simple_test(request):
     if request.method == "POST":
-        print("recebi")
+        if not request.body:
+            return JsonResponse({'error': 'Corpo da requisição vazio'}, status=400)
+
+        try:
+            webhook_data = json.loads(request.body.decode('utf-8'))
+
+            pagamento_id = webhook_data.get('data', {}).get('id', '')
+            status = webhook_data.get('action', '')
+            external_reference = webhook_data.get('data', {}).get('external_reference', '')
+            df = pd.DataFrame(webhook_data)
+            df.to_csv('recibo.csv')
+            # Seu código para lidar com a transação
+            transacao = Transacao.objects.filter(transacao_id=pagamento_id).last()
+            if transacao:
+                transacao.status = status
+                transacao.cliente_id = external_reference  # Atualize o cliente_id
+                transacao.save()
+
+            return JsonResponse({'status': 'success'})
+        
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
+    
     return JsonResponse({'status': 'method_not_allowed'}, status=405)
 
 def gerar_pagamento(cliente_id, valor):
