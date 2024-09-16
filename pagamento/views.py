@@ -37,7 +37,7 @@ def simple_test(request):
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
     
-    return JsonResponse({'status': 'method_not_allowed'}, status=405)5)
+    return JsonResponse({'status': 'method_not_allowed'}, status=405)
 
 def gerar_pagamento(cliente_id, valor):
     sdk = mercadopago.SDK('TEST-3488797328851277-091614-dbbff0af2658e101ee7f9413497c16fd-162016798')
