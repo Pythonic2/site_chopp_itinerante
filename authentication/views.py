@@ -21,6 +21,7 @@ def logout_view(request):
 
 
 class RegisterUser(CreateView):
+
     def get(self, request):
         form = SignUpForm()
         return render(request, "register.html", {"form": form,'title':'Registrar'})
@@ -95,7 +96,7 @@ class EventoView(TemplateView):
             evento = form.save(commit=False)  # Não salva no banco ainda
             evento.usuario = request.user  # Associa o usuário logado ao evento
             evento.save()  # Agora salva com o usuário
-            return redirect('finalizar_pagamento')  # Substitua por uma URL válida
+            return redirect('pagina_carrinho')  # Substitua por uma URL válida
         else:
             return render(request, "evento.html", {"form": form, "erro": form.errors})
     

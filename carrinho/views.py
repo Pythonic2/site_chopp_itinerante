@@ -31,11 +31,13 @@ def pagina_carrinho(request):
 
     # Calcula o valor total
     valor_total = sum(item.produto.valor * item.quantidade for item in itens)
-    
+    evento = Evento.objects.filter(usuario=user).last()
+
     context = {
         'carrinho': produtos_no_carrinho,  # Agora passamos os produtos com suas fotos
         'total': valor_total,
-        'title':'Carrinho'
+        'title':'Carrinho',
+        'evento':evento,
     }
     print(valor_total)
     
@@ -142,35 +144,3 @@ def remover_do_carrinho(request, produto_id):
     # Redireciona para a página do carrinho
     return HttpResponseRedirect(reverse('pagina_carrinho') + '#id_do_elemento')
 
-@login_required
-def finalizar_pagamento(request):
-    """ Renderiza a pagina do carrinho, e carrega as informaçoes descritas no dict context """
-    
-    usuario = request.user.username
-
-    # Obtém o usuário atual
-    user = Usuario.objects.get(username=usuario)
-
-    # Obtém o carrinho do usuário
-    carrinho = Carrinho.objects.filter(usuario=user).last()  # Considera apenas o primeiro carrinho, ajuste se necessário
-    if not carrinho:
-        return render(request, 'cart.html', {'produtos': [], 'valor_total': 0,'title':'Carrinho'})
-
-    # Obtém os itens do carrinho
-    itens = ItemCarrinho.objects.filter(carrinho=carrinho)
-
-    produtos_no_carrinho = [(item.produto, item.quantidade) for item in itens]
-
-    # Calcula o valor total
-    valor_total = sum(item.produto.valor * item.quantidade for item in itens)
-    evento = Evento.objects.filter(usuario=user).last()
-    context = {
-        'carrinho': produtos_no_carrinho,  # Agora passamos os produtos com suas fotos
-        'total': valor_total,
-        'title':'Carrinho',
-        'evento':evento,
-    }
-    print(valor_total)
-    pag = gerar_pagamento(user.username, valor_total)
-    print(pag)
-    return render(request, 'finalizar_pagamento.html', context)

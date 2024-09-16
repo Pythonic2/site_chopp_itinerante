@@ -12,63 +12,130 @@
             </nav>
         </div>
     </div>
-        
-            <!-- Carrinho Section -->
-            <h5>Seu carrinho: {{request.user.username}}</h5>
-            <h5>Seu carrinho: {{evento.bairro}}</h5>
-            <div class="container my-5">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="card mb-4">
-                            <div class="card-header bg-primary text-white">Seu Carrinho</div>
-                            <div class="card-body">
-                                {% if carrinho %}
-                                    <ul class="list-group" >
-                                        {% for item, quantidade in carrinho %}
-                                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                <div class="d-flex align-items-center">
-                                                    <div >
-                                                        <h5>{{ item.nome }}</h5>
-                                                        <small>Quantidade: {{ quantidade }}</small><br>
-                                                        <small>Valor por Unidade: R$ {{ item.valor }}</small>
+            {% if evento%}
+                <div class="container my-5">
+                    
+                        <h5>Evento Cadastrado: </h5> 
+                        <ul>
+                            <li>{{evento.tipo_evento}}</li>
+                            <li><strong>{{evento.data_evento}} (Atenção para Data)</strong></li>
+                            <li>{{evento.bairro}}</li>
+                            <li>{{evento.endereco}}</li>
+                            <li>{{evento.celular}}</li>
+                        </ul>
+                        <p>Cadastrar Um novo Evento ou Editar <a href="{% url 'cad-evento'%}">Click Aqui!!</a></p>
+                    
+                
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">Seu Carrinho</div>
+                                <div class="card-body">
+                                    {% if carrinho %}
+                                        <ul class="list-group" >
+                                            {% for item, quantidade in carrinho %}
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div >
+                                                            <h5>{{ item.nome }}</h5>
+                                                            <small>Quantidade: {{ quantidade }}</small><br>
+                                                            <small>Valor por Unidade: R$ {{ item.valor }}</small>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <form method="post" action="{% url 'remover_do_carrinho' produto_id=item.id %}" style="display: inline;">
-                                                    {% csrf_token %}
-                                                    <button type="submit" class="btn btn-link" style="border: none; background: none; cursor: pointer;">
-                                                        <i class="fas fa-trash-alt" title="Remover item" style="color: red;"id="produtos"></i>
-                                                    </button>
-                                                </form>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                {% else %}
-                                    <p class="text-center">Seu carrinho está vazio.</p>
-                                {% endif %}
+                                                    <form method="post" action="{% url 'remover_do_carrinho' produto_id=item.id %}" style="display: inline;">
+                                                        {% csrf_token %}
+                                                        <button type="submit" class="btn btn-link" style="border: none; background: none; cursor: pointer;">
+                                                            <i class="fas fa-trash-alt" title="Remover item" style="color: red;"id="produtos"></i>
+                                                        </button>
+                                                    </form>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% else %}
+                                        <p class="text-center">Seu carrinho está vazio.</p>
+                                    {% endif %}
 
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Resumo de Pagamento -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header bg-success text-white">Resumo do Pedido</div>
+                                <div class="card-body">
+                                    <h4>Total a Pagar:</h4>
+                                    <p class="lead">R$ {{ total }}</p>
+                                    <!-- Botão de Finalizar Compra -->
+                                    <button type="button" class="btn btn-success btn-lg btn-block">
+                                        Finalizar Compra
+                                    </button>
+                                    
+                                                                                                </div>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Resumo de Pagamento -->
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-header bg-success text-white">Resumo do Pedido</div>
-                            <div class="card-body">
-                                <h4>Total a Pagar:</h4>
-                                <p class="lead">R$ {{ total }}</p>
-                                <!-- Botão de Finalizar Compra -->
-                                <button type="button" class="btn btn-success btn-lg btn-block" onclick="window.location.href='{% url "cad-evento" %}'">
-                                    Finalizar Compra
-                                </button>
-                                                                                            </div>
+                    
+                </div>
+            <!-- Carrinho Section End -->
+            {%else%}
+                <div class="container my-5">
+    
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-header bg-primary text-white">Seu Carrinho</div>
+                                <div class="card-body">
+                                    {% if carrinho %}
+                                        <ul class="list-group" >
+                                            {% for item, quantidade in carrinho %}
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <div >
+                                                            <h5>{{ item.nome }}</h5>
+                                                            <small>Quantidade: {{ quantidade }}</small><br>
+                                                            <small>Valor por Unidade: R$ {{ item.valor }}</small>
+                                                        </div>
+                                                    </div>
+                                                    <form method="post" action="{% url 'remover_do_carrinho' produto_id=item.id %}" style="display: inline;">
+                                                        {% csrf_token %}
+                                                        <button type="submit" class="btn btn-link" style="border: none; background: none; cursor: pointer;">
+                                                            <i class="fas fa-trash-alt" title="Remover item" style="color: red;"id="produtos"></i>
+                                                        </button>
+                                                    </form>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% else %}
+                                        <p class="text-center">Seu carrinho está vazio.</p>
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Resumo de Pagamento -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header bg-success text-white">Resumo do Pedido</div>
+                                <div class="card-body">
+                                    <h4>Total a Pagar:</h4>
+                                    <p class="lead">R$ {{ total }}</p>
+                                    <!-- Botão de Finalizar Compra -->
+                                    <button type="button" class="btn btn-success btn-lg btn-block" onclick="window.location.href='{% url "cad-evento" %}'">
+                                       Cadastar Evento
+                                    </button>      
+                                    
+                                                                                                </div>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-            </div>
-            <!-- Carrinho Section End -->
-            
-    </div>
+            {%endif%}
     <!-- Carrinho Section End -->
+    
+                
+
 
 {%endblock%}
