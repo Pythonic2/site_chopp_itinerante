@@ -44,8 +44,11 @@ def pagina_carrinho(request):
         'evento':evento,
     }
     print(f" --------------- {carrinho.id} -----------------")
-    pag = gerar_pagamento(user, produtos_no_carrinho, carrinho.id)
-    context['link'] = pag
+    try:
+        pag = gerar_pagamento(user, produtos_no_carrinho, carrinho.id)
+        context['link'] = pag
+    except:
+        context['link'] = '#'
     return render(request, 'cart.html', context)
 
 
