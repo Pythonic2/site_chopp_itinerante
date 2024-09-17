@@ -6,8 +6,22 @@ from django.views.generic import TemplateView
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
 from django.views.decorators.cache import cache_page
-
+from testemunho.models import Testemunho
+from contato.forms import ContatoForm
 logger = logging.getLogger(__name__)
-@cache_page(60 * 60 * 24)
-def home(request):
-    return render(request, 'index.html',{'title':'Chopp Itinerante'})
+
+
+class IndexView(TemplateView):
+    template_name = 'index.html'
+
+    def get(self,request):
+        testemunhos = Testemunho.objects.all().order_by('-id')
+        context = {'testemunhos':testemunhos,'title':'Chopp Itinerante','testemunhos':testemunhos, 'form':ContatoForm}
+        return render(request, self.template_name, context)
+    
+    def post(self, request):
+        form = ContatoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('https://api.whatsapp.com/send/?phone=5521965373333&text&type=phone_number&app_absent=0')
+    

@@ -109,7 +109,3 @@ def gerar_pagamento(cliente_id, produtos, carrinho):
     preference = result['response']
 
     return preference['init_point']
-
-def listar_transacoes(request):
-    transacoes = Transacao.objects.all()
-    return render(request, 'transacoes.html', {'transacoes': transacoes})
