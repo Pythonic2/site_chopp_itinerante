@@ -1,11 +1,10 @@
 from django.shortcuts import render, redirect
 from .forms import SignUpForm, LoginForm, EventoForm
-from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout
 from django.views.generic import CreateView, TemplateView
 from django.contrib.auth import authenticate
 from django.contrib.auth.views import LoginView
-from .models import Usuario
+from .models import Usuario, Evento
 from django.utils.translation import gettext_lazy
 from django.contrib.auth import get_user_model
 from django.shortcuts import render, redirect
@@ -84,11 +83,19 @@ class EventoView(TemplateView):
     form_class = EventoForm
 
     def get(self, request):
+        try:
+            usuario = request.user.username
+            user = Usuario.objects.get(username=usuario)
+            evento = Evento.objects.filter(usuario=user).exclude(status='pago').last()
+            evento.delete()
+        except:
+            pass
         context = {'form':self.form_class}
         return render(request, self.template_name, context)
 
 
     def post(self, request):
+
         form = EventoForm(request.POST)
         if form.is_valid():
             evento = form.save(commit=False)  # Não salva no banco ainda

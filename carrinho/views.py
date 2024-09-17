@@ -20,7 +20,7 @@ def pagina_carrinho(request):
     user = Usuario.objects.get(username=usuario)
 
     # Obtém o carrinho do usuário
-    carrinho = Carrinho.objects.filter(usuario=user).last()  # Considera apenas o primeiro carrinho, ajuste se necessário
+    carrinho = Carrinho.objects.filter(usuario=user).exclude(status='pago').last()
     if not carrinho:
         return render(request, 'cart.html', {'produtos': [], 'valor_total': 0,'title':'Carrinho'})
 
@@ -31,7 +31,11 @@ def pagina_carrinho(request):
 
     # Calcula o valor total
     valor_total = sum(item.produto.valor * item.quantidade for item in itens)
-    evento = Evento.objects.filter(usuario=user).last()
+    evento = Evento.objects.filter(usuario=user).exclude(status='pago').last()
+    if evento:
+        evento.carrinho = carrinho.id
+
+        evento.save()
 
     context = {
         'carrinho': produtos_no_carrinho,  # Agora passamos os produtos com suas fotos
@@ -39,8 +43,8 @@ def pagina_carrinho(request):
         'title':'Carrinho',
         'evento':evento,
     }
-    print(valor_total)
-    pag = gerar_pagamento(user,valor_total)
+    print(f" --------------- {carrinho.id} -----------------")
+    pag = gerar_pagamento(user, produtos_no_carrinho, carrinho.id)
     print(pag)
     return render(request, 'cart.html', context)
 
@@ -74,9 +78,10 @@ def adicionar_ao_carrinho(request, produto_id):
 
         # Obtém o usuário atual
         user = Usuario.objects.get(username=usuario)
+        print(user.id)
 
         # Tenta obter o carrinho do usuário, cria um novo se não existir
-        carrinho, created = Carrinho.objects.get_or_create(usuario=user)
+        carrinho, created = Carrinho.objects.get_or_create(usuario=user, status='progress')
 
         print(f"Carrinho: {carrinho}, Criado agora? {created}")
         
