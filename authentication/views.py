@@ -106,6 +106,7 @@ class EventoView(TemplateView):
         else:
             return render(request, "evento.html", {"form": form, "erro": form.errors})
 
+
 class PedidosView(TemplateView):
     template_name = 'sucesso.html'
     

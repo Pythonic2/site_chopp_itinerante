@@ -34,7 +34,7 @@ def pagina_carrinho(request):
     evento = Evento.objects.filter(usuario=user).exclude(status='pago').last()
     if evento:
         evento.carrinho = carrinho.id
-
+        evento.valor = valor_total
         evento.save()
 
     context = {

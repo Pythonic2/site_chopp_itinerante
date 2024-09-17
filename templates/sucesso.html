@@ -12,22 +12,30 @@
         </nav>
     </div>
 </div>
-    <ul>
-        {% for pag in pagamentos %}
-            <li>Tipo do Evento: {{pag.tipo_evento}}</li>
-            <li>Data do Evento: {{pag.data_evento}}</li>
-            <li>Bairro do Evento: {{pag.bairro}}</li>
-            <li>Endereço do Evento: {{pag.endereco}}</li>
-            <li>Status do Pagamento: <strong>{{pag.status}}<strong></li>
-            <br>
-        {%endfor%}
-    </ul>
 
-<span class="badge badge-secondary">Secondary</span>
-<span class="badge badge-success">Success</span>
-<span class="badge badge-danger">Danger</span>
-<span class="badge badge-warning">Warning</span>
-<span class="badge badge-info">Info</span>
-<span class="badge badge-light">Light</span>
-<span class="badge badge-dark">Dark</span>
+    {% for pag in pagamentos %}
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#Id</th>
+            <th scope="col">Evento</th>
+            <th scope="col">Bairro do Evento</th>
+            <th scope="col">Endereço do Evento</th>
+            <th scope="col">Status do Pagamento</th>
+            <th scope="col">Valor do Pagamento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{pag.id}}</th>
+            <td>{{pag.tipo_evento}}</td>
+            <td>{{pag.bairro}}</td>
+            <td>{{pag.endereco}}</td>
+            <td class="badge bg-success ">{{pag.status}}</td>
+            <td class="badge bg-success ">{{pag.valor}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      {%endfor%}
 {%endblock%}
