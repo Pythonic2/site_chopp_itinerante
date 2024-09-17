@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block 'content'%}
+
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Minhas Compras</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#">Pedidos</a></li>
+            </ol>
+        </nav>
+    </div>
+</div>
+    <ul>
+        {% for pag in pagamentos %}
+            <li>Tipo do Evento: {{pag.tipo_evento}}</li>
+            <li>Data do Evento: {{pag.data_evento}}</li>
+            <li>Bairro do Evento: {{pag.bairro}}</li>
+            <li>Endereço do Evento: {{pag.endereco}}</li>
+            <li>Status do Pagamento: <strong>{{pag.status}}<strong></li>
+            <br>
+        {%endfor%}
+    </ul>
+
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+{%endblock%}

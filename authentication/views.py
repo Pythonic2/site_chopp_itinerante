@@ -99,9 +99,23 @@ class EventoView(TemplateView):
         form = EventoForm(request.POST)
         if form.is_valid():
             evento = form.save(commit=False)  # Não salva no banco ainda
-            evento.usuario = request.user  # Associa o usuário logado ao evento
+            evento.usuario = request.user
+            evento.status = 'Aguardando Pagamento'
             evento.save()  # Agora salva com o usuário
             return redirect('pagina_carrinho')  # Substitua por uma URL válida
         else:
             return render(request, "evento.html", {"form": form, "erro": form.errors})
+
+class PedidosView(TemplateView):
+    template_name = 'sucesso.html'
+    
+    
+    def get(self, request):
+        usuario = request.user.username
+        user = Usuario.objects.get(username=usuario)
+        eventos = Evento.objects.filter(usuario=user).order_by('-id')
+        context = {'pagamentos':eventos}
+        return render(request, self.template_name, context)
+
+
     

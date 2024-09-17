@@ -23,7 +23,7 @@
                         REGISTRAR 
                     </a>
                     {% else %}
-                        <a href="#" class="nav-item nav-link">Minhas compras</a>
+                        <a href="{%url 'minhas_compras'%}" class="nav-item nav-link">Minhas compras</a>
                     {%endif%}
                     <a href="{% url 'login'%}" class="nav-item nav-link">{% if not request.user.username%} login {% else%} {{request.user.username}} {%endif%}</a>
 

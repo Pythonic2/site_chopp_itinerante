@@ -45,7 +45,7 @@ def pagina_carrinho(request):
     }
     print(f" --------------- {carrinho.id} -----------------")
     pag = gerar_pagamento(user, produtos_no_carrinho, carrinho.id)
-    print(pag)
+    context['link'] = pag
     return render(request, 'cart.html', context)
 
 
@@ -81,7 +81,7 @@ def adicionar_ao_carrinho(request, produto_id):
         print(user.id)
 
         # Tenta obter o carrinho do usuário, cria um novo se não existir
-        carrinho, created = Carrinho.objects.get_or_create(usuario=user, status='progress')
+        carrinho, created = Carrinho.objects.get_or_create(usuario=user, status='Progress')
 
         print(f"Carrinho: {carrinho}, Criado agora? {created}")
         

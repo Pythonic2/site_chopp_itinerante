@@ -52,8 +52,8 @@ def simple_test(request):
 
                 evento = Evento.objects.get(usuario=user, carrinho=pag['carrinho'])
                 carrinho = Carrinho.objects.get(usuario=user,id=f'{int(evento.carrinho)}')
-                carrinho.status = 'pago'
-                evento.status = 'pago'
+                carrinho.status = 'Pago'
+                evento.status = 'Pago'
                 evento.save()
                 carrinho.save()
                 print(evento)
@@ -92,9 +92,9 @@ def gerar_pagamento(cliente_id, produtos, carrinho):
     preference_data = {
         "items": items,
         "back_urls": {
-            "success": "http://test.com/success",
-            "failure": "http://test.com/failure",
-            "pending": "http://test.com/pending",
+            "success": "https://choppitinerante.cloudboosterlab.org/minhas-compras/",
+            "failure": "https://choppitinerante.cloudboosterlab.org/minhas-compras/",
+            "pending": "https://choppitinerante.cloudboosterlab.org/minhas-compras/",
         },
         "external_reference": f'{cliente_id}',  # Enviando o ID do usuário aqui
         "auto_return": "approved",
@@ -108,7 +108,7 @@ def gerar_pagamento(cliente_id, produtos, carrinho):
     result = sdk.preference().create(preference_data)
     preference = result['response']
 
-    return preference
+    return preference['init_point']
 
 def listar_transacoes(request):
     transacoes = Transacao.objects.all()
