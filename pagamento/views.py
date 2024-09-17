@@ -7,7 +7,7 @@ from carrinho.models import Carrinho
 from authentication.models import Evento
 import mercadopago
 import pandas as pd
-from .main import buscar_pagamento_mercado_pago
+from .busca_pagameto import buscar_pagamento_mercado_pago
 
 @csrf_exempt
 def simple_test(request):
@@ -21,8 +21,8 @@ def simple_test(request):
 
             # Capturar o pagamento_id e outras informações do webhook
             pagamento_id = webhook_data.get('data', {}).get('id', '')
-            
-
+            tipo = webhook_data.get('type', {})
+            print(tipo)
             # Criar um DataFrame do webhook_data e salvar em CSV
             df = pd.DataFrame([webhook_data])  # Convertendo o dict para DataFrame
             df.to_csv('recibo.csv')
@@ -30,7 +30,7 @@ def simple_test(request):
             # Buscar pagamento usando a função definida anteriormente
             pag = buscar_pagamento_mercado_pago(pagamento_id)
           
-            if pag['id']:
+            if pag['id'] and tipo == 'payment':
                 user = Usuario.objects.get(username=pag['usuario'])
 
                 
@@ -57,7 +57,10 @@ def simple_test(request):
                 evento.save()
                 carrinho.save()
                 print(evento)
-            return JsonResponse({'status': 'success'})
+                return JsonResponse({'status': 'success'})
+            else:
+                return JsonResponse({'status': 'Order Generate'})
+        
         
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
