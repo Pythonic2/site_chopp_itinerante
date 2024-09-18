@@ -9,8 +9,8 @@ services:
     restart: always
     ports:
       - "8003:8003"
-    # env_file:
-    #   - stack.env
+    env_file:
+      - stack.env
     networks:
       - cloudflare_default
     volumes:
