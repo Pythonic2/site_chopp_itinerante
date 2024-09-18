@@ -37,7 +37,7 @@ class RegisterUser(CreateView):
             raw_password = form.cleaned_data.get("password1")
             user = authenticate(username=username, password=raw_password)
             if user is not None:
-                return redirect("home")
+                return redirect("cardapio")
             else:
                 return redirect("cardapio")
         else:
