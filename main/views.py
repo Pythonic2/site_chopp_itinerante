@@ -8,12 +8,15 @@ from django.http import HttpResponse
 from django.views.decorators.cache import cache_page
 from testemunho.models import Testemunho
 from contato.forms import ContatoForm
+from django.utils.decorators import method_decorator
+
 logger = logging.getLogger(__name__)
 
 
 class IndexView(TemplateView):
     template_name = 'index.html'
 
+    method_decorator(cache_page(60 * 60 * 24))
     def get(self,request):
         testemunhos = Testemunho.objects.all().order_by('-id')
         context = {'testemunhos':testemunhos,'title':'Chopp Itinerante','testemunhos':testemunhos, 'form':ContatoForm}
@@ -23,5 +26,5 @@ class IndexView(TemplateView):
         form = ContatoForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('https://api.whatsapp.com/send/?phone=5521965373333&text&type=phone_number&app_absent=0')
+            return redirect('home')
     
