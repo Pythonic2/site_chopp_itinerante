@@ -13,13 +13,13 @@ services:
     #   - stack.env
     networks:
       - cloudflare_default
-#     volumes:
-#       - postgres_db2_data:/var/lib/postgresql/data
-#       - user_photos:/app/media
+    volumes:
+      - postgres_chopp_data:/var/lib/postgresql/data
+      - chopp_photos:/app/media
 
-# volumes:
-#   postgres_db2_data:
-#   user_photos:
+volumes:
+  postgres_db2_data:
+  user_photos:
 
 networks:
   cloudflare_default:

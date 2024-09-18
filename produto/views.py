@@ -11,7 +11,7 @@ class CardapioView(TemplateView):
     def get(self, request, **kwargs):
         context = super().get_context_data(**kwargs)
         
-        context['produtos'] = Produto.objects.all()
+        context['produtos'] = Produto.objects.all().order_by('-servico', 'nome')
         context['title'] = 'Produtos'
 
 

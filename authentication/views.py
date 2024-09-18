@@ -115,6 +115,8 @@ class PedidosView(TemplateView):
         usuario = request.user.username
         user = Usuario.objects.get(username=usuario)
         eventos = Evento.objects.filter(usuario=user).order_by('-id')
+        for evento in eventos:
+            print(evento.valor)
         context = {'pagamentos':eventos}
         return render(request, self.template_name, context)
 

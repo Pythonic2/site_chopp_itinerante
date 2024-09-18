@@ -19,20 +19,22 @@
           <tr>
             <th scope="col">#Id</th>
             <th scope="col">Evento</th>
+            <th scope="col">Data do Evento</th>
             <th scope="col">Bairro do Evento</th>
             <th scope="col">Endereço do Evento</th>
-            <th scope="col">Status do Pagamento</th>
             <th scope="col">Valor do Pagamento</th>
+            <th scope="col">Status do Pagamento</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">{{pag.id}}</th>
+            <td>{{pag.data_evento}}</td>
             <td>{{pag.tipo_evento}}</td>
             <td>{{pag.bairro}}</td>
             <td>{{pag.endereco}}</td>
+            <td>{{pag.valor}}</td>
             <td class="badge bg-success ">{{pag.status}}</td>
-            <td class="badge bg-success ">{{pag.valor}}</td>
           </tr>
           
         </tbody>

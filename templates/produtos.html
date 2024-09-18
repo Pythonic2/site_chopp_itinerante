@@ -64,10 +64,15 @@
                                             {%endif%}
                                             <div class="w-100 d-flex flex-column text-start ps-4">
                                                 <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                    <span>{{ produto.nome }} - {{ produto.litros }} L</span>
+                                                    {% if produto.litros%}
+                                                        <span>{{ produto.nome }} - {{ produto.litros }} L</span>
+                                                    {%else%}
+                                                        <span>{{ produto.nome }}</span>
+                                                    {%endif%}
                                                     <span class="text-primary">{{ produto.valor }}</span>
                                                 </h5>
-                                                
+                                                <small class="fst-italic">{{produto.descricao}}</small>
+
                                                 <!-- Botão Adicionar ao Carrinho -->
                                                 <div class="produto-item">
                                                     <!-- Formulário para adicionar ao carrinho -->
@@ -82,13 +87,20 @@
                                                             <input type="hidden" name="produto_id" value="{{ produto.id }}">
                                                             <label for="quantidade_{{ produto.id }}" class="visually-hidden">Quantidade:</label>
                                                             <div class="input-group" style="width: 150px;">
+                                                                {%if not produto.servico%}
                                                                 <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
                                                                     <i class="fas fa-minus"></i>
                                                                 </button>
+                                                                
                                                                 <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
+                                                                
                                                                 <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
                                                                     <i class="fas fa-plus"></i>
                                                                 </button>
+                                                                {%else%}
+                                                                <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px; display:none;">
+
+                                                                {%endif%}
                                                             </div>
                                                             <button type="submit" class="btn btn-primary ms-2">Adicionar</button>
                                                         </form>
@@ -99,6 +111,7 @@
                                                             <input type="hidden" name="produto_id" value="{{ produto.id }}">
                                                             <label for="quantidade_{{ produto.id }}" class="visually-hidden">Quantidade:</label>
                                                             <div class="input-group" style="width: 150px;">
+                                                                {%if not produto.servico%}
                                                                 <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
                                                                     <i class="fas fa-minus"></i>
                                                                 </button>
@@ -106,6 +119,8 @@
                                                                 <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
                                                                     <i class="fas fa-plus"></i>
                                                                 </button>
+                                                                
+                                                                {%endif%}
                                                         </div>
                                                         <button type="submit" class="btn btn-primary ms-2">Adicionar</button>
                                                         </form>
