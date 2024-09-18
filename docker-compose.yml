@@ -18,8 +18,8 @@ services:
       - chopp_photos:/app/media
 
 volumes:
-  postgres_db2_data:
-  user_photos:
+  postgres_chopp_data:
+  chopp_photos:
 
 networks:
   cloudflare_default:
