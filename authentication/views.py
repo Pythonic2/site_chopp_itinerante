@@ -8,7 +8,7 @@ from .models import Usuario, Evento
 from django.utils.translation import gettext_lazy
 from django.contrib.auth import get_user_model
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 User = Usuario
 
 # Create your views here.
@@ -21,7 +21,7 @@ class RegisterUser(CreateView):
 
     def get(self, request):
         form = SignUpForm()
-        return render(request, "register.html", {"form": form,'title':'Registrar'})
+        return render(request, "register.html", {"form": form, 'title': 'Registrar'})
 
     def post(self, request):
         form = SignUpForm(request.POST)
@@ -37,6 +37,7 @@ class RegisterUser(CreateView):
             raw_password = form.cleaned_data.get("password1")
             user = authenticate(username=username, password=raw_password)
             if user is not None:
+                login(request, user)  # Faz o login automático
                 return redirect("cardapio")
             else:
                 return redirect("cardapio")
