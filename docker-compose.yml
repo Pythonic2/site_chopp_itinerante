@@ -7,19 +7,17 @@ services:
     pull_policy: build
     restart: always
     ports:
-      - 8003:8003
+      - "8003:8003"
     env_file:
       - stack.env
     networks:
       - pi_default
     volumes:
-      - chopp_db:/var/lib/postgresql/data
-      - chopp_app:/app/
-
+      - chopp_data:/var/lib/postgresql/data
+      - chopp_app:/app/media
 volumes:
-  ipja_db:
+  chopp_data:
   chopp_app:
-
 networks:
   pi_default:
     external: true
