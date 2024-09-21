@@ -1,26 +1,25 @@
 version: '3.8'
-
 services:
-  site-chopp:
+  ipja-questionarios:
     build:
       context: .
       dockerfile: Dockerfile
     pull_policy: build
     restart: always
     ports:
-      - "8003:8003"
+      - 8003:8003
     env_file:
       - stack.env
     networks:
-      - cloudflare_default
+      - pi_default
     volumes:
-      - postgres_chopp_data:/var/lib/postgresql/data
-      - chopp_photos:/app/media
+      - chopp_db:/var/lib/postgresql/data
+      - chopp_app:/app/
 
 volumes:
-  postgres_chopp_data:
-  chopp_photos:
+  ipja_db:
+  chopp_app:
 
 networks:
-  cloudflare_default:
+  pi_default:
     external: true
