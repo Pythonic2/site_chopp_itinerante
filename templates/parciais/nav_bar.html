@@ -18,6 +18,7 @@
                 <a href="{% url 'home'%}" class="nav-item nav-link active">Início</a>
                 
                 <a href="{% url 'cardapio' %}" class="nav-item nav-link">Chopp</a>
+                <a href="{% url 'galeria' %}" class="nav-item nav-link">Eventos</a>
                 {% if not request.user.username%}
                     <a href="{% url 'register'%}" class="nav-item nav-link"> 
                         REGISTRAR 

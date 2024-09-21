@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'pagamento',
     'testemunho',
     'contato',
+    'galeria',
 ]
 
 MIDDLEWARE = [
