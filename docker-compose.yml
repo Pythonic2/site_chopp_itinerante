@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  ipja-questionarios:
+  site-chopp:
     build:
       context: .
       dockerfile: Dockerfile
