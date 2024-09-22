@@ -72,6 +72,7 @@ def simple_test(request):
                 )
                 evento.save()
                 carrinho.save()
+                carrinho.delete()
                 print(evento)
                 return JsonResponse({'status': 'success'})
             else:
