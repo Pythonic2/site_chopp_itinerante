@@ -71,7 +71,7 @@ def simple_test(request):
                     recipient_email="igormarinhosilva@gmail.com"
                 )
                 evento.save()
-                carrinho.delete()
+                carrinho.save()
                 print(evento)
                 return JsonResponse({'status': 'success'})
             else:
