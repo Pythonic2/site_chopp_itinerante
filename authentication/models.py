@@ -14,7 +14,7 @@ class Usuario(AbstractUser):
 
 class Evento(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    celular = models.CharField(max_length=11, blank=True, null=True)
+    celular = models.CharField(max_length=11)
     bairro = models.CharField(max_length=100, default='None')
     endereco = models.CharField(max_length=100)
     data_evento = models.DateField(null=True)
