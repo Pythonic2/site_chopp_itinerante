@@ -71,7 +71,7 @@ def simple_test(request):
                         body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}",
                         sender_email="noticacoes@gmail.com",
                         sender_password=os.getenv('SENHA'),
-                        recipient_email=["igormarinhosilva@gmail.com","choppitinerante@gmail.com"]
+                        recipient_email="igormarinhosilva@gmail.com"
                     )
                     print(evento)
                     return JsonResponse({'status': 'success'})
