@@ -12,7 +12,7 @@ class CategoriaEvento(models.Model):
 
 class EventoRealizado(models.Model):
     categoria = models.ForeignKey(CategoriaEvento, on_delete=models.CASCADE)
-    nome = models.CharField(max_length=100, default='Algum detalhe para identificar o Evento', blank=True)
+    nome = models.CharField(max_length=100, default='esse texto aparecerá abaixo da imagem', blank=True)
 
     def __str__(self):
         return self.nome

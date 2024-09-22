@@ -9,7 +9,10 @@ from django.views.decorators.cache import cache_page
 from testemunho.models import Testemunho
 from contato.forms import ContatoForm
 from django.utils.decorators import method_decorator
-
+from notifications import send_email
+import os
+from dotenv import load_dotenv
+load_dotenv() 
 logger = logging.getLogger(__name__)
 
 
@@ -26,5 +29,18 @@ class IndexView(TemplateView):
         form = ContatoForm(request.POST)
         if form.is_valid():
             form.save()
+            nome = form.cleaned_data['nome']
+            celular = form.cleaned_data['celular']
+            mensagem = form.cleaned_data['mensagem']
+
+         
+            send_email(
+                subject=f"Novo Contato de {nome}",
+                body=f"{mensagem}\nContato: {celular}",
+                sender_email="noticacoes@gmail.com",
+                sender_password=os.getenv('SENHA'),
+                recipient_email="igormarinhosilva@gmail.com"
+            )
+
             return redirect('home')
     

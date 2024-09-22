@@ -8,6 +8,11 @@ from authentication.models import Evento
 import mercadopago
 import pandas as pd
 from .busca_pagameto import buscar_pagamento_mercado_pago
+from notifications import send_email
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
 
 @csrf_exempt
 def simple_test(request):
@@ -54,6 +59,13 @@ def simple_test(request):
                 carrinho = Carrinho.objects.get(usuario=user,id=f'{int(evento.carrinho)}')
                 carrinho.status = 'Pago'
                 evento.status = 'Pago'
+                send_email(
+                    subject=f"Nova Compra Realizada",
+                    body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}",
+                    sender_email="noticacoes@gmail.com",
+                    sender_password=os.getenv('SENHA'),
+                    recipient_email="igormarinhosilva@gmail.com"
+                )
                 evento.save()
                 carrinho.save()
                 print(evento)

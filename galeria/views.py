@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from .models import CategoriaEvento, EventoRealizado
 
-# Create your views here.
+
 class GaleriaView(TemplateView):
     template_name = 'galeria.html'
     
 
     def get(self, request):
-        
-        return render(request, self.template_name)
+        eventos = EventoRealizado.objects.all()
+        categorias = CategoriaEvento.objects.all()
+        context = {'eventos':eventos,'categorias':categorias}
+        return render(request, self.template_name, context)
