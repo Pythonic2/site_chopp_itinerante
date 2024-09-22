@@ -76,9 +76,9 @@ class EventoForm(forms.ModelForm):
                 "placeholder": "Celular",
                 "class": "form-control",
                 "maxlength":"11",
+                "required":"true"
             }
         ),
-        required=False
     )
     bairro = forms.CharField(
         widget=forms.TextInput(
