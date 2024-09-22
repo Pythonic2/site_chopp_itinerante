@@ -36,48 +36,54 @@ def simple_test(request):
 
             # Buscar pagamento usando a função definida anteriormente
             pag = buscar_pagamento_mercado_pago(pagamento_id)
-          
-            if pag['id'] and tipo == 'payment':
-                user = Usuario.objects.get(username=pag['usuario'])
+            try:
+                pag['id'] 
+                if pag['id'] and tipo == 'payment':
+                    user = Usuario.objects.get(username=pag['usuario'])
 
-                
-                # Criar a instância da transação
-                transacao = Transacao(
-                    transacao_id=pag['id'],
-                    usuario=user,
-                    data_transacao=pag['data'],
-                    valor_total=pag['valor'],
-                    status=pag['status']
-                )
-                transacao.save()  # Salvar a transação primeiro
+                    
+                    # Criar a instância da transação
+                    transacao = Transacao(
+                        transacao_id=pag['id'],
+                        usuario=user,
+                        data_transacao=pag['data'],
+                        valor_total=pag['valor'],
+                        status=pag['status']
+                    )
+                    transacao.save()  # Salvar a transação primeiro
 
-                # Associar produtos à transação
-                produtos = pag['items']
-                for produto_data in produtos:
-                    produto = Produto.objects.get(nome=produto_data)
-                    transacao.produtos.add(produto.id) 
+                    # Associar produtos à transação
+                    produtos = pag['items']
+                    for produto_data in produtos:
+                        produto = Produto.objects.get(nome=produto_data)
+                        transacao.produtos.add(produto.id) 
 
-                evento = Evento.objects.get(usuario=user, carrinho=pag['carrinho'])
-                carrinho = Carrinho.objects.get(usuario=user,id=f'{int(evento.carrinho)}')
-                carrinho.status = 'Pago'
-                evento.status = 'Pago'
-                evento_data = datetime.strptime(evento.data_evento, '%Y-%m-%d')  # Supondo que evento.data_evento esteja no formato YMD
-                data_formatada = evento_data.strftime('%d/%m/%Y')
-                send_email(
-                    subject=f"Nova Compra Realizada",
-                    body=f"Evento: {evento.tipo_evento}\nData: {data_formatada}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}",
-                    sender_email="noticacoes@gmail.com",
-                    sender_password=os.getenv('SENHA'),
-                    recipient_email="igormarinhosilva@gmail.com"
-                )
-                evento.save()
-                carrinho.save()
-                carrinho.delete()
-                print(evento)
-                return JsonResponse({'status': 'success'})
-            else:
+                    evento = Evento.objects.get(usuario=user, carrinho=pag['carrinho'])
+                    carrinho = Carrinho.objects.get(usuario=user,id=f'{int(evento.carrinho)}')
+                    carrinho.status = 'Pago'
+                    evento.status = 'Pago'
+                    evento_data = datetime.strptime(evento.data_evento, '%Y-%m-%d')  # Supondo que evento.data_evento esteja no formato YMD
+                    data_formatada = evento_data.strftime('%d/%m/%Y')
+                    
+                    evento.save()
+                    carrinho.save()
+                    carrinho.delete()
+                    send_email(
+                        subject=f"Nova Compra Realizada",
+                        body=f"Evento: {evento.tipo_evento}\nData: {data_formatada}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}",
+                        sender_email="noticacoes@gmail.com",
+                        sender_password=os.getenv('SENHA'),
+                        recipient_email="igormarinhosilva@gmail.com"
+                    )
+                    print(evento)
+                    return JsonResponse({'status': 'success'})
+                else:
+                    return JsonResponse({'status': 'Order Generate'})
+            except Exception as e :
+                print(e)
+               
                 return JsonResponse({'status': 'Order Generate'})
-        
+            
         
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
