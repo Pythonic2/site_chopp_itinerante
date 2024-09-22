@@ -11,6 +11,8 @@ from .busca_pagameto import buscar_pagamento_mercado_pago
 from notifications import send_email
 from dotenv import load_dotenv
 import os
+from datetime import datetime
+
 load_dotenv()
 
 
@@ -59,9 +61,11 @@ def simple_test(request):
                 carrinho = Carrinho.objects.get(usuario=user,id=f'{int(evento.carrinho)}')
                 carrinho.status = 'Pago'
                 evento.status = 'Pago'
+                evento_data = datetime.strptime(evento.data_evento, '%Y-%m-%d')  # Supondo que evento.data_evento esteja no formato YMD
+                data_formatada = evento_data.strftime('%d/%m/%Y')
                 send_email(
                     subject=f"Nova Compra Realizada",
-                    body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}",
+                    body=f"Evento: {evento.tipo_evento}\nData: {data_formatada}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}",
                     sender_email="noticacoes@gmail.com",
                     sender_password=os.getenv('SENHA'),
                     recipient_email="igormarinhosilva@gmail.com"
