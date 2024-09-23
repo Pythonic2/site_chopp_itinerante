@@ -12,36 +12,52 @@ from notifications import send_email
 from dotenv import load_dotenv
 import os
 from datetime import datetime
+import logging
 
 load_dotenv()
+# Configurando o logger no início do arquivo
+logging.basicConfig(
+    level=logging.DEBUG,  # Nível de log
+    format='%(asctime)s - %(levelname)s - %(message)s',  # Formato da mensagem de log
+    handlers=[logging.FileHandler('transacoes.log', mode='a'),  # Salvar no arquivo transacoes.log
+              logging.StreamHandler()]  # Exibir no console também
+)
 
 
 @csrf_exempt
 def simple_test(request):
+    logging.debug("Recebendo requisição POST")
+    
     if request.method == "POST":
         if not request.body:
+            logging.warning("Corpo da requisição vazio")
             return JsonResponse({'error': 'Corpo da requisição vazio'}, status=400)
 
         try:
             # Decodificar o corpo da requisição em JSON
             webhook_data = json.loads(request.body.decode('utf-8'))
+            logging.debug(f"Dados recebidos no webhook: {webhook_data}")
 
             # Capturar o pagamento_id e outras informações do webhook
             pagamento_id = webhook_data.get('data', {}).get('id', '')
             tipo = webhook_data.get('type', {})
-            print(tipo)
+            logging.debug(f"Pagamento ID: {pagamento_id}, Tipo: {tipo}")
+
             # Criar um DataFrame do webhook_data e salvar em CSV
             df = pd.DataFrame([webhook_data])  # Convertendo o dict para DataFrame
             df.to_csv('recibo.csv')
+            logging.info("Dados do webhook salvos em recibo.csv")
 
             # Buscar pagamento usando a função definida anteriormente
             pag = buscar_pagamento_mercado_pago(pagamento_id)
+            logging.debug(f"Informações do pagamento: {pag}")
+            pd_id = tipo
             try:
-                
-                if pag['id'] and tipo == 'payment':
+                print(f'-----------------{pd_id}-----------------')
+                if  tipo == 'payment ':
+                    logging.debug("Pagamento aprovado, processando transação...")
                     user = Usuario.objects.get(username=pag['usuario'])
 
-                    
                     # Criar a instância da transação
                     transacao = Transacao(
                         transacao_id=pag['id'],
@@ -50,48 +66,56 @@ def simple_test(request):
                         valor_total=pag['valor'],
                         status=pag['status']
                     )
-                    transacao.save()  # Salvar a transação primeiro
+                    transacao.save()  # Salvar a transação
+                    logging.info(f"Transação salva: {transacao.transacao_id}")
 
                     # Associar produtos à transação
                     produtos = pag['items']
                     for produto_data in produtos:
                         produto = Produto.objects.get(nome=produto_data)
-                        transacao.produtos.add(produto.id) 
+                        transacao.produtos.add(produto.id)
+                    logging.debug(f"Produtos associados à transação: {produtos}")
 
                     evento = Evento.objects.get(usuario=user, carrinho=pag['carrinho'])
-                    carrinho = Carrinho.objects.get(usuario=user,id=f'{int(evento.carrinho)}')
+                    carrinho = Carrinho.objects.get(usuario=user, id=f'{int(evento.carrinho)}')
+                    status = pag['status']
+                    print(f'status ----------------------{status}')
                     if pag['status'] == 'approved':
                         carrinho.status = 'Pago'
                         evento.status = 'Pago'
-                        
                         evento.save()
                         carrinho.save()
-                    # carrinho.delete()
+                        logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
+
                     send_email(
                         subject=f"Nova Compra Realizada",
                         body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}\nProdutos: {produtos}",
                         sender_email="noticacoes@gmail.com",
                         sender_password=os.getenv('SENHA'),
-                        recipient_emails=["choppitinerante@gmail.com","igormarinhosilva@gmail.com"]
+                        recipient_emails=["choppitinerante@gmail.com", "igormarinhosilva@gmail.com"]
                     )
-                    print(evento)
+                    logging.info(f"E-mail enviado para notificações")
                     return JsonResponse({'status': 'success'})
                 else:
+                    logging.warning("Tipo de pagamento diferente de 'payment' ou ID não encontrado.")
                     return JsonResponse({'status': 'Order Generate'})
-            except Exception as e :
-                print(e)
-               
+            except Exception as e:
+                logging.error(f"Erro ao processar transação: {str(e)}")
                 return JsonResponse({'status': 'Order Generate'})
-            
-        
+
         except json.JSONDecodeError:
+            logging.error("Falha ao decodificar JSON")
             return JsonResponse({'error': 'Falha ao decodificar JSON'}, status=400)
         except Usuario.DoesNotExist:
+            logging.error("Usuário não encontrado")
             return JsonResponse({'error': 'Usuário não encontrado'}, status=404)
         except Produto.DoesNotExist:
+            logging.error("Produto não encontrado")
             return JsonResponse({'error': 'Produto não encontrado'}, status=404)
-    
+
+    logging.warning("Método HTTP não permitido")
     return JsonResponse({'status': 'method_not_allowed'}, status=405)
+
 
 def gerar_pagamento(cliente_id, produtos, carrinho):
     # Inicializar o SDK do Mercado Pago
