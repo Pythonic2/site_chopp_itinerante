@@ -51,11 +51,11 @@ def simple_test(request):
             # Buscar pagamento usando a função definida anteriormente
             pag = buscar_pagamento_mercado_pago(pagamento_id)
             logging.debug(f"Informações do pagamento: {pag}")
-            logging.debug(f"Informações do tipo do Pagamento: {tipo}")
+            logging.debug(f"Informações do tipo do Pagamento: {tipo}, tam {len(tipo)}")
             pd_id = tipo
             try:
                 print(f'-----------------{pd_id}-----------------')
-                if  tipo == 'payment ':
+                if  tipo == 'payment':
                     logging.debug("Pagamento aprovado, processando transação...")
                     user = Usuario.objects.get(username=pag['usuario'])
 
