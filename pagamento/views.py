@@ -51,6 +51,7 @@ def simple_test(request):
             # Buscar pagamento usando a função definida anteriormente
             pag = buscar_pagamento_mercado_pago(pagamento_id)
             logging.debug(f"Informações do pagamento: {pag}")
+            logging.debug(f"Informações do tipo do Pagamento: {tipo}")
             pd_id = tipo
             try:
                 print(f'-----------------{pd_id}-----------------')
