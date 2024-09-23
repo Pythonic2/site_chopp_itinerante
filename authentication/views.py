@@ -87,7 +87,7 @@ class EventoView(TemplateView):
         try:
             usuario = request.user.username
             user = Usuario.objects.get(username=usuario)
-            evento = Evento.objects.filter(usuario=user).exclude(status='pago').last()
+            evento = Evento.objects.filter(usuario=user).filter(status='Aguardando Pagamento').last()
             evento.delete()
         except:
             pass
@@ -116,8 +116,8 @@ class PedidosView(TemplateView):
         usuario = request.user.username
         user = Usuario.objects.get(username=usuario)
         eventos = Evento.objects.filter(usuario=user).order_by('-id')
-        for evento in eventos:
-            print(evento.valor)
+        print(f'-------------{usuario}---------')
+        print(f'-------------{len(eventos)}---------')
         context = {'pagamentos':eventos}
         return render(request, self.template_name, context)
 

@@ -65,7 +65,7 @@ def simple_test(request):
                     
                     evento.save()
                     carrinho.save()
-                    carrinho.delete()
+                    # carrinho.delete()
                     send_email(
                         subject=f"Nova Compra Realizada",
                         body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}\nProdutos: {produtos}",
