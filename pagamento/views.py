@@ -76,8 +76,11 @@ def simple_test(request):
                         produto = Produto.objects.get(nome=produto_data)
                         transacao.produtos.add(produto.id)
                     logging.debug(f"Produtos associados à transação: {produtos}")
+                    logging.debug(f"id carrinho: {pag['carrinho']}")
 
                     evento = Evento.objects.get(usuario=user, carrinho=pag['carrinho'])
+                    logging.debug(f"consulta evento: {evento}")
+
                     carrinho = Carrinho.objects.get(usuario=user, id=f'{int(evento.carrinho)}')
                     status = pag['status']
                     print(f'status ----------------------{status}')
