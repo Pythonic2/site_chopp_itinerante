@@ -100,7 +100,7 @@ def simple_test(request):
                     logging.warning("Tipo de pagamento diferente de 'payment' ou ID não encontrado.")
                     return JsonResponse({'status': 'Order Generate'})
             except Exception as e:
-                logging.error(f"Erro ao processar transação: {str(e)}")
+                logging.warning(f"Erro ao processar transação: {str(e)}")
                 return JsonResponse({'status': 'Order Generate'})
 
         except json.JSONDecodeError:
