@@ -12,7 +12,7 @@
             </nav>
         </div>
     </div>
-            {% if evento%}
+            {% if evento and evento.status != 'Pago'%}
                 <div class="container my-5">
                     
                         <h5>Evento Cadastrado: </h5> 
