@@ -68,10 +68,10 @@ def simple_test(request):
                     carrinho.delete()
                     send_email(
                         subject=f"Nova Compra Realizada",
-                        body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}",
+                        body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}\nProdutos: {produtos}",
                         sender_email="noticacoes@gmail.com",
                         sender_password=os.getenv('SENHA'),
-                        recipient_email="igormarinhosilva@gmail.com"
+                        recipient_emails=["choppitinerante@gmail.com","igormarinhosilva@gmail.com"]
                     )
                     print(evento)
                     return JsonResponse({'status': 'success'})

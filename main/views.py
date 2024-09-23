@@ -39,7 +39,7 @@ class IndexView(TemplateView):
                 body=f"{mensagem}\nContato: {celular}",
                 sender_email="noticacoes@gmail.com",
                 sender_password=os.getenv('SENHA'),
-                recipient_email=["choppitinerante@gmail.com"]
+                recipient_emails=["choppitinerante@gmail.com","igormarinhosilva@gmail.com"]
             )
 
             return redirect('home')
