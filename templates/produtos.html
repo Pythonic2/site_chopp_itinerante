@@ -121,14 +121,21 @@
         
 
         <script>
-            function alterarQuantidade(produtoId, ajuste) {
+            function incrementar(produtoId) {
                 const input = document.getElementById(`quantidade_${produtoId}`);
                 let quantidade = parseInt(input.value, 10);
-                quantidade += ajuste;
-                if (quantidade < 1) quantidade = 1; // Garantir que a quantidade não seja menor que 1
-                input.value = quantidade;
+                input.value = quantidade + 1;
+            }
+        
+            function decrementar(produtoId) {
+                const input = document.getElementById(`quantidade_${produtoId}`);
+                let quantidade = parseInt(input.value, 10);
+                if (quantidade > 1) {
+                    input.value = quantidade - 1;
+                }
             }
         </script>
+        
         <!-- Back to Top -->
 
 {%endblock%}
