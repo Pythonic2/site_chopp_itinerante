@@ -37,7 +37,7 @@ def simple_test(request):
             # Buscar pagamento usando a função definida anteriormente
             pag = buscar_pagamento_mercado_pago(pagamento_id)
             try:
-                pag['id'] 
+                
                 if pag['id'] and tipo == 'payment':
                     user = Usuario.objects.get(username=pag['usuario'])
 
@@ -60,11 +60,12 @@ def simple_test(request):
 
                     evento = Evento.objects.get(usuario=user, carrinho=pag['carrinho'])
                     carrinho = Carrinho.objects.get(usuario=user,id=f'{int(evento.carrinho)}')
-                    carrinho.status = 'Pago'
-                    evento.status = 'Pago'
-                    
-                    evento.save()
-                    carrinho.save()
+                    if pag['status'] == 'approved':
+                        carrinho.status = 'Pago'
+                        evento.status = 'Pago'
+                        
+                        evento.save()
+                        carrinho.save()
                     # carrinho.delete()
                     send_email(
                         subject=f"Nova Compra Realizada",
