@@ -80,12 +80,12 @@ def simple_test(request):
                     carrinho = Carrinho.objects.get(usuario=user, id=f'{int(evento.carrinho)}')
                     status = pag['status']
                     print(f'status ----------------------{status}')
-                    if pag['status'] == 'approved':
-                        carrinho.status = 'Pago'
-                        evento.status = 'Pago'
-                        evento.save()
-                        carrinho.save()
-                        logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
+                   
+                    carrinho.status = 'Pago'
+                    evento.status = 'Pago'
+                    evento.save()
+                    carrinho.save()
+                    logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
 
                     send_email(
                         subject=f"Nova Compra Realizada",
