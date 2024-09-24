@@ -77,11 +77,12 @@ def simple_test(request):
                         transacao.produtos.add(produto.id)
                     logging.debug(f"Produtos associados à transação: {produtos}")
                     logging.debug(f"id carrinho: {pag['carrinho']}")
-
-                    evento = Evento.objects.get(usuario=user, carrinho=pag['carrinho'])
+                    carrinho = Carrinho.objects.get(usuario=user, id=int(pag['carrinho']))
+                    print(f"----cart: {carrinho}")
+                    evento = Evento.objects.get(usuario=user, carrinho=carrinho.id)
+                    print(f'---------{evento}------------EVENTO')
                     logging.debug(f"consulta evento: {evento}")
 
-                    carrinho = Carrinho.objects.get(usuario=user, id=f'{int(evento.carrinho)}')
                     status = pag['status']
                     print(f'status ----------------------{status}')
                    
@@ -89,6 +90,7 @@ def simple_test(request):
                     evento.status = 'Pago'
                     evento.save()
                     carrinho.save()
+                    carrinho.delete()
                     logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
 
                     send_email(

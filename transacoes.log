@@ -1,0 +1,86 @@
+2024-09-24 00:02:43,264 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:02:48,279 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:03:06,847 - DEBUG - Recebendo requisição POST
+2024-09-24 00:03:06,848 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327102070'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment ', 'user_id': 162016798}
+2024-09-24 00:03:06,848 - DEBUG - Pagamento ID: 1327102070, Tipo: payment 
+2024-09-24 00:03:06,871 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 00:03:06,880 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 00:03:07,540 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327102070 HTTP/11" 404 None
+2024-09-24 00:03:07,542 - DEBUG - Informações do pagamento: None
+2024-09-24 00:03:07,543 - DEBUG - Informações do tipo do Pagamento: payment , tam 8
+2024-09-24 00:03:07,543 - WARNING - Tipo de pagamento diferente de 'payment' ou ID não encontrado.
+2024-09-24 00:03:47,431 - DEBUG - Recebendo requisição POST
+2024-09-24 00:03:47,432 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327102070'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 00:03:47,432 - DEBUG - Pagamento ID: 1327102070, Tipo: payment
+2024-09-24 00:03:47,435 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 00:03:47,437 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 00:03:48,073 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327102070 HTTP/11" 404 None
+2024-09-24 00:03:48,075 - DEBUG - Informações do pagamento: None
+2024-09-24 00:03:48,075 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 00:03:48,076 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 00:03:48,076 - WARNING - Erro ao processar transação: 'NoneType' object is not subscriptable
+2024-09-24 00:05:52,678 - DEBUG - Recebendo requisição POST
+2024-09-24 00:05:52,679 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327102070'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 00:05:52,679 - DEBUG - Pagamento ID: 1327102070, Tipo: payment
+2024-09-24 00:05:52,685 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 00:05:52,687 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 00:05:53,409 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327102070 HTTP/11" 404 None
+2024-09-24 00:05:53,412 - DEBUG - Informações do pagamento: None
+2024-09-24 00:05:53,413 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 00:05:53,414 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 00:05:53,414 - WARNING - Erro ao processar transação: 'NoneType' object is not subscriptable
+2024-09-24 00:06:53,802 - DEBUG - Recebendo requisição POST
+2024-09-24 00:06:53,802 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327102071'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 00:06:53,802 - DEBUG - Pagamento ID: 1327102071, Tipo: payment
+2024-09-24 00:06:53,807 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 00:06:53,809 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 00:06:54,441 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327102071 HTTP/11" 200 None
+2024-09-24 00:06:54,445 - DEBUG - Informações do pagamento: {'id': 1327102071, 'status': 'approved', 'valor': 200, 'usuario': 'chopp_admin', 'data': '2024-09-23T19:58:54.679-04:00', 'items': ['Choppeira'], 'carrinho': 23}
+2024-09-24 00:06:54,446 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 00:06:54,447 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 00:06:54,532 - INFO - Transação salva: 1327102071
+2024-09-24 00:06:54,555 - DEBUG - Produtos associados à transação: ['Choppeira']
+2024-09-24 00:06:54,555 - DEBUG - id carrinho: 23
+2024-09-24 00:06:54,562 - WARNING - Erro ao processar transação: get() returned more than one Evento -- it returned 2!
+2024-09-24 00:09:16,512 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:09:23,638 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:09:50,968 - DEBUG - Recebendo requisição POST
+2024-09-24 00:09:50,969 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327102071'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 00:09:50,970 - DEBUG - Pagamento ID: 1327102071, Tipo: payment
+2024-09-24 00:09:50,995 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 00:09:51,011 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 00:09:51,603 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327102071 HTTP/11" 200 None
+2024-09-24 00:09:51,608 - DEBUG - Informações do pagamento: {'id': 1327102071, 'status': 'approved', 'valor': 200, 'usuario': 'chopp_admin', 'data': '2024-09-23T19:58:54.679-04:00', 'items': ['Choppeira'], 'carrinho': 23}
+2024-09-24 00:09:51,610 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 00:09:51,612 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 00:09:51,838 - INFO - Transação salva: 1327102071
+2024-09-24 00:09:51,901 - DEBUG - Produtos associados à transação: ['Choppeira']
+2024-09-24 00:09:51,906 - DEBUG - id carrinho: 23
+2024-09-24 00:09:51,936 - WARNING - Erro ao processar transação: get() returned more than one Evento -- it returned 2!
+2024-09-24 00:10:53,157 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:10:59,319 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:11:10,344 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:12:05,135 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:12:15,649 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:12:41,959 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:12:55,588 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:13:04,781 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:13:19,900 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:13:28,224 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:13:40,731 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:13:45,984 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:13:55,851 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 00:14:18,037 - DEBUG - Recebendo requisição POST
+2024-09-24 00:14:18,040 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327102071'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 00:14:18,041 - DEBUG - Pagamento ID: 1327102071, Tipo: payment
+2024-09-24 00:14:18,078 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 00:14:18,107 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 00:14:18,752 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327102071 HTTP/11" 200 None
+2024-09-24 00:14:18,763 - DEBUG - Informações do pagamento: {'id': 1327102071, 'status': 'approved', 'valor': 200, 'usuario': 'chopp_admin', 'data': '2024-09-23T19:58:54.679-04:00', 'items': ['Choppeira'], 'carrinho': 23}
+2024-09-24 00:14:18,765 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 00:14:18,769 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 00:14:18,935 - INFO - Transação salva: 1327102071
+2024-09-24 00:14:18,960 - DEBUG - Produtos associados à transação: ['Choppeira']
+2024-09-24 00:14:18,960 - DEBUG - id carrinho: 23
+2024-09-24 00:14:19,004 - WARNING - Erro ao processar transação: get() returned more than one Evento -- it returned 2!
+2024-09-24 00:18:36,442 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
