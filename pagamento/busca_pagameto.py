@@ -16,9 +16,15 @@ def buscar_pagamento_mercado_pago(pagamento_id):
         if pagamento["status"] == 200:
             dados_pagamento = pagamento["response"]
                         
+            # Buscar os itens do pagamento
             itens = dados_pagamento.get('additional_info', {}).get('items', [])
             inf = dados_pagamento.get('metadata', {}).get('other_info', [])
-            print(inf)
+            carrinho_id = dados_pagamento.get('metadata', {}).get('carrinho_id')
+            evento_id = dados_pagamento.get('metadata', {}).get('evento_id')
+            
+            print(f"Informações adicionais: {inf}")
+            print(f"Carrinho ID: {carrinho_id}, Evento ID: {evento_id}")
+            
             x = []
             if itens:
                 for item in itens:
@@ -26,19 +32,22 @@ def buscar_pagamento_mercado_pago(pagamento_id):
                     x.append(item_title)
             else:
                 print("Nenhum item encontrado na resposta.")
+            
+            # Retornar os dados do pagamento
             return {
-                "id":dados_pagamento.get('id'),
-                "status":dados_pagamento.get('status'),
-                "valor":dados_pagamento.get('transaction_amount'),
-                "usuario":dados_pagamento.get('external_reference'),
-                "data":dados_pagamento.get('date_approved'),
-                "items":x,
-                "carrinho": dados_pagamento.get('metadata', {}).get('other_info', [])
-                
+                "id": dados_pagamento.get('id'),
+                "status": dados_pagamento.get('status'),
+                "valor": dados_pagamento.get('transaction_amount'),
+                "usuario": dados_pagamento.get('external_reference'),
+                "data": dados_pagamento.get('date_approved'),
+                "items": x,
+                "evento": evento_id,  
+                "carrinho_id": carrinho_id 
             }
         else:
             print(f"Erro ao buscar o pagamento: {pagamento['status']}, {pagamento['response']}")
     
     except Exception as e:
         print(f"Ocorreu um erro: {str(e)}")
+
 

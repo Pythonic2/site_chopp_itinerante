@@ -127,3 +127,304 @@ AttributeError: 'NoneType' object has no attribute 'id'
 2024-09-24 21:08:46,571 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
 2024-09-24 21:08:46,588 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
 2024-09-24 21:08:46,599 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:19:06,439 - DEBUG - Recebendo requisição POST
+2024-09-24 21:19:06,440 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114613'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 21:19:06,441 - DEBUG - Pagamento ID: 1327114613, Tipo: payment
+2024-09-24 21:19:06,466 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 21:19:06,477 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:19:07,104 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114613 HTTP/11" 200 None
+2024-09-24 21:19:07,112 - DEBUG - Informações do pagamento: {'id': 1327114613, 'status': 'approved', 'valor': 200, 'usuario': 'admin', 'data': '2024-09-24T17:15:51.081-04:00', 'items': ['Choppeira'], 'carrinho': 44}
+2024-09-24 21:19:07,113 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 21:19:07,121 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 21:21:45,072 - INFO - Transação salva: 1327114613
+2024-09-24 21:21:59,722 - DEBUG - Produtos associados à transação: ['Choppeira']
+2024-09-24 21:22:52,906 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/busca_pagameto.py changed, reloading.
+2024-09-24 21:22:54,909 - WARNING - Erro ao processar transação: 'evento'
+2024-09-24 21:23:07,393 - DEBUG - Recebendo requisição POST
+2024-09-24 21:23:07,394 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114613'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 21:23:07,395 - DEBUG - Pagamento ID: 1327114613, Tipo: payment
+2024-09-24 21:23:07,406 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 21:23:07,413 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:23:08,063 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114613 HTTP/11" 200 None
+2024-09-24 21:23:08,080 - DEBUG - Informações do pagamento: {'id': 1327114613, 'status': 'approved', 'valor': 200, 'usuario': 'admin', 'data': '2024-09-24T17:15:51.081-04:00', 'items': ['Choppeira'], 'evento': 44}
+2024-09-24 21:23:08,083 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 21:23:08,088 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 21:23:08,232 - WARNING - Erro ao processar transação: duplicate key value violates unique constraint "pagamento_transacao_transacao_id_key"
+DETAIL:  Key (transacao_id)=(1327114613) already exists.
+2024-09-24 21:23:15,802 - DEBUG - Recebendo requisição POST
+2024-09-24 21:23:15,803 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114613'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 21:23:15,804 - DEBUG - Pagamento ID: 1327114613, Tipo: payment
+2024-09-24 21:23:15,809 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 21:23:15,817 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:23:16,457 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114613 HTTP/11" 200 None
+2024-09-24 21:23:16,462 - DEBUG - Informações do pagamento: {'id': 1327114613, 'status': 'approved', 'valor': 200, 'usuario': 'admin', 'data': '2024-09-24T17:15:51.081-04:00', 'items': ['Choppeira'], 'evento': 44}
+2024-09-24 21:23:16,463 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 21:23:16,466 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 21:23:16,526 - WARNING - Erro ao processar transação: duplicate key value violates unique constraint "pagamento_transacao_transacao_id_key"
+DETAIL:  Key (transacao_id)=(1327114613) already exists.
+2024-09-24 21:24:35,609 - DEBUG - Recebendo requisição POST
+2024-09-24 21:24:35,610 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114613'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 21:24:35,610 - DEBUG - Pagamento ID: 1327114613, Tipo: payment
+2024-09-24 21:24:35,622 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 21:24:35,630 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:24:36,175 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114613 HTTP/11" 200 None
+2024-09-24 21:24:36,179 - DEBUG - Informações do pagamento: {'id': 1327114613, 'status': 'approved', 'valor': 200, 'usuario': 'admin', 'data': '2024-09-24T17:15:51.081-04:00', 'items': ['Choppeira'], 'evento': 44}
+2024-09-24 21:24:36,179 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 21:24:36,180 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 21:24:42,158 - INFO - Transação salva: 1327114613
+2024-09-24 21:24:57,545 - DEBUG - Produtos associados à transação: ['Choppeira']
+2024-09-24 21:24:57,600 - DEBUG - id evento: 44
+2024-09-24 21:25:10,011 - DEBUG - consulta evento: casamento - 2024-09-26
+2024-09-24 21:34:00,856 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:34:00,888 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:34:00,917 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:34:00,932 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:34:00,937 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:34:00,955 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:34:00,974 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:34:01,011 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:34:01,021 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:34:01,024 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:34:01,055 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:34:01,069 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:34:01,073 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:34:02,583 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:34:03,413 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 828
+2024-09-24 21:34:03,470 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:34:03,499 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:34:03,506 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:34:03,511 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:34:03,525 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:34:03,542 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:34:03,552 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:34:03,572 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:34:03,594 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:34:08,128 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:34:08,747 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 21:34:08,900 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:34:08,927 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:34:08,957 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:34:08,969 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:34:08,989 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:34:08,999 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:34:09,010 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:34:09,034 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:34:09,042 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:34:10,347 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:34:10,375 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:34:10,406 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:34:10,422 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:34:10,428 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:34:10,458 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:34:10,460 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:34:10,488 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:34:10,508 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:34:10,510 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:34:10,544 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:34:10,575 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:34:10,582 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:34:12,810 - INFO - Carrinho: 39, Criado agora? False
+2024-09-24 21:34:13,853 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:34:14,549 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 825
+2024-09-24 21:34:14,666 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:34:14,675 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:34:14,689 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:34:14,694 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:34:14,708 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:34:14,756 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:34:14,756 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:34:14,771 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:34:14,787 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:34:16,787 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:34:16,813 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:34:16,827 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:34:16,844 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:34:16,857 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:34:16,871 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:34:16,881 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:34:16,891 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:34:16,918 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:34:30,160 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:34:30,934 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 823
+2024-09-24 21:34:31,008 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:34:31,020 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:34:31,039 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:34:31,050 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:34:31,063 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:34:31,089 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:34:31,105 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:34:31,113 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:34:31,124 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:36:33,384 - DEBUG - Recebendo requisição POST
+2024-09-24 21:36:33,385 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114769'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 21:36:33,385 - DEBUG - Pagamento ID: 1327114769, Tipo: payment
+2024-09-24 21:36:33,400 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 21:36:33,411 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:36:33,967 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114769 HTTP/11" 200 None
+2024-09-24 21:36:33,969 - DEBUG - Informações do pagamento: {'id': 1327114769, 'status': 'approved', 'valor': 410, 'usuario': 'admin', 'data': '2024-09-24T17:35:38.114-04:00', 'items': ['Brahma'], 'evento': None, 'carrinho_id': None}
+2024-09-24 21:36:33,970 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 21:36:33,971 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 21:36:42,550 - INFO - Transação salva: 1327114769
+2024-09-24 21:37:06,958 - DEBUG - Produtos associados à transação: ['Brahma']
+2024-09-24 21:37:10,548 - DEBUG - id evento: None
+2024-09-24 21:38:51,027 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/busca_pagameto.py changed, reloading.
+2024-09-24 21:39:15,737 - WARNING - Erro ao processar transação: Evento matching query does not exist.
+2024-09-24 21:39:23,813 - DEBUG - Recebendo requisição POST
+2024-09-24 21:39:23,814 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114769'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 21:39:23,814 - DEBUG - Pagamento ID: 1327114769, Tipo: payment
+2024-09-24 21:39:23,829 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 21:39:23,838 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:39:24,390 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114769 HTTP/11" 200 None
+2024-09-24 21:39:24,407 - DEBUG - Informações do pagamento: {'id': 1327114769, 'status': 'approved', 'valor': 410, 'usuario': 'admin', 'data': '2024-09-24T17:35:38.114-04:00', 'items': ['Brahma'], 'evento': None, 'carrinho_id': None}
+2024-09-24 21:39:24,410 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 21:39:24,416 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 21:40:32,162 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 21:42:15,564 - INFO - Transação salva: 1327114769
+2024-09-24 21:42:15,618 - DEBUG - Produtos associados à transação: ['Brahma']
+2024-09-24 21:42:15,619 - DEBUG - id evento: None
+2024-09-24 21:42:15,629 - WARNING - Erro ao processar transação: Evento matching query does not exist.
+2024-09-24 21:43:29,320 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:43:29,333 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:43:29,403 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:43:29,408 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:29,453 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:43:29,516 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:43:29,522 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:43:29,603 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:29,619 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:29,624 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:29,686 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:29,750 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:29,776 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:43:31,232 - INFO - Carrinho: 39, Criado agora? False
+2024-09-24 21:43:41,888 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:43:42,634 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 861
+2024-09-24 21:43:42,730 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:43:42,779 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:43:42,825 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:42,839 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:42,845 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:42,852 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:42,867 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:42,934 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:42,953 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:43:44,975 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:43:45,721 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 860
+2024-09-24 21:43:45,885 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:45,905 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:43:45,948 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:43:45,952 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:45,982 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:45,987 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:46,016 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:46,073 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:46,093 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:43:47,378 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:43:48,167 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 825
+2024-09-24 21:43:48,352 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:43:48,366 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:43:48,378 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:48,437 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:48,452 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:48,473 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:48,531 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:48,546 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:48,561 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:43:49,815 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:43:50,551 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 827
+2024-09-24 21:43:50,754 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:43:50,765 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:43:50,802 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:50,807 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:50,869 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:50,871 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:50,927 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:50,939 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:50,970 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:43:52,328 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:43:52,949 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 827
+2024-09-24 21:43:53,173 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:53,179 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:43:53,203 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:43:53,208 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:53,233 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:53,255 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:53,284 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:53,315 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:53,336 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:43:54,754 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:43:55,394 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 21:43:55,555 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:43:55,579 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:55,611 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:55,644 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:55,658 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:55,661 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:43:55,689 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:55,748 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:43:55,751 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:57,530 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:43:57,591 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:43:57,638 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:43:57,674 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:43:57,644 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:43:57,685 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:43:57,714 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:43:57,736 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:43:57,765 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:43:57,807 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:43:57,857 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:43:57,864 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:43:57,897 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:45:57,494 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:45:58,172 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 21:46:01,444 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:46:01,964 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 21:46:02,218 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:46:02,223 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:46:02,259 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:46:02,290 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:46:02,298 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:46:02,325 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:46:02,357 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:46:02,374 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:46:02,393 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:46:08,058 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:46:08,077 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:46:08,124 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:46:08,206 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:46:08,230 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:46:08,236 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:46:08,253 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:46:08,298 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:46:08,335 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:46:08,381 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:46:08,386 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:46:08,416 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:46:08,465 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:46:11,231 - INFO - Carrinho: 39, Criado agora? False
+2024-09-24 21:47:58,580 - INFO - Carrinho: 39, Criado agora? False
+2024-09-24 21:48:53,331 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:48:54,182 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 829
+2024-09-24 21:50:22,298 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:50:22,336 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:50:22,352 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:50:22,379 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:50:22,421 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:50:22,424 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:50:22,459 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:50:22,505 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:50:22,513 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:52:40,128 - DEBUG - Recebendo requisição POST
+2024-09-24 21:52:40,130 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114989'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 21:52:40,130 - DEBUG - Pagamento ID: 1327114989, Tipo: payment
+2024-09-24 21:52:40,163 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 21:52:40,174 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:52:40,817 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114989 HTTP/11" 200 None
+2024-09-24 21:52:40,908 - DEBUG - Informações do pagamento: {'id': 1327114989, 'status': 'approved', 'valor': 400, 'usuario': 'admin', 'data': '2024-09-24T17:52:10.915-04:00', 'items': ['Choppeira'], 'evento': None, 'carrinho_id': None}
+2024-09-24 21:52:40,925 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 21:52:40,948 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 21:53:28,232 - INFO - Transação salva: 1327114989
+2024-09-24 21:53:41,309 - DEBUG - Produtos associados à transação: ['Choppeira']
+2024-09-24 21:53:41,310 - DEBUG - id evento: None
+2024-09-24 21:53:41,331 - WARNING - Erro ao processar transação: Evento matching query does not exist.

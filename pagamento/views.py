@@ -124,7 +124,7 @@ def simple_test(request):
     return JsonResponse({'status': 'method_not_allowed'}, status=405)
 
 
-def gerar_pagamento(cliente_id:int, produtos:list, evento:int):
+def gerar_pagamento(cliente_id: int, produtos: list, evento: int, carrinho_id: int):
     # Inicializar o SDK do Mercado Pago
     sdk = mercadopago.SDK('TEST-3488797328851277-091614-dbbff0af2658e101ee7f9413497c16fd-162016798')
 
@@ -153,13 +153,15 @@ def gerar_pagamento(cliente_id:int, produtos:list, evento:int):
         "auto_return": "approved",
         "notification_url": "https://choppitinerante.cloudboosterlab.org/pag/",
         "metadata": {
-            "other_info": evento
+            "evento_id": evento,
+            "carrinho_id": carrinho_id  # Passando o carrinho_id no metadata
         }
     }
-
 
     result = sdk.preference().create(preference_data)
     preference = result['response']
 
-    return preference['init_point']
+    # Retornar o link de pagamento (init_point) e o carrinho_id
+    return preference['init_point'], carrinho_id
+
 

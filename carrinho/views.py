@@ -22,7 +22,7 @@ logging.basicConfig(
 )
 @login_required
 def pagina_carrinho(request):
-    """ Renderiza a pagina do carrinho, e carrega as informaçoes descritas no dict context """
+    """ Renderiza a página do carrinho e carrega as informações descritas no dict context """
     
     usuario = request.user.username
 
@@ -32,7 +32,7 @@ def pagina_carrinho(request):
     # Obtém o carrinho do usuário
     carrinho = Carrinho.objects.filter(usuario=user).exclude(status='pago').last()
     if not carrinho:
-        return render(request, 'cart.html', {'produtos': [], 'valor_total': 0,'title':'Carrinho'})
+        return render(request, 'cart.html', {'produtos': [], 'valor_total': 0, 'title': 'Carrinho'})
 
     # Obtém os itens do carrinho
     itens = ItemCarrinho.objects.filter(carrinho=carrinho)
@@ -41,6 +41,7 @@ def pagina_carrinho(request):
 
     # Calcula o valor total
     valor_total = sum(item.produto.valor * item.quantidade for item in itens)
+    
     evento = Evento.objects.filter(usuario=user).exclude(status='pago').last()
     if evento:
         evento.carrinho = carrinho.id
@@ -48,20 +49,23 @@ def pagina_carrinho(request):
         evento.save()
 
     context = {
-        'carrinho': produtos_no_carrinho,  # Agora passamos os produtos com suas fotos
+        'carrinho': produtos_no_carrinho,
         'total': valor_total,
-        'title':'Carrinho',
-        'evento':evento,
+        'title': 'Carrinho',
+        'evento': evento,
     }
-    print(f" --------------- {carrinho.id} -----------------")
-    
+
     try:
-        evento = evento.id
-        pag = gerar_pagamento(user, produtos_no_carrinho, evento)
+        carrinho = carrinho.id
+        evento_id = evento.id if evento else None
+        pag = gerar_pagamento(user.id, produtos_no_carrinho, evento_id, carrinho)
         context['link'] = pag
-    except:
+    except Exception as e:
+        print(f"Erro ao gerar pagamento: {e}")
         context['link'] = '#'
+
     return render(request, 'cart.html', context)
+
 
 
 def obter_quantidade_carrinho_htmx(request):
