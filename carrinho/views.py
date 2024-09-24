@@ -58,7 +58,8 @@ def pagina_carrinho(request):
     try:
         carrinho = carrinho.id
         evento_id = evento.id if evento else None
-        pag = gerar_pagamento(user.id, produtos_no_carrinho, evento_id, carrinho)
+        pag, carrinho_id = gerar_pagamento(user.id, produtos_no_carrinho, evento_id, carrinho)
+        
         context['link'] = pag
     except Exception as e:
         print(f"Erro ao gerar pagamento: {e}")

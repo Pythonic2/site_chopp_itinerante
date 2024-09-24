@@ -428,3 +428,557 @@ DETAIL:  Key (transacao_id)=(1327114613) already exists.
 2024-09-24 21:53:41,309 - DEBUG - Produtos associados à transação: ['Choppeira']
 2024-09-24 21:53:41,310 - DEBUG - id evento: None
 2024-09-24 21:53:41,331 - WARNING - Erro ao processar transação: Evento matching query does not exist.
+2024-09-24 21:55:52,034 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:55:52,036 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:55:52,056 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:55:52,069 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:55:52,082 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:55:52,124 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:55:52,155 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:55:52,159 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:55:52,178 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:55:52,196 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:55:52,219 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:55:52,237 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:55:52,270 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:55:53,338 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:55:53,349 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:55:53,357 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:55:53,385 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:55:53,388 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:55:53,409 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:55:53,425 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:55:53,439 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:55:53,442 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:55:54,593 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:55:54,612 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:55:54,635 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:55:54,647 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:55:54,657 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:55:54,688 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:55:54,718 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:55:54,740 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:55:54,765 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:56:08,337 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:56:08,357 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:56:08,361 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:56:08,379 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:56:08,390 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:56:08,414 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:56:08,435 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:56:08,437 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:56:08,443 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:56:13,684 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:56:13,698 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:56:13,725 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:56:13,738 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:56:13,756 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:56:13,770 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:56:13,777 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:56:13,802 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:56:13,806 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:56:21,525 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:56:21,551 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:56:21,572 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:56:21,574 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:56:21,562 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:56:21,606 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:56:21,626 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:56:21,628 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:56:21,633 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:56:22,786 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:56:22,810 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:56:22,836 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:56:22,855 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:56:22,863 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:56:22,874 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:56:22,890 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:56:22,906 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:56:22,909 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:56:32,981 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:56:33,003 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:56:33,024 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:56:33,039 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:56:33,055 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:56:33,057 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:56:33,088 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:56:33,100 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:56:33,106 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:56:53,515 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:56:57,897 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:57:00,191 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:57:08,370 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:57:10,719 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:57:17,737 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:57:17,741 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:57:17,765 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:57:17,775 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:57:17,785 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:57:17,795 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:57:17,808 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:57:17,829 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:57:17,842 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:57:19,298 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:57:19,330 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:57:19,343 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:57:19,344 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:57:19,344 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:57:19,349 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:57:19,369 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:57:19,381 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:57:19,397 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:57:28,104 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:57:28,106 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:57:28,118 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:57:28,121 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:57:28,126 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:57:28,164 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:57:28,172 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:57:28,185 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:57:28,196 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:57:33,587 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:57:41,911 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 21:57:55,196 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/busca_pagameto.py changed, reloading.
+2024-09-24 21:58:06,512 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/busca_pagameto.py changed, reloading.
+2024-09-24 21:58:19,889 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/busca_pagameto.py changed, reloading.
+2024-09-24 21:58:22,201 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/busca_pagameto.py changed, reloading.
+2024-09-24 21:58:38,009 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:58:38,018 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:58:38,037 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:58:38,046 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:58:38,050 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:58:38,070 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:58:38,139 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:58:38,167 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:58:38,173 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:58:48,014 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:58:48,018 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:58:48,048 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:58:48,050 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:58:48,070 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:58:48,114 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:58:48,116 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:58:48,135 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:58:48,144 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:35,048 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:35,075 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:35,081 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:35,106 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:35,109 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:35,121 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:35,135 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:35,150 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:35,160 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:35,907 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:35,911 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:35,920 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:35,927 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:35,936 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:35,947 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:35,977 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:35,990 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:35,999 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:36,322 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:36,329 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:36,338 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:36,345 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:36,363 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:36,384 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:36,388 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:36,392 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:36,439 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:36,459 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:36,471 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:36,482 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:36,502 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:36,505 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:36,511 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:36,546 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:36,552 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:36,554 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:37,594 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:37,612 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:37,639 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:37,641 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:37,652 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:37,663 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:37,688 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:37,705 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:37,728 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:37,939 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:37,944 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:37,956 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:37,958 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:37,968 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:37,980 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:38,013 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:38,027 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:38,040 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:38,482 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:59:38,494 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:59:38,513 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:38,523 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:38,541 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:38,556 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:38,565 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:38,592 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:38,618 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:59:46,597 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:46,633 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:46,636 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:46,648 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:46,654 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:46,679 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:46,703 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:46,719 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:46,729 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:49,159 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:59:49,170 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:59:49,181 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:59:49,181 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:59:49,190 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:59:49,205 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:59:49,215 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:49,241 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:49,261 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:49,285 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:49,299 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:49,322 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:49,329 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:59:50,894 - INFO - Carrinho: 40, Criado agora? True
+2024-09-24 21:59:51,813 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:59:52,518 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 822
+2024-09-24 21:59:52,561 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:59:52,579 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:59:52,583 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:52,587 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:52,604 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:52,646 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:52,647 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:52,656 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:52,662 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:59:56,901 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:59:56,921 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:59:56,925 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:59:56,941 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:59:56,944 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:59:56,962 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:59:56,994 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:59:56,998 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:59:57,007 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 22:00:06,086 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:00:06,699 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 823
+2024-09-24 22:00:06,803 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:00:06,824 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:00:06,842 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:00:06,860 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:00:06,862 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:00:06,872 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:00:06,892 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:00:06,902 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:00:06,910 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:00:35,186 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/busca_pagameto.py changed, reloading.
+2024-09-24 22:00:37,840 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:00:41,305 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 22:00:47,776 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 22:00:53,073 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 22:00:55,191 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 22:01:24,743 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:01:29,813 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:01:33,865 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:01:35,820 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:01:36,526 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 827
+2024-09-24 22:01:36,604 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:01:36,634 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:01:36,641 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:01:36,655 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:01:36,660 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:01:36,676 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:01:36,680 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:01:36,705 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:01:36,716 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:01:37,620 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:01:38,228 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 830
+2024-09-24 22:01:38,333 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:01:38,333 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:01:38,344 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:01:38,356 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:01:38,364 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:01:38,366 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:01:38,382 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:01:38,389 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:01:38,404 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:01:42,092 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:01:42,699 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 828
+2024-09-24 22:01:42,795 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:01:42,805 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:01:42,819 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:01:42,830 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:01:42,831 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:01:42,832 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:01:42,849 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:01:42,860 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:01:42,865 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:01:57,749 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:01:59,950 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:02:01,874 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:02:02,478 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 829
+2024-09-24 22:02:02,535 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:02:02,547 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:02:02,563 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:02:02,576 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:02:02,596 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:02:02,598 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:02:02,602 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:02:02,612 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:02:02,622 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:02:15,466 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:02:18,651 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:02:20,764 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:02:21,402 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 828
+2024-09-24 22:02:21,462 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:02:21,468 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:02:21,516 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:02:21,522 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:02:21,525 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:02:21,533 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:02:21,540 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:02:21,545 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:02:21,554 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:02:22,693 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:02:23,291 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 826
+2024-09-24 22:02:23,438 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:02:23,468 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:02:23,474 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:02:23,481 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:02:23,483 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:02:23,484 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:02:23,498 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:02:23,512 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:02:23,523 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:02:45,366 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:02:46,695 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:02:47,387 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 828
+2024-09-24 22:02:47,435 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:02:47,447 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:02:47,459 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:02:47,473 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:02:47,477 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:02:47,484 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:02:47,511 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:02:47,525 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:02:47,525 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:02:49,069 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:02:49,687 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 828
+2024-09-24 22:02:49,769 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:02:49,783 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:02:49,785 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:02:49,792 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:02:49,806 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:02:49,809 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:02:49,827 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:02:49,836 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:02:49,852 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:03:15,045 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:03:17,272 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:03:17,884 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 829
+2024-09-24 22:03:18,002 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:03:18,016 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:03:18,029 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:03:18,033 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:03:18,049 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:03:18,051 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:03:18,064 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:03:18,083 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:03:18,090 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:03:49,158 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:03:49,845 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 829
+2024-09-24 22:03:49,945 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:03:49,954 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:03:49,967 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:03:49,984 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:03:49,989 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:03:49,991 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:03:50,000 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:03:50,014 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:03:50,041 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:04:02,162 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:04:02,680 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 22:04:02,752 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:04:02,761 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:04:02,787 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:02,844 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:02,849 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:02,857 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:02,887 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:02,897 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:02,913 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:04:06,238 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:04:06,848 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 825
+2024-09-24 22:04:06,923 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:04:06,940 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:04:06,964 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:06,985 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:06,989 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:06,999 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:07,014 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:07,017 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:07,028 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:04:08,475 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-09-24 22:04:08,477 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:08,481 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:08,502 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-09-24 22:04:08,497 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:08,512 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:08,554 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:08,575 - WARNING - Not Found: /login/static/js/main.js
+2024-09-24 22:04:08,579 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:13,206 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 22:04:13,217 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 22:04:13,230 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 22:04:13,239 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 22:04:13,251 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 22:04:13,254 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 22:04:13,283 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:13,300 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:13,303 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:13,313 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:13,314 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:13,318 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:13,349 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 22:04:28,312 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:04:28,819 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 22:04:28,870 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:04:28,890 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:04:28,901 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:28,906 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:28,922 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:28,929 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:28,958 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:28,973 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:28,982 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:04:30,982 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:04:31,489 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 22:04:31,572 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:31,589 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:04:31,595 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:04:31,598 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:31,603 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:31,613 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:31,632 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:31,637 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:04:31,646 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:36,358 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 22:04:36,363 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 22:04:36,367 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 22:04:36,373 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 22:04:36,382 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 22:04:36,383 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 22:04:36,402 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:36,407 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:36,424 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:36,448 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:36,457 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:36,459 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:36,472 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 22:04:37,667 - INFO - Carrinho: 39, Criado agora? False
+2024-09-24 22:04:38,597 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:04:39,221 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 827
+2024-09-24 22:04:39,265 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:04:39,272 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:39,276 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:39,281 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:04:39,294 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:39,297 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:39,325 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:39,336 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:04:39,342 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:53,714 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:04:54,221 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 400 93
+2024-09-24 22:04:54,299 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:54,301 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:04:54,312 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:04:54,317 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:54,320 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:54,324 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:54,333 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:54,356 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:54,363 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:04:57,126 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 22:04:57,135 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 22:04:57,149 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 22:04:57,158 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 22:04:57,163 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 22:04:57,166 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 22:04:57,186 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:04:57,206 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 22:04:57,215 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:04:57,229 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:04:57,239 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:04:57,245 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:04:57,260 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 22:04:59,054 - INFO - Carrinho: 39, Criado agora? False
+2024-09-24 22:05:02,682 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:05:03,382 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 825
+2024-09-24 22:05:03,432 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:05:03,457 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:05:03,464 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:05:03,491 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:05:03,510 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:05:03,515 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:05:03,559 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:05:03,578 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:05:03,590 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:05:17,370 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:05:25,734 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:05:27,899 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:05:30,059 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:05:31,921 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:05:32,568 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 825
+2024-09-24 22:05:32,638 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:05:32,643 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:05:32,661 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:05:32,666 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:05:32,677 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:05:32,681 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:05:32,696 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:05:32,705 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:05:32,711 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:05:39,678 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:05:49,775 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:05:50,383 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 826
+2024-09-24 22:05:50,453 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:05:50,460 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:05:50,468 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:05:50,481 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:05:50,487 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:05:50,517 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:05:50,549 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:05:50,555 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:05:50,568 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:06:13,624 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:06:21,179 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:06:21,880 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 826
+2024-09-24 22:06:21,931 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 22:06:21,949 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 22:06:21,959 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 22:06:21,975 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 22:06:21,994 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 22:06:21,998 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 22:06:22,000 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 22:06:22,004 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 22:06:22,008 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 22:06:37,399 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 22:08:40,866 - DEBUG - Recebendo requisição POST
+2024-09-24 22:08:40,867 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327114989'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 22:08:40,867 - DEBUG - Pagamento ID: 1327114989, Tipo: payment
+2024-09-24 22:08:40,882 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 22:08:44,538 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:08:45,074 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327114989 HTTP/11" 200 None
+2024-09-24 22:09:59,328 - DEBUG - Informações do pagamento: {'id': 1327114989, 'status': 'approved', 'valor': 400, 'usuario': 'admin', 'data': '2024-09-24T17:52:10.915-04:00', 'items': ['Choppeira'], 'evento': None, 'carrinho_id': None}
+2024-09-24 22:10:23,062 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 22:10:23,063 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 22:10:23,136 - INFO - Transação salva: 1327114989
+2024-09-24 22:10:23,162 - DEBUG - Produtos associados à transação: ['Choppeira']
+2024-09-24 22:10:23,162 - DEBUG - id evento: None
+2024-09-24 22:10:23,169 - WARNING - Erro ao processar transação: Evento matching query does not exist.
