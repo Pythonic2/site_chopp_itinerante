@@ -12,13 +12,14 @@ from django.urls import reverse
 import logging
 
 # Configurando o logger no início do arquivo
+import os
+
 logging.basicConfig(
     level=logging.DEBUG,  # Nível de log
     format='%(asctime)s - %(levelname)s - %(message)s',  # Formato da mensagem de log
-    handlers=[logging.FileHandler('carrinho.log', mode='a'),  # Salvar no arquivo transacoes.log
+    handlers=[logging.FileHandler('transacoes.log', mode='a'),  # Salvar no arquivo transacoes.log
               logging.StreamHandler()]  # Exibir no console também
 )
-
 @login_required
 def pagina_carrinho(request):
     """ Renderiza a pagina do carrinho, e carrega as informaçoes descritas no dict context """
@@ -96,7 +97,7 @@ def adicionar_ao_carrinho(request, produto_id):
         carrinho, created = Carrinho.objects.get_or_create(usuario=user, status='Progress')
 
         print(f"Carrinho: {carrinho.id}, Criado agora? {created}")
-        logging.debug(f"Carrinho: {carrinho.id}, Criado agora? {created}")
+        logging.info(f"Carrinho: {carrinho.id}, Criado agora? {created}")
 
         # Obtém o produto
         produto = get_object_or_404(Produto, pk=produto_id)
