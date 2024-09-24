@@ -97,21 +97,13 @@ class EventoView(TemplateView):
 
 
     def post(self, request):
+
         form = EventoForm(request.POST)
         if form.is_valid():
-            # Verifica se já existe um evento "Aguardando Pagamento"
-            evento = Evento.objects.filter(usuario=request.user, status='Aguardando Pagamento').last()
-
-            if evento:
-                evento.valor = form.cleaned_data['valor']  # Atualize os dados necessários
-            else:
-                evento = form.save(commit=False)  # Não salva no banco ainda
-                evento.usuario = request.user
-                evento.status = 'Aguardando Pagamento'
-            
-            evento.carrinho = Carrinho.objects.filter(usuario=request.user, status='Progress').last()
-            evento.save()  # Agora salva com o usuário e carrinho
-            
+            evento = form.save(commit=False)  # Não salva no banco ainda
+            evento.usuario = request.user
+            evento.status = 'Aguardando Pagamento'
+            evento.save()  # Agora salva com o usuário
             return redirect('pagina_carrinho')  # Substitua por uma URL válida
         else:
             return render(request, "evento.html", {"form": form, "erro": form.errors})
