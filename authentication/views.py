@@ -10,6 +10,7 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 User = Usuario
+from carrinho.models import Carrinho
 
 # Create your views here.
 def logout_view(request):
