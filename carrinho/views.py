@@ -9,6 +9,15 @@ from django.http import HttpResponse
 from produto.models import Produto
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+import logging
+
+# Configurando o logger no início do arquivo
+logging.basicConfig(
+    level=logging.DEBUG,  # Nível de log
+    format='%(asctime)s - %(levelname)s - %(message)s',  # Formato da mensagem de log
+    handlers=[logging.FileHandler('carrinho.log', mode='a'),  # Salvar no arquivo transacoes.log
+              logging.StreamHandler()]  # Exibir no console também
+)
 
 @login_required
 def pagina_carrinho(request):
@@ -86,8 +95,9 @@ def adicionar_ao_carrinho(request, produto_id):
         # Tenta obter o carrinho do usuário, cria um novo se não existir
         carrinho, created = Carrinho.objects.get_or_create(usuario=user, status='Progress')
 
-        print(f"Carrinho: {carrinho}, Criado agora? {created}")
-        
+        print(f"Carrinho: {carrinho.id}, Criado agora? {created}")
+        logging.debug(f"Carrinho: {carrinho.id}, Criado agora? {created}")
+
         # Obtém o produto
         produto = get_object_or_404(Produto, pk=produto_id)
         quantidade = int(request.POST.get('quantidade', 0))
