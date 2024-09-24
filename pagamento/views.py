@@ -76,22 +76,23 @@ def simple_test(request):
                         produto = Produto.objects.get(nome=produto_data)
                         transacao.produtos.add(produto.id)
                     logging.debug(f"Produtos associados à transação: {produtos}")
-                    logging.debug(f"id carrinho: {pag['carrinho']}")
-                    carrinho = Carrinho.objects.get(usuario=user, id=int(pag['carrinho']))
-                    print(f"----cart: {carrinho}")
-                    evento = Evento.objects.get(usuario=user, carrinho=carrinho.id)
+                    logging.debug(f"id evento: {pag['evento']}")
+                    #carrinho = Carrinho.objects.get(usuario=user, id=int(pag['evento']))
+                    #print(f"----cart: {carrinho}")
+                    id_evento = pag['evento']
+                    evento = Evento.objects.get(usuario=user, id=id_evento)
                     print(f'---------{evento}------------EVENTO')
                     logging.debug(f"consulta evento: {evento}")
 
                     status = pag['status']
                     print(f'status ----------------------{status}')
                    
-                    carrinho.status = 'Pago'
+                    #carrinho.status = 'Pago'
                     evento.status = 'Pago'
                     evento.save()
-                    carrinho.save()
-                    carrinho.delete()
-                    logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
+                    #carrinho.save()
+                    #carrinho.delete()
+                    #logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
 
                     send_email(
                         subject=f"Nova Compra Realizada",
@@ -123,7 +124,7 @@ def simple_test(request):
     return JsonResponse({'status': 'method_not_allowed'}, status=405)
 
 
-def gerar_pagamento(cliente_id, produtos, carrinho):
+def gerar_pagamento(cliente_id:int, produtos:list, evento:int):
     # Inicializar o SDK do Mercado Pago
     sdk = mercadopago.SDK('TEST-3488797328851277-091614-dbbff0af2658e101ee7f9413497c16fd-162016798')
 
@@ -152,7 +153,7 @@ def gerar_pagamento(cliente_id, produtos, carrinho):
         "auto_return": "approved",
         "notification_url": "https://choppitinerante.cloudboosterlab.org/pag/",
         "metadata": {
-            "other_info": carrinho
+            "other_info": evento
         }
     }
 

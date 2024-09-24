@@ -70,3 +70,60 @@
 2024-09-24 01:46:48,853 - DEBUG - Produtos associados à transação: ['Choppeira']
 2024-09-24 01:46:48,854 - DEBUG - id carrinho: 33
 2024-09-24 01:46:48,859 - WARNING - Erro ao processar transação: Carrinho matching query does not exist.
+2024-09-24 20:51:03,069 - WARNING - Not Found: /favicon.ico
+2024-09-24 21:07:33,208 - WARNING - Not Found: /media/chopps/Captura_de_tela_2024-09-17_185550.png
+2024-09-24 21:07:33,223 - WARNING - Not Found: /media/chopps/Logo_Azul_e_Cinza_de_Construtora_Estilo__Moderno_512_x_512_px.png
+2024-09-24 21:07:33,268 - WARNING - Not Found: /media/chopps/unimed-removebg-preview.png
+2024-09-24 21:07:33,281 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-09-24 21:07:33,319 - WARNING - Not Found: /media/chopps/IMG_7813.jpg
+2024-09-24 21:07:33,327 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-09-24 21:07:33,356 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:07:33,397 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-09-24 21:07:33,408 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:07:33,437 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:07:33,469 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:07:33,487 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-09-24 21:07:33,514 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:07:35,378 - INFO - Carrinho: 39, Criado agora? True
+2024-09-24 21:07:36,880 - ERROR - Internal Server Error: /carrinho/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/carrinho/views.py", line 57, in pagina_carrinho
+    evento = evento.id
+AttributeError: 'NoneType' object has no attribute 'id'
+2024-09-24 21:08:02,137 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:08:22,801 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/views.py changed, reloading.
+2024-09-24 21:08:34,641 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:08:34,661 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:08:34,665 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:08:34,677 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:08:34,692 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:08:34,695 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:08:34,704 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:08:34,746 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-09-24 21:08:34,752 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:08:37,715 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-09-24 21:08:37,722 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-09-24 21:08:37,747 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:08:37,752 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-09-24 21:08:37,770 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:08:37,776 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:08:37,802 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:08:37,838 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:08:37,850 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-09-24 21:08:45,386 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 21:08:46,371 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 820
+2024-09-24 21:08:46,470 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-09-24 21:08:46,490 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-09-24 21:08:46,537 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-09-24 21:08:46,539 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-09-24 21:08:46,543 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-09-24 21:08:46,554 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-09-24 21:08:46,571 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-09-24 21:08:46,588 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-09-24 21:08:46,599 - WARNING - Not Found: /carrinho/static/js/main.js

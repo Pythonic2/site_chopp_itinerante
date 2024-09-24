@@ -20,7 +20,7 @@ class Evento(models.Model):
     data_evento = models.DateField(null=True)
     tipo_evento = models.CharField(max_length=50, null=True)
     status = models.CharField(max_length=50, null=True, blank=True, default=' ')
-    carrinho = models.CharField(max_length=50, default=0, unique=True)
+    #carrinho = models.CharField(max_length=50, default=0, unique=True)
     valor = models.DecimalField(max_digits=10, decimal_places=2, default=0)
 
     def __str__(self):
