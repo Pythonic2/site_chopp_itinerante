@@ -982,3 +982,38 @@ DETAIL:  Key (transacao_id)=(1327114613) already exists.
 2024-09-24 22:10:23,162 - DEBUG - Produtos associados à transação: ['Choppeira']
 2024-09-24 22:10:23,162 - DEBUG - id evento: None
 2024-09-24 22:10:23,169 - WARNING - Erro ao processar transação: Evento matching query does not exist.
+2024-09-24 22:24:25,226 - DEBUG - Recebendo requisição POST
+2024-09-24 22:24:25,227 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327115237'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 22:24:25,228 - DEBUG - Pagamento ID: 1327115237, Tipo: payment
+2024-09-24 22:24:25,242 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 22:24:35,276 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:24:35,823 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327115237 HTTP/11" 200 None
+2024-09-24 22:25:10,800 - DEBUG - Informações do pagamento: {'id': 1327115237, 'status': 'approved', 'valor': 650, 'usuario': '1', 'data': '2024-09-24T18:19:10.967-04:00', 'items': ['Choppeira', 'Stela Artois'], 'evento': 53, 'carrinho_id': 41}
+2024-09-24 22:25:11,660 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 22:25:29,611 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 22:25:59,012 - WARNING - Erro ao processar transação: Usuario matching query does not exist.
+2024-09-24 22:27:55,401 - DEBUG - Recebendo requisição POST
+2024-09-24 22:27:55,402 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327115237'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 22:27:55,403 - DEBUG - Pagamento ID: 1327115237, Tipo: payment
+2024-09-24 22:27:55,411 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 22:28:00,457 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:28:00,999 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327115237 HTTP/11" 200 None
+2024-09-24 22:28:01,988 - DEBUG - Informações do pagamento: {'id': 1327115237, 'status': 'approved', 'valor': 650, 'usuario': '1', 'data': '2024-09-24T18:19:10.967-04:00', 'items': ['Choppeira', 'Stela Artois'], 'evento': 53, 'carrinho_id': 41}
+2024-09-24 22:28:02,703 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 22:28:08,486 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 22:28:27,519 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-09-24 22:28:36,324 - WARNING - Erro ao processar transação: Usuario matching query does not exist.
+2024-09-24 22:28:57,503 - DEBUG - Recebendo requisição POST
+2024-09-24 22:28:57,504 - DEBUG - Dados recebidos no webhook: {'action': 'payment.updated', 'api_version': 'v1', 'data': {'id': '1327115237'}, 'date_created': '2021-11-01T02:02:02Z', 'live_mode': False, 'type': 'payment', 'user_id': 162016798}
+2024-09-24 22:28:57,505 - DEBUG - Pagamento ID: 1327115237, Tipo: payment
+2024-09-24 22:28:57,514 - INFO - Dados do webhook salvos em recibo.csv
+2024-09-24 22:29:01,908 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-09-24 22:29:02,455 - DEBUG - https://api.mercadopago.com:443 "GET /v1/payments/1327115237 HTTP/11" 200 None
+2024-09-24 22:29:02,462 - DEBUG - Informações do pagamento: {'id': 1327115237, 'status': 'approved', 'valor': 650, 'usuario': '1', 'data': '2024-09-24T18:19:10.967-04:00', 'items': ['Choppeira', 'Stela Artois'], 'evento': 53, 'carrinho_id': 41}
+2024-09-24 22:29:02,463 - DEBUG - Informações do tipo do Pagamento: payment, tam 7
+2024-09-24 22:29:02,467 - DEBUG - Pagamento aprovado, processando transação...
+2024-09-24 22:29:16,025 - INFO - Transação salva: 1327115237
+2024-09-24 22:29:34,058 - DEBUG - Produtos associados à transação: ['Choppeira', 'Stela Artois']
+2024-09-24 22:29:34,059 - DEBUG - id evento: 53
+2024-09-24 22:29:52,419 - DEBUG - consulta evento: casamento - 2024-09-28
+2024-09-24 22:30:05,844 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.

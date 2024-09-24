@@ -57,7 +57,7 @@ def simple_test(request):
                 print(f'-----------------{pd_id}-----------------')
                 if  tipo == 'payment':
                     logging.debug("Pagamento aprovado, processando transação...")
-                    user = Usuario.objects.get(username=pag['usuario'])
+                    user = Usuario.objects.get(id=pag['usuario'])
 
                     # Criar a instância da transação
                     transacao = Transacao(
@@ -90,9 +90,10 @@ def simple_test(request):
                     #carrinho.status = 'Pago'
                     evento.status = 'Pago'
                     evento.save()
+                    carrinho = Carrinho.objects.get(usuario=user, id=int(pag['carrinho_id']))
                     #carrinho.save()
-                    #carrinho.delete()
-                    #logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
+                    carrinho.delete()
+                    logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
 
                     send_email(
                         subject=f"Nova Compra Realizada",
