@@ -53,6 +53,7 @@ def simple_test(request):
             logging.debug(f"Informações do pagamento: {pag}")
             logging.debug(f"Informações do tipo do Pagamento: {tipo}, tam {len(tipo)}")
             pd_id = tipo
+            status = pag['status']
             try:
                 print(f'-----------------{pd_id}-----------------')
                 if  tipo == 'payment':
@@ -61,7 +62,7 @@ def simple_test(request):
 
                     # Criar a instância da transação
                     
-                    status = pag['status']
+                    
                     if status == 'approved':
                         transacao = Transacao(
                         transacao_id=pag['id'],
