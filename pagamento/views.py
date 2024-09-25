@@ -127,7 +127,7 @@ def simple_test(request):
 
 def gerar_pagamento(cliente_id: int, produtos: list, evento: int, carrinho_id: int):
     # Inicializar o SDK do Mercado Pago
-    sdk = mercadopago.SDK('TEST-3488797328851277-091614-dbbff0af2658e101ee7f9413497c16fd-162016798')
+    sdk = mercadopago.SDK(f"{os.getenv('API_TOKEN')}")
 
     # Construir a lista de itens dinamicamente
     items = []

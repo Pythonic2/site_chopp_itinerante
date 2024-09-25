@@ -66,7 +66,7 @@
                                                                     <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px; display:none;">
                                                                 {% endif %}
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary ms-sm-2">Adicionar</button>
+                                                            <button type="submit" class="btn btn-primary">Adicionar</button>
                                                         </form>
                                                     {% else %}
                                                         <form method="POST" action="{% url 'login' %}" class="d-flex flex-column flex-sm-row align-items-center">
@@ -83,7 +83,7 @@
                                                                     </button>
                                                                 {% endif %}
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary ms-sm-2">Adicionar</button>
+                                                            <button type="submit" class="btn btn-primary">Adicionar</button>
                                                         </form>
                                                     {% endif %}
                                                     <div id="mensagem-produto-{{ produto.id }}" class="mensagem-produto"></div>
@@ -102,7 +102,16 @@
         </div>
     </div>
 </div>
+<div class="col-lg-6">
+    <div class="d-flex align-items-center">
+        <div class="w-100 d-flex flex-column text-start ps-4" id="quantidade-carrinho">
+            <a href="{% url 'pagina_carrinho' %}"type="submit" class="btn btn-primary add-to-cart" style="width:30%;">Pagar</a>    
+            
 
+        </div>
+    </div>
+    
+</div>
 <script>
     function incrementar(produtoId) {
         const input = document.getElementById(`quantidade_${produtoId}`);
