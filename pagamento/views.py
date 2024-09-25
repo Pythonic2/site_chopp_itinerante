@@ -60,51 +60,54 @@ def simple_test(request):
                     user = Usuario.objects.get(id=pag['usuario'])
 
                     # Criar a instância da transação
-                    transacao = Transacao(
+                    
+                    status = pag['status']
+                    if status == 'approved':
+                        transacao = Transacao(
                         transacao_id=pag['id'],
                         usuario=user,
                         data_transacao=pag['data'],
                         valor_total=pag['valor'],
                         status=pag['status']
                     )
-                    transacao.save()  # Salvar a transação
-                    logging.info(f"Transação salva: {transacao.transacao_id}")
+                        transacao.save()  # Salvar a transação
+                        logging.info(f"Transação salva: {transacao.transacao_id}")
 
-                    # Associar produtos à transação
-                    produtos = pag['items']
-                    for produto_data in produtos:
-                        produto = Produto.objects.get(nome=produto_data)
-                        transacao.produtos.add(produto.id)
-                    logging.debug(f"Produtos associados à transação: {produtos}")
-                    logging.debug(f"id evento: {pag['evento']}")
-                    #carrinho = Carrinho.objects.get(usuario=user, id=int(pag['evento']))
-                    #print(f"----cart: {carrinho}")
-                    id_evento = pag['evento']
-                    evento = Evento.objects.get(usuario=user, id=id_evento)
-                    print(f'---------{evento}------------EVENTO')
-                    logging.debug(f"consulta evento: {evento}")
+                        produtos = pag['items']
+                        for produto_data in produtos:
+                            produto = Produto.objects.get(nome=produto_data)
+                            transacao.produtos.add(produto.id)
+                        logging.debug(f"Produtos associados à transação: {produtos}")
+                        logging.debug(f"id evento: {pag['evento']}")
+                        #carrinho = Carrinho.objects.get(usuario=user, id=int(pag['evento']))
+                        #print(f"----cart: {carrinho}")
+                        id_evento = pag['evento']
+                        evento = Evento.objects.get(usuario=user, id=id_evento)
+                        print(f'---------{evento}------------EVENTO')
+                        logging.debug(f"consulta evento: {evento}")
 
-                    status = pag['status']
-                    print(f'status ----------------------{status}')
-                   
-                    #carrinho.status = 'Pago'
-                    evento.status = 'Pago'
-                    evento.save()
-                    carrinho = Carrinho.objects.get(usuario=user, id=int(pag['carrinho_id']))
-                    #carrinho.save()
-                    carrinho.delete()
-                    logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
+                        
+                        print(f'status ----------------------{status}')
+                    
+                        #carrinho.status = 'Pago'
+                        evento.status = 'Pago'
+                        evento.save()
+                        carrinho = Carrinho.objects.get(usuario=user, id=int(pag['carrinho_id']))
+                        #carrinho.save()
+                        carrinho.delete()
+                        logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
 
-                    send_email(
-                        subject=f"Nova Compra Realizada",
-                        body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}\nProdutos: {produtos}",
-                        sender_email="noticacoes@gmail.com",
-                        sender_password=os.getenv('SENHA'),
-                        recipient_emails=["choppitinerante@gmail.com", "igormarinhosilva@gmail.com"]
-                    )
-                    logging.info(f"E-mail enviado para notificações")
-                    return JsonResponse({'status': 'success'})
+                        send_email(
+                            subject=f"Nova Compra Realizada",
+                            body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}\nProdutos: {produtos}",
+                            sender_email="noticacoes@gmail.com",
+                            sender_password=os.getenv('SENHA'),
+                            recipient_emails=["choppitinerante@gmail.com", "igormarinhosilva@gmail.com"]
+                        )
+                        logging.info(f"E-mail enviado para notificações")
+                        return JsonResponse({'status': 'success'})
                 else:
+                    print(status)
                     logging.warning("Tipo de pagamento diferente de 'payment' ou ID não encontrado.")
                     return JsonResponse({'status': 'Order Generate'})
             except Exception as e:
