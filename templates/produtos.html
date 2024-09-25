@@ -1,141 +1,121 @@
 {% extends 'base.html'%}
-{%block 'content'%}
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Chopp Menu</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Início</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Chopps</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+{% block 'content'%}
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
+    <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Chopp Menu</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#">Início</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Chopps</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Chopp Itinerante</h5>
+            <h1 class="mb-5">Opções de Chopp</h1>
         </div>
-        <!-- Navbar & Hero End -->
-
-
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Chopp Itinerante</h5>
-                    <h1 class="mb-5">Opções de Chopp</h1>
-                </div>
-                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                {% if produtos %}
-                                    {% for produto in produtos %}
-                                        {% if produto.disponivel %}
-                                            <div class="col-lg-6">
-                                                <div class="d-flex align-items-center">
-                                                    {% if produto.imagem %}
-                                                        <img class="flex-shrink-0 img-fluid rounded" src="{{ produto.imagem.url }}" alt="" style="width: 80px;">
+        <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        {% if produtos %}
+                            {% for produto in produtos %}
+                                {% if produto.disponivel %}
+                                    <div class="col-lg-6">
+                                        <div class="d-flex flex-column flex-sm-row align-items-center">
+                                            {% if produto.imagem %}
+                                                <img class="flex-shrink-0 img-fluid rounded mb-3 mb-sm-0" src="{{ produto.imagem.url }}" alt="" style="width: 80px;">
+                                            {% endif %}
+                                            <div class="w-100 d-flex flex-column text-start ps-sm-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    {% if produto.litros %}
+                                                        <span>{{ produto.nome }} - {{ produto.litros }} L</span>
+                                                    {% else %}
+                                                        <span>{{ produto.nome }}</span>
                                                     {% endif %}
-                                                    <div class="w-100 d-flex flex-column text-start ps-4">
-                                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                            {% if produto.litros %}
-                                                                <span>{{ produto.nome }} - {{ produto.litros }} L</span>
-                                                            {% else %}
-                                                                <span>{{ produto.nome }}</span>
-                                                            {% endif %}
-                                                            <span class="text-primary">{{ produto.valor }}</span>
-                                                        </h5>
-                                                        <small class="fst-italic">{{ produto.descricao }}</small>
-        
-                                                        <!-- Botão Adicionar ao Carrinho -->
-                                                        <div class="produto-item">
-                                                            {% if request.user.is_authenticated %}
-                                                                <form hx-post="{% url 'adicionar_ao_carrinho' produto.id %}" 
-                                                                    hx-target="#mensagem-produto-{{ produto.id }}" 
-                                                                    hx-swap="innerHTML" 
-                                                                    hx-trigger="submit" 
-                                                                    hx-on="htmx:afterRequest: atualizarQuantidadeCarrinho" 
-                                                                    method="post" class="d-flex align-items-center">
-                                                                    {% csrf_token %}
-                                                                    <input type="hidden" name="produto_id" value="{{ produto.id }}">
-                                                                    <div class="input-group" style="width: 150px;">
-                                                                        {% if not produto.servico %}
-                                                                            <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
-                                                                                <i class="fas fa-minus"></i>
-                                                                            </button>
-                                                                            <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
-                                                                            <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
-                                                                                <i class="fas fa-plus"></i>
-                                                                            </button>
-                                                                        {% else %}
-                                                                            <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px; display:none;">
-                                                                        {% endif %}
-                                                                    </div>
-                                                                    <button type="submit" class="btn btn-primary ms-2">Adicionar</button>
-                                                                </form>
-                                                            {% else %}
-                                                                <form method="POST" action="{% url 'login' %}" class="d-flex align-items-center">
-                                                                    {% csrf_token %}
-                                                                    <input type="hidden" name="produto_id" value="{{ produto.id }}">
-                                                                    <div class="input-group" style="width: 150px;">
-                                                                        {% if not produto.servico %}
-                                                                            <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
-                                                                                <i class="fas fa-minus"></i>
-                                                                            </button>
-                                                                            <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
-                                                                            <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
-                                                                                <i class="fas fa-plus"></i>
-                                                                            </button>
-                                                                        {% endif %}
-                                                                    </div>
-                                                                    <button type="submit" class="btn btn-primary ms-2">Adicionar</button>
-                                                                </form>
-                                                            {% endif %}
-                                                            <div id="mensagem-produto-{{ produto.id }}" class="mensagem-produto"></div>
-                                                        </div>
-                                                    </div>
+                                                    <span class="text-primary">{{ produto.valor }}</span>
+                                                </h5>
+                                                <small class="fst-italic">{{ produto.descricao }}</small>
+
+                                                <!-- Botão Adicionar ao Carrinho -->
+                                                <div class="produto-item mt-3 mt-sm-0">
+                                                    {% if request.user.is_authenticated %}
+                                                        <form hx-post="{% url 'adicionar_ao_carrinho' produto.id %}"
+                                                              hx-target="#mensagem-produto-{{ produto.id }}"
+                                                              hx-swap="innerHTML"
+                                                              hx-trigger="submit"
+                                                              hx-on="htmx:afterRequest: atualizarQuantidadeCarrinho"
+                                                              method="post"
+                                                              class="d-flex flex-column flex-sm-row align-items-center">
+                                                            {% csrf_token %}
+                                                            <input type="hidden" name="produto_id" value="{{ produto.id }}">
+                                                            <div class="input-group mb-2 mb-sm-0" style="width: 150px;">
+                                                                {% if not produto.servico %}
+                                                                    <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
+                                                                        <i class="fas fa-minus"></i>
+                                                                    </button>
+                                                                    <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
+                                                                    <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
+                                                                        <i class="fas fa-plus"></i>
+                                                                    </button>
+                                                                {% else %}
+                                                                    <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px; display:none;">
+                                                                {% endif %}
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary ms-sm-2">Adicionar</button>
+                                                        </form>
+                                                    {% else %}
+                                                        <form method="POST" action="{% url 'login' %}" class="d-flex flex-column flex-sm-row align-items-center">
+                                                            {% csrf_token %}
+                                                            <input type="hidden" name="produto_id" value="{{ produto.id }}">
+                                                            <div class="input-group mb-2 mb-sm-0" style="width: 150px;">
+                                                                {% if not produto.servico %}
+                                                                    <button type="button" class="btn btn-outline-secondary" onclick="decrementar('{{ produto.id }}')">
+                                                                        <i class="fas fa-minus"></i>
+                                                                    </button>
+                                                                    <input type="number" id="quantidade_{{ produto.id }}" name="quantidade" value="1" min="1" class="form-control text-center" style="max-width: 80px;">
+                                                                    <button type="button" class="btn btn-outline-secondary" onclick="incrementar('{{ produto.id }}')">
+                                                                        <i class="fas fa-plus"></i>
+                                                                    </button>
+                                                                {% endif %}
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary ms-sm-2">Adicionar</button>
+                                                        </form>
+                                                    {% endif %}
+                                                    <div id="mensagem-produto-{{ produto.id }}" class="mensagem-produto"></div>
                                                 </div>
                                             </div>
-                                        {% endif %}
-                                    {% endfor %}
-                                {% else %}
-                                    <p>Sem produtos disponíveis no momento.</p>
+                                        </div>
+                                    </div>
                                 {% endif %}
-                            </div>
-                        </div>
+                            {% endfor %}
+                        {% else %}
+                            <p>Sem produtos disponíveis no momento.</p>
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Menu End -->
-        <!-- Exibir a quantidade de itens no carrinho -->
-        <div class="col-lg-6">
-            <div class="d-flex align-items-center">
-                <div class="w-100 d-flex flex-column text-start ps-4" id="quantidade-carrinho">
-                    <a href="{% url 'pagina_carrinho' %}"type="submit" class="btn btn-primary add-to-cart">Pagar</a>    
-                    
+    </div>
+</div>
 
-                </div>
-            </div>
-            
-        </div>
+<script>
+    function incrementar(produtoId) {
+        const input = document.getElementById(`quantidade_${produtoId}`);
+        let quantidade = parseInt(input.value, 10);
+        input.value = quantidade + 1;
+    }
 
-
-        
-
-        <script>
-            function incrementar(produtoId) {
-                const input = document.getElementById(`quantidade_${produtoId}`);
-                let quantidade = parseInt(input.value, 10);
-                input.value = quantidade + 1;
-            }
-        
-            function decrementar(produtoId) {
-                const input = document.getElementById(`quantidade_${produtoId}`);
-                let quantidade = parseInt(input.value, 10);
-                if (quantidade > 1) {
-                    input.value = quantidade - 1;
-                }
-            }
-        </script>
-        
-        <!-- Back to Top -->
-
-{%endblock%}
+    function decrementar(produtoId) {
+        const input = document.getElementById(`quantidade_${produtoId}`);
+        let quantidade = parseInt(input.value, 10);
+        if (quantidade > 1) {
+            input.value = quantidade - 1;
+        }
+    }
+</script>
+{% endblock %}
