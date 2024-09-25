@@ -56,57 +56,52 @@ def simple_test(request):
             status = pag['status']
             try:
                 print(f'-----------------{pd_id}-----------------')
-                if  tipo == 'payment':
+                if status == 'approved' and tipo == 'payment':
                     logging.debug("Pagamento aprovado, processando transação...")
                     user = Usuario.objects.get(id=pag['usuario'])
+                    transacao = Transacao(
+                    transacao_id=pag['id'],
+                    usuario=user,
+                    data_transacao=pag['data'],
+                    valor_total=pag['valor'],
+                    status=pag['status']
+                )
+                    transacao.save()  # Salvar a transação
+                    logging.info(f"Transação salva: {transacao.transacao_id}")
 
-                    # Criar a instância da transação
+                    produtos = pag['items']
+                    for produto_data in produtos:
+                        produto = Produto.objects.get(nome=produto_data)
+                        transacao.produtos.add(produto.id)
+                    logging.debug(f"Produtos associados à transação: {produtos}")
+                    logging.debug(f"id evento: {pag['evento']}")
+                    #carrinho = Carrinho.objects.get(usuario=user, id=int(pag['evento']))
+                    #print(f"----cart: {carrinho}")
+                    id_evento = pag['evento']
+                    evento = Evento.objects.get(usuario=user, id=id_evento)
+                    print(f'---------{evento}------------EVENTO')
+                    logging.debug(f"consulta evento: {evento}")
+
                     
-                    
-                    if status == 'approved':
-                        transacao = Transacao(
-                        transacao_id=pag['id'],
-                        usuario=user,
-                        data_transacao=pag['data'],
-                        valor_total=pag['valor'],
-                        status=pag['status']
+                    print(f'status ----------------------{status}')
+                
+                    #carrinho.status = 'Pago'
+                    evento.status = 'Pago'
+                    evento.save()
+                    carrinho = Carrinho.objects.get(usuario=user, id=int(pag['carrinho_id']))
+                    #carrinho.save()
+                    carrinho.delete()
+                    logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
+
+                    send_email(
+                        subject=f"Nova Compra Realizada",
+                        body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}\nProdutos: {produtos}",
+                        sender_email="noticacoes@gmail.com",
+                        sender_password=os.getenv('SENHA'),
+                        recipient_emails=["choppitinerante@gmail.com", "igormarinhosilva@gmail.com"]
                     )
-                        transacao.save()  # Salvar a transação
-                        logging.info(f"Transação salva: {transacao.transacao_id}")
-
-                        produtos = pag['items']
-                        for produto_data in produtos:
-                            produto = Produto.objects.get(nome=produto_data)
-                            transacao.produtos.add(produto.id)
-                        logging.debug(f"Produtos associados à transação: {produtos}")
-                        logging.debug(f"id evento: {pag['evento']}")
-                        #carrinho = Carrinho.objects.get(usuario=user, id=int(pag['evento']))
-                        #print(f"----cart: {carrinho}")
-                        id_evento = pag['evento']
-                        evento = Evento.objects.get(usuario=user, id=id_evento)
-                        print(f'---------{evento}------------EVENTO')
-                        logging.debug(f"consulta evento: {evento}")
-
-                        
-                        print(f'status ----------------------{status}')
-                    
-                        #carrinho.status = 'Pago'
-                        evento.status = 'Pago'
-                        evento.save()
-                        carrinho = Carrinho.objects.get(usuario=user, id=int(pag['carrinho_id']))
-                        #carrinho.save()
-                        carrinho.delete()
-                        logging.info(f"Carrinho e evento atualizados para 'Pago': {carrinho.id}, {evento.id}")
-
-                        send_email(
-                            subject=f"Nova Compra Realizada",
-                            body=f"Evento: {evento.tipo_evento}\nData: {evento.data_evento}\nBairro: {evento.bairro}\nRua: {evento.endereco}\nValor da Compra: {evento.valor}\nCliente: {user.nome}\nContato: {evento.celular}\nProdutos: {produtos}",
-                            sender_email="noticacoes@gmail.com",
-                            sender_password=os.getenv('SENHA'),
-                            recipient_emails=["choppitinerante@gmail.com", "igormarinhosilva@gmail.com"]
-                        )
-                        logging.info(f"E-mail enviado para notificações")
-                        return JsonResponse({'status': 'success'})
+                    logging.info(f"E-mail enviado para notificações")
+                    return JsonResponse({'status': 'success'})
                 else:
                     print(status)
                     logging.warning("Tipo de pagamento diferente de 'payment' ou ID não encontrado.")
