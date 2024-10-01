@@ -3338,3 +3338,12 @@ DETAIL:  Key (transacao_id)=(1327114613) already exists.
 2024-10-01 21:50:14,632 - WARNING - Not Found: /media/chopps/IMG_7808_SrH2Ft1.PNG
 2024-10-01 21:50:14,638 - WARNING - Not Found: /media/chopps/IMG_7814.PNG
 2024-10-01 21:50:14,702 - WARNING - Not Found: /media/chopps/IMG_7811.PNG
+2024-10-01 22:31:55,435 - WARNING - Not Found: /feedback/static/lib/easing/easing.min.js
+2024-10-01 22:31:55,439 - WARNING - Not Found: /feedback/static/lib/wow/wow.min.js
+2024-10-01 22:31:55,451 - WARNING - Not Found: /feedback/static/lib/counterup/counterup.min.js
+2024-10-01 22:31:55,473 - WARNING - Not Found: /feedback/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-01 22:31:55,490 - WARNING - Not Found: /feedback/static/lib/tempusdominus/js/moment.min.js
+2024-10-01 22:31:55,494 - WARNING - Not Found: /feedback/static/lib/waypoints/waypoints.min.js
+2024-10-01 22:31:55,504 - WARNING - Not Found: /feedback/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-01 22:31:55,537 - WARNING - Not Found: /feedback/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-01 22:31:55,556 - WARNING - Not Found: /feedback/static/js/main.js
