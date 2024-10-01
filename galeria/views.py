@@ -8,7 +8,7 @@ class GaleriaView(TemplateView):
     
 
     def get(self, request):
-        eventos = EventoRealizado.objects.all()
+        eventos = EventoRealizado.objects.all().order_by('-id')
         categorias = CategoriaEvento.objects.all()
         context = {'eventos':eventos,'categorias':categorias}
         return render(request, self.template_name, context)

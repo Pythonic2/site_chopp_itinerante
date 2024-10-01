@@ -3347,3 +3347,11 @@ DETAIL:  Key (transacao_id)=(1327114613) already exists.
 2024-10-01 22:31:55,504 - WARNING - Not Found: /feedback/static/lib/tempusdominus/js/moment-timezone.min.js
 2024-10-01 22:31:55,537 - WARNING - Not Found: /feedback/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
 2024-10-01 22:31:55,556 - WARNING - Not Found: /feedback/static/js/main.js
+2024-10-01 23:34:09,159 - INFO - /home/igor/git/site_chopp_itinerante/authentication/admin.py changed, reloading.
+2024-10-01 23:34:16,821 - WARNING - Not Found: /favicon.ico
+2024-10-01 23:34:43,163 - INFO - /home/igor/git/site_chopp_itinerante/authentication/admin.py changed, reloading.
+2024-10-01 23:35:04,636 - INFO - /home/igor/git/site_chopp_itinerante/authentication/admin.py changed, reloading.
+2024-10-01 23:35:17,116 - INFO - /home/igor/git/site_chopp_itinerante/authentication/admin.py changed, reloading.
+2024-10-01 23:35:27,368 - INFO - /home/igor/git/site_chopp_itinerante/authentication/admin.py changed, reloading.
+2024-10-01 23:35:29,710 - WARNING - Not Found: /favicon.ico
+2024-10-01 23:35:35,707 - INFO - /home/igor/git/site_chopp_itinerante/authentication/admin.py changed, reloading.
