@@ -15,6 +15,11 @@ from dotenv import load_dotenv
 load_dotenv() 
 logger = logging.getLogger(__name__)
 
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+
+
+
 
 class IndexView(TemplateView):
     template_name = 'index.html'

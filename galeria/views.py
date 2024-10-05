@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
 from .models import CategoriaEvento, EventoRealizado, ImagemEvento
+from django.contrib.auth.decorators import user_passes_test
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.decorators import user_passes_test
+
 
 
 
