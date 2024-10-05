@@ -9,6 +9,9 @@ from django.utils.translation import gettext_lazy
 from django.contrib.auth import get_user_model
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
+from django.utils.decorators import method_decorator
+from django.contrib.auth.decorators import login_required
+
 User = Usuario
 from carrinho.models import Carrinho
 
@@ -109,7 +112,7 @@ class EventoView(TemplateView):
             return render(request, "evento.html", {"form": form, "erro": form.errors})
 
 
-
+method_decorator(login_required)
 class PedidosView(TemplateView):
     template_name = 'sucesso.html'
     
