@@ -15,6 +15,7 @@ class GaleriaView(TemplateView):
 
     def get(self, request):
         eventos = EventoRealizado.objects.all().order_by('-id')
+        print(f'-------count {eventos.count()}')
         categorias = CategoriaEvento.objects.all()
         context = {'eventos': eventos, 'categorias': categorias}
         return render(request, self.template_name, context)
