@@ -145,13 +145,13 @@ def gerar_pagamento(cliente_id: int, produtos: list, evento: int, carrinho_id: i
     preference_data = {
         "items": items,
         "back_urls": {
-            "success": "https://choppitinerante.cloudboosterlab.org/minhas-compras/",
-            "failure": "https://choppitinerante.cloudboosterlab.org/minhas-compras/",
-            "pending": "https://choppitinerante.cloudboosterlab.org/minhas-compras/",
+            "success": "https://www.choppitinerante.com.br/minhas-compras/",
+            "failure": "https://www.choppitinerante.com.br/minhas-compras/",
+            "pending": "https://www.choppitinerante.com.br/minhas-compras/",
         },
         "external_reference": f'{cliente_id}',  # Enviando o ID do usuário aqui
         "auto_return": "approved",
-        "notification_url": "https://choppitinerante.cloudboosterlab.org/pag/",
+        "notification_url": "https://www.choppitinerante.com.br/pag/",
         "metadata": {
             "evento_id": evento,
             "carrinho_id": carrinho_id  # Passando o carrinho_id no metadata
