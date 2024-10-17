@@ -25,7 +25,6 @@ SECRET_KEY = 'django-insecure-bg)ybva($%u6l_^eoc!xkwffy2hqh&%^&t_@@wzik%ao6(89gn
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['www.choppitinerante.com.br']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = True
