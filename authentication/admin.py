@@ -1,7 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import Usuario, Evento
+from .models import Carrinho,ItemCarrinho
 
+# Register your models here.
+admin.site.register(ItemCarrinho)
+admin.site.register(Carrinho)
 class CustomUserAdmin(UserAdmin):
     # Campos a serem exibidos no formulário de criação de usuário
     add_fieldsets = (

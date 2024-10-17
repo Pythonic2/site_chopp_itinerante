@@ -34542,3 +34542,1136 @@ django.template.exceptions.TemplateDoesNotExist: faleria.html
 2024-10-07 17:39:31,832 - WARNING - Not Found: /media/chopps/IMG_7808_AWQNXAA.PNG
 2024-10-07 17:39:31,929 - WARNING - Not Found: /media/chopps/IMG_7808.PNG
 2024-10-07 17:41:17,296 - INFO - /home/igor/git/site_chopp_itinerante/produto/views.py changed, reloading.
+2024-10-17 01:34:52,478 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/models.py changed, reloading.
+2024-10-17 01:41:40,187 - ERROR - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-10-17 01:41:40,242 - WARNING - Bad Request: /
+2024-10-17 01:41:40,533 - ERROR - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-10-17 01:41:40,568 - WARNING - Bad Request: /favicon.ico
+2024-10-17 01:41:57,194 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 01:42:40,227 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-17 01:43:20,469 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-17 01:43:22,546 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-17 01:43:27,499 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-17 01:43:30,540 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-17 01:44:02,535 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-17 01:44:57,374 - INFO - /home/igor/git/site_chopp_itinerante/authentication/admin.py changed, reloading.
+2024-10-17 01:45:20,583 - INFO - /home/igor/git/site_chopp_itinerante/authentication/urls.py changed, reloading.
+2024-10-17 01:46:10,584 - INFO - /home/igor/git/site_chopp_itinerante/authentication/views.py changed, reloading.
+2024-10-17 01:46:15,359 - INFO - /home/igor/git/site_chopp_itinerante/authentication/views.py changed, reloading.
+2024-10-17 01:46:34,630 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/admin.py changed, reloading.
+2024-10-17 01:46:37,872 - INFO - /home/igor/git/site_chopp_itinerante/carrinho/models.py changed, reloading.
+2024-10-17 01:47:49,291 - INFO - /home/igor/git/site_chopp_itinerante/authentication/views.py changed, reloading.
+2024-10-17 01:48:11,606 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 01:49:13,862 - INFO - /home/igor/git/site_chopp_itinerante/main/models.py changed, reloading.
+2024-10-17 01:49:32,241 - INFO - /home/igor/git/site_chopp_itinerante/main/urls.py changed, reloading.
+2024-10-17 01:51:48,591 - INFO - /home/igor/git/site_chopp_itinerante/main/models.py changed, reloading.
+2024-10-17 01:51:58,845 - INFO - /home/igor/git/site_chopp_itinerante/main/admin.py changed, reloading.
+2024-10-17 01:52:35,455 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 02:20:25,128 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-17 02:20:42,251 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/urls.py changed, reloading.
+2024-10-17 02:20:45,581 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/urls.py changed, reloading.
+2024-10-17 02:20:58,212 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-10-17 02:21:08,504 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/admin.py changed, reloading.
+2024-10-17 02:21:12,667 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/admin.py changed, reloading.
+2024-10-17 02:21:25,716 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/urls.py changed, reloading.
+2024-10-17 02:21:27,966 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/urls.py changed, reloading.
+2024-10-17 02:21:49,515 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 02:30:56,616 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-10-17 02:31:01,903 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-10-17 02:31:04,395 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/views.py changed, reloading.
+2024-10-17 02:35:32,363 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-17 02:40:39,370 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-17 02:40:39,391 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-17 02:40:39,430 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:40:39,454 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:40:39,501 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:40:39,538 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-17 02:40:39,543 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:40:39,569 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:40:39,605 - WARNING - Not Found: /login/static/js/main.js
+2024-10-17 02:40:44,530 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-17 02:40:44,557 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-17 02:40:44,579 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:40:44,594 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:40:44,628 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-17 02:40:44,633 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:40:44,661 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:40:44,695 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:40:44,703 - WARNING - Not Found: /login/static/js/main.js
+2024-10-17 02:40:51,614 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-17 02:40:51,617 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-17 02:40:51,648 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:40:51,655 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:40:51,668 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-17 02:40:51,719 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:40:51,743 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:40:51,770 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:40:51,774 - WARNING - Not Found: /login/static/js/main.js
+2024-10-17 02:40:54,212 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:40:54,232 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:40:54,272 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:40:54,278 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:40:54,293 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:40:54,298 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:40:54,311 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:40:54,328 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:40:54,341 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:44:18,393 - ERROR - Internal Server Error: /cardapio/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedTable: relation "pagamento_produto" does not exist
+LINE 1: ...uto"."imagem", "pagamento_produto"."servico" FROM "pagamento...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/pagamento/views.py", line 189, in get
+    return render(request, self.template_name, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 326, in render
+    if match:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 414, in __bool__
+    self._fetch_all()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: relation "pagamento_produto" does not exist
+LINE 1: ...uto"."imagem", "pagamento_produto"."servico" FROM "pagamento...
+                                                             ^
+2024-10-17 02:44:18,822 - WARNING - Not Found: /favicon.ico
+2024-10-17 02:44:41,570 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 02:44:44,095 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:44:44,110 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:44:44,121 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:44:44,135 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:44:44,144 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:44:44,161 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:44:44,173 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:44:44,189 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:44:44,224 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:53:28,949 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:53:28,963 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:53:28,986 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:53:29,009 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:53:29,025 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:53:29,030 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:53:29,048 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:53:29,099 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:53:29,117 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:53:30,018 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:53:30,031 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:53:30,060 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:53:30,114 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:53:30,120 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:53:30,125 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:53:30,149 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:53:30,157 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:53:30,163 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:53:30,535 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:53:30,550 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:53:30,593 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:53:30,608 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:53:30,610 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:53:30,615 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:53:30,663 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:53:30,666 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:53:30,681 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:53:30,768 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:53:30,791 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:53:30,814 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:53:30,841 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:53:30,882 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:53:30,896 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:53:30,907 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:53:30,908 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:53:30,927 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:53:31,021 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:53:31,067 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:53:31,074 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:53:31,076 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:53:31,115 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:53:31,144 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:53:31,146 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:53:31,177 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:53:31,191 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:54:13,957 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:54:13,992 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:54:14,022 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:54:14,060 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:54:14,084 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:54:14,119 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:54:14,140 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:54:14,174 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:54:14,194 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:54:17,098 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:54:17,116 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:54:17,155 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:54:17,186 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:54:17,193 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:54:17,200 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:54:17,226 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:54:17,233 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:54:17,255 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:54:18,218 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-17 02:54:18,249 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:54:18,264 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:54:18,269 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-17 02:54:18,285 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-17 02:54:18,290 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:54:18,327 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:54:18,332 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:54:18,339 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-17 02:54:18,859 - WARNING - Not Found: /register/static/lib/wow/wow.min.js
+2024-10-17 02:54:18,862 - WARNING - Not Found: /register/static/lib/easing/easing.min.js
+2024-10-17 02:54:18,877 - WARNING - Not Found: /register/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:54:18,891 - WARNING - Not Found: /register/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:54:18,902 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:54:18,913 - WARNING - Not Found: /register/static/lib/counterup/counterup.min.js
+2024-10-17 02:54:18,941 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:54:18,969 - WARNING - Not Found: /register/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:54:18,990 - WARNING - Not Found: /register/static/js/main.js
+2024-10-17 02:54:29,191 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 02:54:29,216 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 02:54:29,265 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 02:54:29,281 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 02:54:29,298 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 02:54:29,318 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 02:54:29,346 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 02:54:29,356 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 02:54:29,378 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 02:54:46,245 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 02:56:48,554 - ERROR - Internal Server Error: /cardapio/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedTable: relation "pagamento_produto" does not exist
+LINE 1: ...uto"."imagem", "pagamento_produto"."servico" FROM "pagamento...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/pagamento/views.py", line 189, in get
+    return render(request, self.template_name, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 326, in render
+    if match:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 414, in __bool__
+    self._fetch_all()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: relation "pagamento_produto" does not exist
+LINE 1: ...uto"."imagem", "pagamento_produto"."servico" FROM "pagamento...
+                                                             ^
+2024-10-17 02:56:49,172 - WARNING - Not Found: /favicon.ico
+2024-10-17 02:56:50,708 - ERROR - Internal Server Error: /cardapio/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedTable: relation "pagamento_produto" does not exist
+LINE 1: ...uto"."imagem", "pagamento_produto"."servico" FROM "pagamento...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/pagamento/views.py", line 189, in get
+    return render(request, self.template_name, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 326, in render
+    if match:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 414, in __bool__
+    self._fetch_all()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: relation "pagamento_produto" does not exist
+LINE 1: ...uto"."imagem", "pagamento_produto"."servico" FROM "pagamento...
+                                                             ^
+2024-10-17 04:56:42,383 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UndefinedTable: relation "main_testemunho" does not exist
+LINE 1: ...."data_evento", "main_testemunho"."feedback" FROM "main_test...
+                                                             ^
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/main/views.py", line 31, in get
+    return render(request, self.template_name, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 210, in render
+    return template.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 326, in render
+    if match:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 414, in __bool__
+    self._fetch_all()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.ProgrammingError: relation "main_testemunho" does not exist
+LINE 1: ...."data_evento", "main_testemunho"."feedback" FROM "main_test...
+                                                             ^
+2024-10-17 04:56:42,841 - WARNING - Not Found: /favicon.ico
+2024-10-17 05:01:50,155 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 05:34:52,358 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 05:34:52,360 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 05:34:52,361 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 05:34:52,411 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 05:34:52,428 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 05:34:52,432 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 05:34:52,440 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 05:34:52,449 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 05:34:52,493 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 05:34:52,610 - WARNING - Not Found: /media/chopps/IMG_8554_N4IrZsu.jpeg
+2024-10-17 05:34:52,625 - WARNING - Not Found: /media/chopps/IMG_8552_vn0ymGu.jpeg
+2024-10-17 05:34:56,877 - WARNING - Not Found: /register/static/lib/wow/wow.min.js
+2024-10-17 05:34:56,892 - WARNING - Not Found: /register/static/lib/waypoints/waypoints.min.js
+2024-10-17 05:34:56,893 - WARNING - Not Found: /register/static/lib/easing/easing.min.js
+2024-10-17 05:34:56,899 - WARNING - Not Found: /register/static/lib/counterup/counterup.min.js
+2024-10-17 05:34:56,905 - WARNING - Not Found: /register/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 05:34:56,923 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 05:34:56,941 - WARNING - Not Found: /register/static/js/main.js
+2024-10-17 05:34:56,948 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 05:34:56,966 - WARNING - Not Found: /register/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 05:35:18,485 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(1) already exists.
+2024-10-17 05:45:09,468 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(2) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(2) already exists.
+2024-10-17 05:45:13,727 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(3) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(3) already exists.
+2024-10-17 05:45:16,535 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(4) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(4) already exists.
+2024-10-17 05:45:19,828 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(5) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(5) already exists.
+2024-10-17 05:45:22,779 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(6) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(6) already exists.
+2024-10-17 05:45:26,383 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(7) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(7) already exists.
+2024-10-17 05:45:29,420 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(8) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(8) already exists.
+2024-10-17 05:45:33,698 - ERROR - Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(9) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/authentication/views.py", line 52, in post
+    form.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 256, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 165, in set_password_and_save
+    user.save()
+  File "/home/igor/git/site_chopp_itinerante/authentication/models.py", line 11, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 62, in save
+    super().save(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "authentication_usuario_pkey"
+DETAIL:  Key (id)=(9) already exists.
+2024-10-17 05:45:37,649 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-17 05:45:37,654 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-17 05:45:37,662 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-17 05:45:37,677 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-17 05:45:37,677 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 05:45:37,684 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 05:45:37,692 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 05:45:37,706 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 05:45:37,726 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-17 05:45:38,075 - WARNING - Not Found: /media/chopps/IMG_8552_vn0ymGu.jpeg
+2024-10-17 05:45:38,080 - WARNING - Not Found: /media/chopps/IMG_8554_N4IrZsu.jpeg
+2024-10-17 05:45:45,236 - INFO - Carrinho: 1, Criado agora? True
+2024-10-17 05:45:48,278 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-10-17 05:45:48,914 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 825
+2024-10-17 05:45:48,935 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-10-17 05:45:48,945 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-10-17 05:45:48,985 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-10-17 05:45:48,988 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 05:45:48,988 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-10-17 05:45:48,989 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 05:45:48,992 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 05:45:49,009 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-10-17 05:45:49,012 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 05:45:50,389 - WARNING - Not Found: /cadastrar-evento/static/lib/wow/wow.min.js
+2024-10-17 05:45:50,395 - WARNING - Not Found: /cadastrar-evento/static/lib/easing/easing.min.js
+2024-10-17 05:45:50,414 - WARNING - Not Found: /cadastrar-evento/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 05:45:50,418 - WARNING - Not Found: /cadastrar-evento/static/lib/waypoints/waypoints.min.js
+2024-10-17 05:45:50,420 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 05:45:50,427 - WARNING - Not Found: /cadastrar-evento/static/lib/counterup/counterup.min.js
+2024-10-17 05:45:50,438 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 05:45:50,450 - WARNING - Not Found: /cadastrar-evento/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 05:45:50,463 - WARNING - Not Found: /cadastrar-evento/static/js/main.js
+2024-10-17 05:45:59,579 - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2024-10-17 05:46:00,057 - DEBUG - https://api.mercadopago.com:443 "POST /checkout/preferences HTTP/11" 201 827
+2024-10-17 05:46:00,139 - WARNING - Not Found: /carrinho/static/lib/easing/easing.min.js
+2024-10-17 05:46:00,141 - WARNING - Not Found: /carrinho/static/lib/wow/wow.min.js
+2024-10-17 05:46:00,173 - WARNING - Not Found: /carrinho/static/lib/counterup/counterup.min.js
+2024-10-17 05:46:00,178 - WARNING - Not Found: /carrinho/static/lib/waypoints/waypoints.min.js
+2024-10-17 05:46:00,185 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 05:46:00,193 - WARNING - Not Found: /carrinho/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 05:46:00,202 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 05:46:00,216 - WARNING - Not Found: /carrinho/static/js/main.js
+2024-10-17 05:46:00,225 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 05:46:10,197 - WARNING - Not Found: /carrinho/admin/
