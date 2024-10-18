@@ -35675,3 +35675,547 @@ DETAIL:  Key (id)=(9) already exists.
 2024-10-17 05:46:00,216 - WARNING - Not Found: /carrinho/static/js/main.js
 2024-10-17 05:46:00,225 - WARNING - Not Found: /carrinho/static/lib/tempusdominus/js/moment.min.js
 2024-10-17 05:46:10,197 - WARNING - Not Found: /carrinho/admin/
+2024-10-17 23:38:40,071 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:39:31,769 - DEBUG - Importing BlpImagePlugin
+2024-10-17 23:39:31,774 - DEBUG - Importing BmpImagePlugin
+2024-10-17 23:39:31,774 - DEBUG - Importing BufrStubImagePlugin
+2024-10-17 23:39:31,776 - DEBUG - Importing CurImagePlugin
+2024-10-17 23:39:31,777 - DEBUG - Importing DcxImagePlugin
+2024-10-17 23:39:31,782 - DEBUG - Importing DdsImagePlugin
+2024-10-17 23:39:31,814 - DEBUG - Importing EpsImagePlugin
+2024-10-17 23:39:31,837 - DEBUG - Importing FitsImagePlugin
+2024-10-17 23:39:31,872 - DEBUG - Importing FliImagePlugin
+2024-10-17 23:39:31,875 - DEBUG - Importing FpxImagePlugin
+2024-10-17 23:39:31,878 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-17 23:39:31,880 - DEBUG - Importing FtexImagePlugin
+2024-10-17 23:39:31,883 - DEBUG - Importing GbrImagePlugin
+2024-10-17 23:39:31,885 - DEBUG - Importing GifImagePlugin
+2024-10-17 23:39:31,886 - DEBUG - Importing GribStubImagePlugin
+2024-10-17 23:39:31,889 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-17 23:39:31,893 - DEBUG - Importing IcnsImagePlugin
+2024-10-17 23:39:31,902 - DEBUG - Importing IcoImagePlugin
+2024-10-17 23:39:31,906 - DEBUG - Importing ImImagePlugin
+2024-10-17 23:39:31,911 - DEBUG - Importing ImtImagePlugin
+2024-10-17 23:39:31,913 - DEBUG - Importing IptcImagePlugin
+2024-10-17 23:39:31,916 - DEBUG - Importing JpegImagePlugin
+2024-10-17 23:39:31,918 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-17 23:39:31,920 - DEBUG - Importing McIdasImagePlugin
+2024-10-17 23:39:31,924 - DEBUG - Importing MicImagePlugin
+2024-10-17 23:39:31,926 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-17 23:39:31,927 - DEBUG - Importing MpegImagePlugin
+2024-10-17 23:39:31,929 - DEBUG - Importing MpoImagePlugin
+2024-10-17 23:39:31,937 - DEBUG - Importing MspImagePlugin
+2024-10-17 23:39:31,941 - DEBUG - Importing PalmImagePlugin
+2024-10-17 23:39:31,971 - DEBUG - Importing PcdImagePlugin
+2024-10-17 23:39:31,980 - DEBUG - Importing PcxImagePlugin
+2024-10-17 23:39:31,982 - DEBUG - Importing PdfImagePlugin
+2024-10-17 23:39:31,999 - DEBUG - Importing PixarImagePlugin
+2024-10-17 23:39:32,002 - DEBUG - Importing PngImagePlugin
+2024-10-17 23:39:32,005 - DEBUG - Importing PpmImagePlugin
+2024-10-17 23:39:32,007 - DEBUG - Importing PsdImagePlugin
+2024-10-17 23:39:32,010 - DEBUG - Importing QoiImagePlugin
+2024-10-17 23:39:32,013 - DEBUG - Importing SgiImagePlugin
+2024-10-17 23:39:32,039 - DEBUG - Importing SpiderImagePlugin
+2024-10-17 23:39:32,043 - DEBUG - Importing SunImagePlugin
+2024-10-17 23:39:32,050 - DEBUG - Importing TgaImagePlugin
+2024-10-17 23:39:32,053 - DEBUG - Importing TiffImagePlugin
+2024-10-17 23:39:32,055 - DEBUG - Importing WebPImagePlugin
+2024-10-17 23:39:32,068 - DEBUG - Importing WmfImagePlugin
+2024-10-17 23:39:32,072 - DEBUG - Importing XbmImagePlugin
+2024-10-17 23:39:32,115 - DEBUG - Importing XpmImagePlugin
+2024-10-17 23:39:32,121 - DEBUG - Importing XVThumbImagePlugin
+2024-10-17 23:39:44,354 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-17 23:39:44,510 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-17 23:39:44,531 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-17 23:39:44,602 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-17 23:39:44,615 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 23:39:44,802 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 23:39:44,807 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 23:39:44,811 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 23:39:44,857 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-17 23:41:40,775 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-17 23:42:01,422 - DEBUG - STREAM b'IHDR' 16 13
+2024-10-17 23:42:01,423 - DEBUG - STREAM b'pHYs' 41 9
+2024-10-17 23:42:01,423 - DEBUG - STREAM b'iTXt' 62 1270
+2024-10-17 23:42:01,424 - DEBUG - STREAM b'IDAT' 1344 7536
+2024-10-17 23:42:01,424 - DEBUG - Importing BlpImagePlugin
+2024-10-17 23:42:01,428 - DEBUG - Importing BmpImagePlugin
+2024-10-17 23:42:01,430 - DEBUG - Importing BufrStubImagePlugin
+2024-10-17 23:42:01,435 - DEBUG - Importing CurImagePlugin
+2024-10-17 23:42:01,443 - DEBUG - Importing DcxImagePlugin
+2024-10-17 23:42:01,451 - DEBUG - Importing DdsImagePlugin
+2024-10-17 23:42:01,485 - DEBUG - Importing EpsImagePlugin
+2024-10-17 23:42:01,488 - DEBUG - Importing FitsImagePlugin
+2024-10-17 23:42:01,490 - DEBUG - Importing FliImagePlugin
+2024-10-17 23:42:01,492 - DEBUG - Importing FpxImagePlugin
+2024-10-17 23:42:01,494 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-17 23:42:01,495 - DEBUG - Importing FtexImagePlugin
+2024-10-17 23:42:01,499 - DEBUG - Importing GbrImagePlugin
+2024-10-17 23:42:01,502 - DEBUG - Importing GifImagePlugin
+2024-10-17 23:42:01,504 - DEBUG - Importing GribStubImagePlugin
+2024-10-17 23:42:01,510 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-17 23:42:01,524 - DEBUG - Importing IcnsImagePlugin
+2024-10-17 23:42:01,532 - DEBUG - Importing IcoImagePlugin
+2024-10-17 23:42:01,535 - DEBUG - Importing ImImagePlugin
+2024-10-17 23:42:01,537 - DEBUG - Importing ImtImagePlugin
+2024-10-17 23:42:01,539 - DEBUG - Importing IptcImagePlugin
+2024-10-17 23:42:01,540 - DEBUG - Importing JpegImagePlugin
+2024-10-17 23:42:01,541 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-17 23:42:01,542 - DEBUG - Importing McIdasImagePlugin
+2024-10-17 23:42:01,543 - DEBUG - Importing MicImagePlugin
+2024-10-17 23:42:01,544 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-17 23:42:01,545 - DEBUG - Importing MpegImagePlugin
+2024-10-17 23:42:01,545 - DEBUG - Importing MpoImagePlugin
+2024-10-17 23:42:01,554 - DEBUG - Importing MspImagePlugin
+2024-10-17 23:42:01,555 - DEBUG - Importing PalmImagePlugin
+2024-10-17 23:42:01,557 - DEBUG - Importing PcdImagePlugin
+2024-10-17 23:42:01,558 - DEBUG - Importing PcxImagePlugin
+2024-10-17 23:42:01,559 - DEBUG - Importing PdfImagePlugin
+2024-10-17 23:42:01,613 - DEBUG - Importing PixarImagePlugin
+2024-10-17 23:42:01,615 - DEBUG - Importing PngImagePlugin
+2024-10-17 23:42:01,616 - DEBUG - Importing PpmImagePlugin
+2024-10-17 23:42:01,616 - DEBUG - Importing PsdImagePlugin
+2024-10-17 23:42:01,618 - DEBUG - Importing QoiImagePlugin
+2024-10-17 23:42:01,620 - DEBUG - Importing SgiImagePlugin
+2024-10-17 23:42:01,621 - DEBUG - Importing SpiderImagePlugin
+2024-10-17 23:42:01,622 - DEBUG - Importing SunImagePlugin
+2024-10-17 23:42:01,623 - DEBUG - Importing TgaImagePlugin
+2024-10-17 23:42:01,624 - DEBUG - Importing TiffImagePlugin
+2024-10-17 23:42:01,625 - DEBUG - Importing WebPImagePlugin
+2024-10-17 23:42:01,629 - DEBUG - Importing WmfImagePlugin
+2024-10-17 23:42:01,632 - DEBUG - Importing XbmImagePlugin
+2024-10-17 23:42:01,634 - DEBUG - Importing XpmImagePlugin
+2024-10-17 23:42:01,636 - DEBUG - Importing XVThumbImagePlugin
+2024-10-17 23:51:07,652 - DEBUG - Importing BlpImagePlugin
+2024-10-17 23:51:07,664 - DEBUG - Importing BmpImagePlugin
+2024-10-17 23:51:07,665 - DEBUG - Importing BufrStubImagePlugin
+2024-10-17 23:51:07,667 - DEBUG - Importing CurImagePlugin
+2024-10-17 23:51:07,669 - DEBUG - Importing DcxImagePlugin
+2024-10-17 23:51:07,684 - DEBUG - Importing DdsImagePlugin
+2024-10-17 23:51:07,735 - DEBUG - Importing EpsImagePlugin
+2024-10-17 23:51:07,763 - DEBUG - Importing FitsImagePlugin
+2024-10-17 23:51:07,767 - DEBUG - Importing FliImagePlugin
+2024-10-17 23:51:07,770 - DEBUG - Importing FpxImagePlugin
+2024-10-17 23:51:07,773 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-17 23:51:07,774 - DEBUG - Importing FtexImagePlugin
+2024-10-17 23:51:07,779 - DEBUG - Importing GbrImagePlugin
+2024-10-17 23:51:07,783 - DEBUG - Importing GifImagePlugin
+2024-10-17 23:51:07,785 - DEBUG - Importing GribStubImagePlugin
+2024-10-17 23:51:07,789 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-17 23:51:07,793 - DEBUG - Importing IcnsImagePlugin
+2024-10-17 23:51:07,816 - DEBUG - Importing IcoImagePlugin
+2024-10-17 23:51:07,830 - DEBUG - Importing ImImagePlugin
+2024-10-17 23:51:07,833 - DEBUG - Importing ImtImagePlugin
+2024-10-17 23:51:07,844 - DEBUG - Importing IptcImagePlugin
+2024-10-17 23:51:07,845 - DEBUG - Importing JpegImagePlugin
+2024-10-17 23:51:07,845 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-17 23:51:07,846 - DEBUG - Importing McIdasImagePlugin
+2024-10-17 23:51:07,846 - DEBUG - Importing MicImagePlugin
+2024-10-17 23:51:07,847 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-17 23:51:07,848 - DEBUG - Importing MpegImagePlugin
+2024-10-17 23:51:07,849 - DEBUG - Importing MpoImagePlugin
+2024-10-17 23:51:07,857 - DEBUG - Importing MspImagePlugin
+2024-10-17 23:51:07,858 - DEBUG - Importing PalmImagePlugin
+2024-10-17 23:51:07,860 - DEBUG - Importing PcdImagePlugin
+2024-10-17 23:51:07,861 - DEBUG - Importing PcxImagePlugin
+2024-10-17 23:51:07,862 - DEBUG - Importing PdfImagePlugin
+2024-10-17 23:51:07,872 - DEBUG - Importing PixarImagePlugin
+2024-10-17 23:51:07,873 - DEBUG - Importing PngImagePlugin
+2024-10-17 23:51:07,873 - DEBUG - Importing PpmImagePlugin
+2024-10-17 23:51:07,874 - DEBUG - Importing PsdImagePlugin
+2024-10-17 23:51:07,874 - DEBUG - Importing QoiImagePlugin
+2024-10-17 23:51:07,875 - DEBUG - Importing SgiImagePlugin
+2024-10-17 23:51:07,875 - DEBUG - Importing SpiderImagePlugin
+2024-10-17 23:51:07,876 - DEBUG - Importing SunImagePlugin
+2024-10-17 23:51:07,876 - DEBUG - Importing TgaImagePlugin
+2024-10-17 23:51:07,877 - DEBUG - Importing TiffImagePlugin
+2024-10-17 23:51:07,877 - DEBUG - Importing WebPImagePlugin
+2024-10-17 23:51:07,878 - DEBUG - Importing WmfImagePlugin
+2024-10-17 23:51:07,879 - DEBUG - Importing XbmImagePlugin
+2024-10-17 23:51:07,879 - DEBUG - Importing XpmImagePlugin
+2024-10-17 23:51:07,882 - DEBUG - Importing XVThumbImagePlugin
+2024-10-17 23:51:08,138 - ERROR - Internal Server Error: /admin/main/eventorealizado/add/
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "main_eventorealizado_pkey"
+DETAIL:  Key (id)=(9) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1871, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1294, in save_model
+    obj.save()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "main_eventorealizado_pkey"
+DETAIL:  Key (id)=(9) already exists.
+2024-10-17 23:56:46,991 - WARNING - Not Found: /eventos/IMG_6713.jpeg
+2024-10-17 23:56:47,010 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-17 23:56:47,015 - WARNING - Not Found: /eventos/IMG_6707.jpeg
+2024-10-17 23:56:47,024 - WARNING - Not Found: /eventos/IMG_6714.jpeg
+2024-10-17 23:56:47,032 - WARNING - Not Found: /eventos/IMG_6715.jpeg
+2024-10-17 23:56:47,074 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-17 23:56:47,096 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-17 23:56:47,124 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-17 23:56:47,136 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-17 23:56:47,187 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-17 23:56:47,201 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-17 23:56:47,271 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-17 23:56:47,275 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-17 23:56:47,283 - WARNING - Not Found: /eventos/IMG_6720.jpeg
+2024-10-17 23:56:47,285 - WARNING - Not Found: /eventos/IMG_6525.jpeg
+2024-10-17 23:56:47,330 - WARNING - Not Found: /eventos/IMG_6524.jpeg
+2024-10-17 23:56:47,379 - WARNING - Not Found: /eventos/IMG_6528.jpeg
+2024-10-17 23:56:47,402 - WARNING - Not Found: /eventos/IMG_6554.jpeg
+2024-10-17 23:56:47,443 - WARNING - Not Found: /eventos/IMG_6566.jpeg
+2024-10-17 23:56:47,451 - WARNING - Not Found: /eventos/IMG_6581.jpeg
+2024-10-17 23:56:47,512 - WARNING - Not Found: /eventos/IMG_6585.jpeg
+2024-10-17 23:56:47,532 - WARNING - Not Found: /eventos/IMG_6583.jpeg
+2024-10-17 23:56:47,536 - WARNING - Not Found: /eventos/IMG_6592.jpeg
+2024-10-17 23:56:47,540 - WARNING - Not Found: /eventos/IMG_6593.jpeg
+2024-10-17 23:56:47,549 - WARNING - Not Found: /eventos/IMG_6597.jpeg
+2024-10-17 23:56:47,572 - WARNING - Not Found: /eventos/IMG_6594.jpeg
+2024-10-17 23:56:47,588 - WARNING - Not Found: /eventos/IMG_6568.jpeg
+2024-10-17 23:56:47,602 - WARNING - Not Found: /eventos/IMG_6608.jpeg
+2024-10-17 23:56:47,634 - WARNING - Not Found: /eventos/maquinas.jpeg
+2024-10-17 23:56:47,640 - WARNING - Not Found: /eventos/IMG_5566.jpeg
+2024-10-17 23:56:47,651 - WARNING - Not Found: /eventos/IMG_5564_OEgwG4m.jpeg
+2024-10-17 23:56:47,682 - WARNING - Not Found: /eventos/12BF40F6-3332-456B-82B3-632E0DE862D3.jpeg
+2024-10-17 23:56:47,682 - WARNING - Not Found: /eventos/IMG_5579.jpeg
+2024-10-17 23:56:47,712 - WARNING - Not Found: /eventos/BA57E010-41BE-4067-87E3-B4AA520DFCF6.jpeg
+2024-10-17 23:56:47,716 - WARNING - Not Found: /eventos/82090845-8939-4dc2-8c11-a20e2778b316_UVzxOCd.jpeg
+2024-10-17 23:56:47,731 - WARNING - Not Found: /eventos/7B92832D-EB11-43B2-959D-8A429BB2D38C.jpeg
+2024-10-17 23:56:47,742 - WARNING - Not Found: /eventos/A370457B-D56A-44E9-8E62-95A3D265E429.jpeg
+2024-10-17 23:56:47,750 - WARNING - Not Found: /eventos/9526d2ee-f4e3-441e-a41f-dff5627b1d96_MZcR9xE.jpeg
+2024-10-17 23:56:47,782 - WARNING - Not Found: /eventos/IMG_5734.jpeg
+2024-10-17 23:56:47,786 - WARNING - Not Found: /eventos/IMG_5750.jpeg
+2024-10-17 23:56:47,796 - WARNING - Not Found: /eventos/IMG_5754.jpeg
+2024-10-17 23:56:47,819 - WARNING - Not Found: /eventos/IMG_5760.jpeg
+2024-10-17 23:56:47,829 - WARNING - Not Found: /eventos/IMG_5756.jpeg
+2024-10-17 23:56:47,849 - WARNING - Not Found: /eventos/IMG_5765.jpeg
+2024-10-17 23:56:47,856 - WARNING - Not Found: /eventos/IMG_5766.jpeg
+2024-10-17 23:56:47,868 - WARNING - Not Found: /eventos/IMG_5797.jpeg
+2024-10-17 23:56:47,885 - WARNING - Not Found: /eventos/b28f1f84-93f2-440b-bf86-6ffdd7d7c709.jpeg
+2024-10-17 23:56:47,892 - WARNING - Not Found: /eventos/IMG_5829.jpeg
+2024-10-17 23:56:47,918 - WARNING - Not Found: /eventos/IMG_5830.jpeg
+2024-10-17 23:56:47,926 - WARNING - Not Found: /eventos/141d5a9f-db4f-4718-89f8-29352689f8a4.jpeg
+2024-10-17 23:56:47,936 - WARNING - Not Found: /eventos/E9241114-F4A5-4DB7-8846-E7531737C7BB.jpeg
+2024-10-17 23:56:47,952 - WARNING - Not Found: /eventos/IMG_6752.jpeg
+2024-10-17 23:56:47,962 - WARNING - Not Found: /eventos/IMG_6740.jpeg
+2024-10-17 23:56:47,984 - WARNING - Not Found: /eventos/IMG_6804.jpeg
+2024-10-17 23:56:48,000 - WARNING - Not Found: /eventos/IMG_6796.jpeg
+2024-10-17 23:56:48,010 - WARNING - Not Found: /eventos/IMG_6802.jpeg
+2024-10-17 23:56:48,030 - WARNING - Not Found: /eventos/IMG_6801.jpeg
+2024-10-17 23:56:48,191 - WARNING - Not Found: /eventos/IMG_6810.jpeg
+2024-10-17 23:56:48,238 - WARNING - Not Found: /eventos/IMG_6807.jpeg
+2024-10-17 23:56:48,594 - WARNING - Not Found: /eventos/IMG_6816.jpeg
+2024-10-17 23:56:48,655 - WARNING - Not Found: /eventos/IMG_6693.jpeg
+2024-10-17 23:56:48,659 - WARNING - Not Found: /eventos/IMG_6916.jpeg
+2024-10-17 23:56:48,664 - WARNING - Not Found: /eventos/IMG_6630.jpeg
+2024-10-17 23:56:48,669 - WARNING - Not Found: /eventos/IMG_6613.jpeg
+2024-10-17 23:56:48,681 - WARNING - Not Found: /eventos/IMG_6635.jpeg
+2024-10-17 23:56:48,687 - WARNING - Not Found: /eventos/IMG_6638.jpeg
+2024-10-17 23:56:48,703 - WARNING - Not Found: /eventos/IMG_6641.jpeg
+2024-10-17 23:56:48,718 - WARNING - Not Found: /eventos/IMG_6645.jpeg
+2024-10-17 23:56:48,758 - WARNING - Not Found: /eventos/IMG_6653.jpeg
+2024-10-17 23:56:48,762 - WARNING - Not Found: /eventos/IMG_6656.jpeg
+2024-10-17 23:56:48,773 - WARNING - Not Found: /eventos/IMG_6674.jpeg
+2024-10-17 23:56:48,782 - WARNING - Not Found: /eventos/IMG_6672.jpeg
+2024-10-17 23:56:48,795 - WARNING - Not Found: /eventos/IMG_6670.jpeg
+2024-10-17 23:56:48,814 - WARNING - Not Found: /eventos/IMG_6359.jpeg
+2024-10-17 23:56:49,009 - WARNING - Not Found: /eventos/IMG_6361.jpeg
+2024-10-17 23:56:49,022 - WARNING - Not Found: /eventos/IMG_6356.jpeg
+2024-10-17 23:56:49,029 - WARNING - Not Found: /eventos/IMG_6369.jpeg
+2024-10-17 23:56:49,036 - WARNING - Not Found: /eventos/IMG_6378.jpeg
+2024-10-17 23:56:49,043 - WARNING - Not Found: /eventos/IMG_6365.jpeg
+2024-10-17 23:56:49,059 - WARNING - Not Found: /eventos/IMG_6380.jpeg
+2024-10-17 23:56:49,079 - WARNING - Not Found: /eventos/IMG_6385.jpeg
+2024-10-17 23:56:49,085 - WARNING - Not Found: /eventos/IMG_6388.jpeg
+2024-10-17 23:56:49,101 - WARNING - Not Found: /eventos/IMG_6391.jpeg
+2024-10-17 23:56:49,117 - WARNING - Not Found: /eventos/IMG_6410.jpeg
+2024-10-17 23:56:57,162 - WARNING - Not Found: /cadastrar-evento/
+2024-10-17 23:56:57,348 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:57:04,137 - WARNING - Not Found: /login/
+2024-10-17 23:57:14,053 - WARNING - Not Found: /cadastrar-fotos
+2024-10-17 23:57:16,786 - WARNING - Not Found: /login/
+2024-10-17 23:57:37,767 - WARNING - Not Found: /login/
+2024-10-17 23:58:08,901 - WARNING - Not Found: /login/
+2024-10-17 23:58:11,229 - WARNING - Not Found: /login/
+2024-10-17 23:58:11,953 - WARNING - Not Found: /login/
+2024-10-17 23:58:12,229 - WARNING - Not Found: /login/
+2024-10-17 23:58:29,088 - WARNING - Not Found: /login/
+2024-10-17 23:58:29,212 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:29,617 - WARNING - Not Found: /login/
+2024-10-17 23:58:29,796 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:29,838 - WARNING - Not Found: /login/
+2024-10-17 23:58:30,112 - WARNING - Not Found: /login/
+2024-10-17 23:58:30,218 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:30,227 - WARNING - Not Found: /login/
+2024-10-17 23:58:30,482 - WARNING - Not Found: /login/
+2024-10-17 23:58:30,674 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:30,729 - WARNING - Not Found: /login/
+2024-10-17 23:58:30,829 - WARNING - Not Found: /login/
+2024-10-17 23:58:31,069 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:31,140 - WARNING - Not Found: /login/
+2024-10-17 23:58:31,200 - WARNING - Not Found: /login/
+2024-10-17 23:58:31,229 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:31,325 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:31,517 - WARNING - Not Found: /login/
+2024-10-17 23:58:31,745 - WARNING - Not Found: /favicon.ico
+2024-10-17 23:58:40,997 - WARNING - Not Found: /cardapio/
+2024-10-18 00:55:52,190 - WARNING - Not Found: /eventos/IMG_6713.jpeg
+2024-10-18 00:55:52,200 - WARNING - Not Found: /eventos/IMG_6707.jpeg
+2024-10-18 00:55:52,222 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-18 00:55:52,249 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-18 00:55:52,268 - WARNING - Not Found: /eventos/IMG_6714.jpeg
+2024-10-18 00:55:52,280 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-18 00:55:52,289 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-18 00:55:52,301 - WARNING - Not Found: /eventos/IMG_6715.jpeg
+2024-10-18 00:55:52,331 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-18 00:55:52,346 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-18 00:55:52,375 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-18 00:55:52,385 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-18 00:55:52,409 - WARNING - Not Found: /eventos/IMG_6720.jpeg
+2024-10-18 00:55:52,412 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-18 00:55:52,433 - WARNING - Not Found: /eventos/IMG_6525.jpeg
+2024-10-18 00:55:52,463 - WARNING - Not Found: /eventos/IMG_6528.jpeg
+2024-10-18 00:55:52,466 - WARNING - Not Found: /eventos/IMG_6524.jpeg
+2024-10-18 00:55:52,487 - WARNING - Not Found: /eventos/IMG_6554.jpeg
+2024-10-18 00:55:52,497 - WARNING - Not Found: /eventos/IMG_6566.jpeg
+2024-10-18 00:55:52,504 - WARNING - Not Found: /eventos/IMG_6581.jpeg
+2024-10-18 00:55:52,532 - WARNING - Not Found: /eventos/IMG_6583.jpeg
+2024-10-18 00:55:52,542 - WARNING - Not Found: /eventos/IMG_6585.jpeg
+2024-10-18 00:55:52,562 - WARNING - Not Found: /eventos/IMG_6592.jpeg
+2024-10-18 00:55:52,573 - WARNING - Not Found: /eventos/IMG_6593.jpeg
+2024-10-18 00:55:52,581 - WARNING - Not Found: /eventos/IMG_6597.jpeg
+2024-10-18 00:55:52,630 - WARNING - Not Found: /eventos/IMG_6568.jpeg
+2024-10-18 00:55:52,632 - WARNING - Not Found: /eventos/IMG_6594.jpeg
+2024-10-18 00:55:52,647 - WARNING - Not Found: /eventos/IMG_6608.jpeg
+2024-10-18 00:55:52,652 - WARNING - Not Found: /eventos/maquinas.jpeg
+2024-10-18 00:55:52,663 - WARNING - Not Found: /eventos/IMG_5566.jpeg
+2024-10-18 00:55:52,713 - WARNING - Not Found: /eventos/IMG_5564_OEgwG4m.jpeg
+2024-10-18 00:55:52,724 - WARNING - Not Found: /eventos/IMG_5579.jpeg
+2024-10-18 00:55:52,734 - WARNING - Not Found: /eventos/12BF40F6-3332-456B-82B3-632E0DE862D3.jpeg
+2024-10-18 00:55:52,745 - WARNING - Not Found: /eventos/BA57E010-41BE-4067-87E3-B4AA520DFCF6.jpeg
+2024-10-18 00:55:52,746 - WARNING - Not Found: /eventos/82090845-8939-4dc2-8c11-a20e2778b316_UVzxOCd.jpeg
+2024-10-18 00:55:52,798 - WARNING - Not Found: /eventos/9526d2ee-f4e3-441e-a41f-dff5627b1d96_MZcR9xE.jpeg
+2024-10-18 00:55:52,800 - WARNING - Not Found: /eventos/7B92832D-EB11-43B2-959D-8A429BB2D38C.jpeg
+2024-10-18 00:55:52,813 - WARNING - Not Found: /eventos/A370457B-D56A-44E9-8E62-95A3D265E429.jpeg
+2024-10-18 00:55:52,819 - WARNING - Not Found: /eventos/IMG_5734.jpeg
+2024-10-18 00:55:52,828 - WARNING - Not Found: /eventos/IMG_5750.jpeg
+2024-10-18 00:55:52,879 - WARNING - Not Found: /eventos/IMG_5754.jpeg
+2024-10-18 00:55:52,885 - WARNING - Not Found: /eventos/IMG_5756.jpeg
+2024-10-18 00:55:52,898 - WARNING - Not Found: /eventos/IMG_5760.jpeg
+2024-10-18 00:55:52,903 - WARNING - Not Found: /eventos/IMG_5765.jpeg
+2024-10-18 00:55:52,912 - WARNING - Not Found: /eventos/IMG_5766.jpeg
+2024-10-18 00:55:52,956 - WARNING - Not Found: /eventos/IMG_5797.jpeg
+2024-10-18 00:55:52,963 - WARNING - Not Found: /eventos/b28f1f84-93f2-440b-bf86-6ffdd7d7c709.jpeg
+2024-10-18 00:55:52,973 - WARNING - Not Found: /eventos/IMG_5829.jpeg
+2024-10-18 00:55:52,982 - WARNING - Not Found: /eventos/141d5a9f-db4f-4718-89f8-29352689f8a4.jpeg
+2024-10-18 00:55:52,987 - WARNING - Not Found: /eventos/IMG_5830.jpeg
+2024-10-18 00:55:53,014 - WARNING - Not Found: /eventos/E9241114-F4A5-4DB7-8846-E7531737C7BB.jpeg
+2024-10-18 00:55:53,062 - WARNING - Not Found: /eventos/IMG_6740.jpeg
+2024-10-18 00:55:53,066 - WARNING - Not Found: /eventos/IMG_6804.jpeg
+2024-10-18 00:55:53,080 - WARNING - Not Found: /eventos/IMG_6752.jpeg
+2024-10-18 00:55:53,087 - WARNING - Not Found: /eventos/IMG_6796.jpeg
+2024-10-18 00:55:53,089 - WARNING - Not Found: /eventos/IMG_6802.jpeg
+2024-10-18 00:55:53,139 - WARNING - Not Found: /eventos/IMG_6801.jpeg
+2024-10-18 00:55:53,171 - WARNING - Not Found: /eventos/IMG_6916.jpeg
+2024-10-18 00:55:53,176 - WARNING - Not Found: /eventos/IMG_6816.jpeg
+2024-10-18 00:55:53,185 - WARNING - Not Found: /eventos/IMG_6810.jpeg
+2024-10-18 00:55:53,186 - WARNING - Not Found: /eventos/IMG_6807.jpeg
+2024-10-18 00:55:53,210 - WARNING - Not Found: /eventos/IMG_6693.jpeg
+2024-10-18 00:55:53,285 - WARNING - Not Found: /eventos/IMG_6630.jpeg
+2024-10-18 00:55:53,288 - WARNING - Not Found: /eventos/IMG_6638.jpeg
+2024-10-18 00:55:53,290 - WARNING - Not Found: /eventos/IMG_6635.jpeg
+2024-10-18 00:55:53,297 - WARNING - Not Found: /eventos/IMG_6613.jpeg
+2024-10-18 00:55:53,305 - WARNING - Not Found: /eventos/IMG_6641.jpeg
+2024-10-18 00:55:53,388 - WARNING - Not Found: /eventos/IMG_6674.jpeg
+2024-10-18 00:55:53,390 - WARNING - Not Found: /eventos/IMG_6672.jpeg
+2024-10-18 00:55:53,409 - WARNING - Not Found: /eventos/IMG_6653.jpeg
+2024-10-18 00:55:53,411 - WARNING - Not Found: /eventos/IMG_6656.jpeg
+2024-10-18 00:55:53,415 - WARNING - Not Found: /eventos/IMG_6645.jpeg
+2024-10-18 00:55:53,460 - WARNING - Not Found: /eventos/IMG_6670.jpeg
+2024-10-18 00:55:53,470 - WARNING - Not Found: /eventos/IMG_6359.jpeg
+2024-10-18 00:55:53,508 - WARNING - Not Found: /eventos/IMG_6361.jpeg
+2024-10-18 00:55:53,531 - WARNING - Not Found: /eventos/IMG_6356.jpeg
+2024-10-18 00:55:53,551 - WARNING - Not Found: /eventos/IMG_6365.jpeg
+2024-10-18 00:55:53,582 - WARNING - Not Found: /eventos/IMG_6369.jpeg
+2024-10-18 00:55:53,583 - WARNING - Not Found: /eventos/IMG_6378.jpeg
+2024-10-18 00:55:53,625 - WARNING - Not Found: /eventos/IMG_6380.jpeg
+2024-10-18 00:55:53,649 - WARNING - Not Found: /eventos/IMG_6385.jpeg
+2024-10-18 00:55:53,701 - WARNING - Not Found: /eventos/IMG_6388.jpeg
+2024-10-18 00:55:53,713 - WARNING - Not Found: /eventos/IMG_6391.jpeg
+2024-10-18 00:55:53,722 - WARNING - Not Found: /eventos/IMG_6410.jpeg
+2024-10-18 00:55:56,739 - WARNING - Not Found: /login/
+2024-10-18 00:56:06,567 - WARNING - Not Found: /login/
+2024-10-18 00:56:10,448 - WARNING - Not Found: /login/
+2024-10-18 00:56:13,208 - WARNING - Not Found: /login/
+2024-10-18 00:57:46,573 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-18 00:57:49,954 - WARNING - Not Found: /login/
+2024-10-18 00:57:55,860 - WARNING - Not Found: /cardapio/
+2024-10-18 00:58:27,361 - WARNING - Not Found: /cardapio/
+2024-10-18 00:58:27,988 - WARNING - Not Found: /cardapio/
+2024-10-18 00:58:28,150 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-18 00:58:57,187 - WARNING - Not Found: /cardapio/
+2024-10-18 00:58:59,592 - WARNING - Not Found: /cardapio/
+2024-10-18 00:58:59,723 - WARNING - Not Found: /favicon.ico
+2024-10-18 00:59:13,735 - WARNING - Not Found: /eventos/IMG_6713.jpeg
+2024-10-18 00:59:13,744 - WARNING - Not Found: /eventos/IMG_6707.jpeg
+2024-10-18 00:59:13,754 - WARNING - Not Found: /eventos/IMG_6714.jpeg
+2024-10-18 00:59:13,765 - WARNING - Not Found: /eventos/IMG_6715.jpeg
+2024-10-18 00:59:13,784 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-18 00:59:13,787 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-18 00:59:13,855 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-18 00:59:13,867 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-18 00:59:13,873 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-18 00:59:13,881 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-18 00:59:13,887 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-18 00:59:13,903 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-18 00:59:13,907 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-18 00:59:13,937 - WARNING - Not Found: /eventos/IMG_6720.jpeg
+2024-10-18 00:59:13,942 - WARNING - Not Found: /eventos/IMG_6525.jpeg
+2024-10-18 00:59:13,955 - WARNING - Not Found: /eventos/IMG_6524.jpeg
+2024-10-18 00:59:13,969 - WARNING - Not Found: /eventos/IMG_6528.jpeg
+2024-10-18 00:59:13,974 - WARNING - Not Found: /eventos/IMG_6554.jpeg
+2024-10-18 00:59:14,008 - WARNING - Not Found: /eventos/IMG_6566.jpeg
+2024-10-18 00:59:14,018 - WARNING - Not Found: /eventos/IMG_6581.jpeg
+2024-10-18 00:59:14,026 - WARNING - Not Found: /eventos/IMG_6583.jpeg
+2024-10-18 00:59:14,037 - WARNING - Not Found: /eventos/IMG_6585.jpeg
+2024-10-18 00:59:14,053 - WARNING - Not Found: /eventos/IMG_6592.jpeg
+2024-10-18 00:59:14,055 - WARNING - Not Found: /eventos/IMG_6593.jpeg
+2024-10-18 00:59:14,106 - WARNING - Not Found: /eventos/IMG_6597.jpeg
+2024-10-18 00:59:14,118 - WARNING - Not Found: /eventos/IMG_6594.jpeg
+2024-10-18 00:59:14,134 - WARNING - Not Found: /eventos/IMG_6568.jpeg
+2024-10-18 00:59:14,148 - WARNING - Not Found: /eventos/IMG_6608.jpeg
+2024-10-18 00:59:14,150 - WARNING - Not Found: /eventos/maquinas.jpeg
+2024-10-18 00:59:14,173 - WARNING - Not Found: /eventos/IMG_5566.jpeg
+2024-10-18 00:59:14,183 - WARNING - Not Found: /eventos/IMG_5564_OEgwG4m.jpeg
+2024-10-18 00:59:14,205 - WARNING - Not Found: /eventos/IMG_5579.jpeg
+2024-10-18 00:59:14,210 - WARNING - Not Found: /eventos/12BF40F6-3332-456B-82B3-632E0DE862D3.jpeg
+2024-10-18 00:59:14,217 - WARNING - Not Found: /eventos/BA57E010-41BE-4067-87E3-B4AA520DFCF6.jpeg
+2024-10-18 00:59:14,224 - WARNING - Not Found: /eventos/82090845-8939-4dc2-8c11-a20e2778b316_UVzxOCd.jpeg
+2024-10-18 00:59:14,239 - WARNING - Not Found: /eventos/7B92832D-EB11-43B2-959D-8A429BB2D38C.jpeg
+2024-10-18 00:59:14,267 - WARNING - Not Found: /eventos/9526d2ee-f4e3-441e-a41f-dff5627b1d96_MZcR9xE.jpeg
+2024-10-18 00:59:14,274 - WARNING - Not Found: /eventos/A370457B-D56A-44E9-8E62-95A3D265E429.jpeg
+2024-10-18 00:59:14,289 - WARNING - Not Found: /eventos/IMG_5734.jpeg
+2024-10-18 00:59:14,291 - WARNING - Not Found: /eventos/IMG_5750.jpeg
+2024-10-18 00:59:14,300 - WARNING - Not Found: /eventos/IMG_5754.jpeg
+2024-10-18 00:59:14,339 - WARNING - Not Found: /eventos/IMG_5760.jpeg
+2024-10-18 00:59:14,350 - WARNING - Not Found: /eventos/IMG_5765.jpeg
+2024-10-18 00:59:14,355 - WARNING - Not Found: /eventos/IMG_5766.jpeg
+2024-10-18 00:59:14,363 - WARNING - Not Found: /eventos/IMG_5756.jpeg
+2024-10-18 00:59:14,370 - WARNING - Not Found: /eventos/IMG_5797.jpeg
+2024-10-18 00:59:14,415 - WARNING - Not Found: /eventos/b28f1f84-93f2-440b-bf86-6ffdd7d7c709.jpeg
+2024-10-18 00:59:14,425 - WARNING - Not Found: /eventos/IMG_5829.jpeg
+2024-10-18 00:59:14,437 - WARNING - Not Found: /eventos/E9241114-F4A5-4DB7-8846-E7531737C7BB.jpeg
+2024-10-18 00:59:14,441 - WARNING - Not Found: /eventos/141d5a9f-db4f-4718-89f8-29352689f8a4.jpeg
+2024-10-18 00:59:14,449 - WARNING - Not Found: /eventos/IMG_5830.jpeg
+2024-10-18 00:59:14,465 - WARNING - Not Found: /eventos/IMG_6740.jpeg
+2024-10-18 00:59:14,473 - WARNING - Not Found: /eventos/IMG_6752.jpeg
+2024-10-18 00:59:14,505 - WARNING - Not Found: /eventos/IMG_6804.jpeg
+2024-10-18 00:59:14,518 - WARNING - Not Found: /eventos/IMG_6796.jpeg
+2024-10-18 00:59:14,535 - WARNING - Not Found: /eventos/IMG_6801.jpeg
+2024-10-18 00:59:14,541 - WARNING - Not Found: /eventos/IMG_6807.jpeg
+2024-10-18 00:59:14,553 - WARNING - Not Found: /eventos/IMG_6802.jpeg
+2024-10-18 00:59:14,559 - WARNING - Not Found: /eventos/IMG_6810.jpeg
+2024-10-18 00:59:14,589 - WARNING - Not Found: /eventos/IMG_6816.jpeg
+2024-10-18 00:59:14,599 - WARNING - Not Found: /eventos/IMG_6916.jpeg
+2024-10-18 00:59:14,619 - WARNING - Not Found: /eventos/IMG_6693.jpeg
+2024-10-18 00:59:14,629 - WARNING - Not Found: /eventos/IMG_6630.jpeg
+2024-10-18 00:59:14,634 - WARNING - Not Found: /eventos/IMG_6613.jpeg
+2024-10-18 00:59:14,655 - WARNING - Not Found: /eventos/IMG_6635.jpeg
+2024-10-18 00:59:14,664 - WARNING - Not Found: /eventos/IMG_6638.jpeg
+2024-10-18 00:59:14,687 - WARNING - Not Found: /eventos/IMG_6641.jpeg
+2024-10-18 00:59:14,698 - WARNING - Not Found: /eventos/IMG_6645.jpeg
+2024-10-18 00:59:14,702 - WARNING - Not Found: /eventos/IMG_6653.jpeg
+2024-10-18 00:59:14,717 - WARNING - Not Found: /eventos/IMG_6656.jpeg
+2024-10-18 00:59:14,725 - WARNING - Not Found: /eventos/IMG_6674.jpeg
+2024-10-18 00:59:14,750 - WARNING - Not Found: /eventos/IMG_6672.jpeg
+2024-10-18 00:59:14,756 - WARNING - Not Found: /eventos/IMG_6670.jpeg
+2024-10-18 00:59:14,768 - WARNING - Not Found: /eventos/IMG_6359.jpeg
+2024-10-18 00:59:14,776 - WARNING - Not Found: /eventos/IMG_6361.jpeg
+2024-10-18 00:59:14,787 - WARNING - Not Found: /eventos/IMG_6356.jpeg
+2024-10-18 00:59:14,816 - WARNING - Not Found: /eventos/IMG_6365.jpeg
+2024-10-18 00:59:14,822 - WARNING - Not Found: /eventos/IMG_6369.jpeg
+2024-10-18 00:59:14,833 - WARNING - Not Found: /eventos/IMG_6378.jpeg
+2024-10-18 00:59:14,839 - WARNING - Not Found: /eventos/IMG_6380.jpeg
+2024-10-18 00:59:14,849 - WARNING - Not Found: /eventos/IMG_6385.jpeg
+2024-10-18 00:59:14,874 - WARNING - Not Found: /eventos/IMG_6388.jpeg
+2024-10-18 00:59:14,880 - WARNING - Not Found: /eventos/IMG_6391.jpeg
+2024-10-18 00:59:14,904 - WARNING - Not Found: /eventos/IMG_6410.jpeg
+2024-10-18 00:59:16,951 - WARNING - Not Found: /cardapio/
+2024-10-18 00:59:59,148 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:20,679 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:20,806 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-18 01:00:23,515 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:24,257 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:25,153 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:25,757 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:26,028 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:26,266 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:26,507 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:26,708 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:26,916 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:27,106 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:27,337 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:27,519 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:27,724 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:27,899 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:28,110 - WARNING - Not Found: /cardapio/
+2024-10-18 01:00:28,356 - WARNING - Not Found: /cardapio/
