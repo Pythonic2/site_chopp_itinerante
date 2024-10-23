@@ -98,7 +98,7 @@ DATABASES = {
     'HOST':  '192.168.0.3',
     'PORT': os.getenv('DB_PORT'),
     'OPTIONS': {
-        'options': '-c search_path=cecilie'
+        'options': '-c search_path=chopp2'
     }
 }
 }
