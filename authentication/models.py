@@ -30,6 +30,7 @@ class Usuario(AbstractUser):
     def __str__(self):
         return self.username
 
+
 class Carrinho(models.Model):
     data = models.DateTimeField(auto_now_add=True)
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='carrinhos')

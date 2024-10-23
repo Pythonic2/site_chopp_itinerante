@@ -45113,3 +45113,458 @@ Traceback (most recent call last):
     raise DisallowedHost(msg)
 django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
 2024-10-23 01:29:43,373 - WARNING - Bad Request: /
+2024-10-23 01:46:11,094 - ERROR - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-10-23 01:46:11,222 - WARNING - Bad Request: /
+2024-10-23 01:47:26,394 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:47:32,664 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: pagamento_transacao
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/main/views.py", line 28, in get
+    eventos_realizados = Transacao.objects.all().count()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: pagamento_transacao
+2024-10-23 01:47:33,419 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: pagamento_transacao
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/main/views.py", line 28, in get
+    eventos_realizados = Transacao.objects.all().count()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: pagamento_transacao
+2024-10-23 01:47:33,894 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: pagamento_transacao
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/main/views.py", line 28, in get
+    eventos_realizados = Transacao.objects.all().count()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: pagamento_transacao
+2024-10-23 01:47:34,413 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: pagamento_transacao
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/main/views.py", line 28, in get
+    eventos_realizados = Transacao.objects.all().count()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: pagamento_transacao
+2024-10-23 01:47:36,845 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: pagamento_transacao
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/igor/git/site_chopp_itinerante/main/views.py", line 28, in get
+    eventos_realizados = Transacao.objects.all().count()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: pagamento_transacao
+2024-10-23 01:48:29,730 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:48:29,743 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:48:29,754 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:48:29,767 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:48:29,776 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:48:29,803 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:48:29,816 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:48:29,826 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:48:29,832 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:48:32,531 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:48:32,556 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:48:32,590 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:48:32,601 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:48:32,613 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:48:32,626 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:48:32,632 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:48:32,642 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:48:32,653 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:48:37,884 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:48:37,896 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:48:37,908 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:48:37,918 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:48:37,936 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:48:37,959 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:48:37,972 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:48:37,982 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:48:37,991 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:48:40,457 - WARNING - Not Found: /register/static/lib/wow/wow.min.js
+2024-10-23 01:48:40,471 - WARNING - Not Found: /register/static/lib/easing/easing.min.js
+2024-10-23 01:48:40,485 - WARNING - Not Found: /register/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:48:40,493 - WARNING - Not Found: /register/static/lib/counterup/counterup.min.js
+2024-10-23 01:48:40,497 - WARNING - Not Found: /register/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:48:40,518 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:48:40,520 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:48:40,537 - WARNING - Not Found: /register/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:48:40,552 - WARNING - Not Found: /register/static/js/main.js
+2024-10-23 01:48:49,524 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-23 01:48:49,534 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-23 01:48:49,552 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:48:49,561 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:48:49,566 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-23 01:48:49,586 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:48:49,605 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:48:49,606 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:48:49,630 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-23 01:48:59,674 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-23 01:48:59,675 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-23 01:48:59,700 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:48:59,704 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:48:59,718 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-23 01:48:59,724 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:48:59,736 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:48:59,766 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:48:59,772 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-23 01:49:00,385 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 01:49:00,395 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 01:49:00,405 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:00,416 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:00,452 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:00,460 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:00,467 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:00,476 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:00,532 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 01:49:02,119 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:49:02,125 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:49:02,140 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:02,143 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:02,154 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:02,169 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:02,185 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:02,205 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:02,234 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:49:05,695 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 01:49:05,701 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 01:49:05,711 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:05,719 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:05,735 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:05,750 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:05,751 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:05,774 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:05,800 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 01:49:07,628 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:49:07,635 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:49:07,645 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:07,651 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:07,667 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:07,676 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:07,688 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:07,709 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:07,735 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:49:11,569 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:49:11,572 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:49:11,581 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:11,598 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:11,609 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:11,643 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:11,645 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:11,659 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:11,675 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:49:16,553 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-23 01:49:16,555 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-23 01:49:16,570 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:16,582 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:16,597 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:16,620 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:16,636 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:16,659 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:16,674 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-23 01:49:17,273 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 01:49:17,277 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 01:49:17,288 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:17,310 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:17,311 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:17,345 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:17,356 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:17,374 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:17,381 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 01:49:19,567 - WARNING - Not Found: /register/static/lib/wow/wow.min.js
+2024-10-23 01:49:19,568 - WARNING - Not Found: /register/static/lib/easing/easing.min.js
+2024-10-23 01:49:19,575 - WARNING - Not Found: /register/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:19,586 - WARNING - Not Found: /register/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:19,599 - WARNING - Not Found: /register/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:19,608 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:19,617 - WARNING - Not Found: /register/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:19,626 - WARNING - Not Found: /register/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:19,691 - WARNING - Not Found: /register/static/js/main.js
+2024-10-23 01:49:20,867 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 01:49:20,869 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 01:49:20,873 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:20,885 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:20,892 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:20,904 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:20,971 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:20,980 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:20,985 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 01:49:23,472 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-23 01:49:23,479 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-23 01:49:23,496 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:49:23,502 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:49:23,506 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-23 01:49:23,530 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:49:23,542 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:49:23,557 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:49:23,570 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-23 01:49:26,433 - WARNING - Not Found: /accounts/login/
+2024-10-23 01:49:26,561 - WARNING - Not Found: /favicon.ico
+2024-10-23 01:49:32,926 - WARNING - Not Found: /accounts/login/
+2024-10-23 01:50:19,518 - WARNING - Not Found: /admmin
+2024-10-23 01:50:51,772 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:50:51,779 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:50:51,789 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:50:51,793 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:50:51,800 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:50:51,823 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:50:51,827 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:50:51,837 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:50:51,841 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:50:54,884 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:50:54,890 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:50:54,907 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:50:54,916 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:50:54,926 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:50:54,937 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:50:54,961 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:50:54,968 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:50:54,977 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:51:29,956 - WARNING - Forbidden (CSRF token from POST incorrect.): /login/
+2024-10-23 01:51:49,590 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:51:49,597 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:51:49,620 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:51:49,622 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:51:49,626 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:51:49,655 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:51:49,666 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:51:49,678 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:51:49,685 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:51:56,131 - WARNING - Not Found: /accounts/profile/
+2024-10-23 01:52:29,310 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:52:32,626 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:52:38,337 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:52:49,674 - WARNING - Not Found: /accounts/profile/
+2024-10-23 01:52:50,526 - WARNING - Not Found: /accounts/profile/
+2024-10-23 01:52:53,936 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:53:00,746 - WARNING - Not Found: /accounts/profile/
+2024-10-23 01:55:03,025 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:55:12,826 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:55:15,506 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:55:17,304 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:55:19,255 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:55:21,143 - WARNING - Not Found: /accounts/profile/
+2024-10-23 01:55:21,727 - WARNING - Not Found: /accounts/profile/
+2024-10-23 01:55:23,236 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 01:55:23,256 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 01:55:23,278 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:55:23,303 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:55:23,310 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:55:23,313 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:55:23,327 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:55:23,327 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 01:55:23,339 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 01:55:27,444 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-23 01:55:27,450 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-23 01:55:27,467 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-23 01:55:27,470 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 01:55:27,480 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-23 01:55:27,480 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 01:55:27,495 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 01:55:27,501 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 01:55:27,516 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-23 01:56:08,186 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 01:57:48,340 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 01:57:57,632 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 01:58:58,521 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 02:00:57,169 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 02:07:49,580 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 02:35:20,031 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 02:35:25,667 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 02:35:29,441 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 02:35:40,156 - INFO - /home/igor/git/site_chopp_itinerante/authentication/models.py changed, reloading.
+2024-10-23 02:36:03,703 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 02:36:07,476 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 02:36:49,005 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
