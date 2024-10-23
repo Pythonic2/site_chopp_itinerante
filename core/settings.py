@@ -24,8 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bg)ybva($%u6l_^eoc!xkwffy2hqh&%^&t_@@wzik%ao6(89gn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['choppitinerante.com.br', 'www.choppitinerante.com.br']
 CSRF_TRUSTED_ORIGINS = ['https://choppitinerante.com.br', 'https://www.choppitinerante.com.br']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = True
@@ -48,7 +49,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Adicione esta linha
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -148,11 +148,6 @@ MERCADOPAGO_ACCESS_TOKEN = 'TEST-1760381132114687-090312-969ed10bb8987a4c2f15dd1
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # # Definir o diretório onde os arquivos estáticos serão coletados
@@ -172,7 +167,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
+STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR / 'static')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")

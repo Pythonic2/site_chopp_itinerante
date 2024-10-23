@@ -10,4 +10,4 @@ urlpatterns = [
     path('feedback/',FeedbackView.as_view(), name='feedback')
 
     
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
