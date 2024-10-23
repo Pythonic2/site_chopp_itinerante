@@ -9,6 +9,7 @@ django-storages==1.14.4
 idna==3.8
 jmespath==1.0.1
 mercadopago==2.2.3
+mysqlclient==2.2.5
 numpy==2.1.1
 pandas==2.2.2
 pillow==10.4.0
