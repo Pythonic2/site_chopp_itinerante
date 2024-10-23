@@ -45568,3 +45568,1048 @@ django.db.utils.OperationalError: no such table: pagamento_transacao
 2024-10-23 02:36:03,703 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
 2024-10-23 02:36:07,476 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
 2024-10-23 02:36:49,005 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:39:14,710 - ERROR - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-10-23 04:39:14,787 - WARNING - Bad Request: /
+2024-10-23 04:39:14,890 - ERROR - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2024-10-23 04:39:14,891 - WARNING - Bad Request: /favicon.ico
+2024-10-23 04:39:32,695 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:39:36,137 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:39:42,975 - WARNING - Not Found: /login/static/lib/wow/wow.min.js
+2024-10-23 04:39:42,984 - WARNING - Not Found: /login/static/lib/easing/easing.min.js
+2024-10-23 04:39:43,014 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:39:43,035 - WARNING - Not Found: /login/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:39:43,061 - WARNING - Not Found: /login/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:39:43,082 - WARNING - Not Found: /login/static/lib/counterup/counterup.min.js
+2024-10-23 04:39:43,126 - WARNING - Not Found: /login/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:39:43,155 - WARNING - Not Found: /login/static/js/main.js
+2024-10-23 04:39:43,235 - WARNING - Not Found: /login/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:39:47,750 - WARNING - Not Found: /cardapio/static/lib/wow/wow.min.js
+2024-10-23 04:39:47,773 - WARNING - Not Found: /cardapio/static/lib/easing/easing.min.js
+2024-10-23 04:39:47,801 - WARNING - Not Found: /cardapio/static/lib/counterup/counterup.min.js
+2024-10-23 04:39:47,831 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:39:47,845 - WARNING - Not Found: /cardapio/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:39:47,857 - WARNING - Not Found: /cardapio/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:39:47,862 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:39:47,871 - WARNING - Not Found: /cardapio/static/js/main.js
+2024-10-23 04:39:47,891 - WARNING - Not Found: /cardapio/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:39:57,472 - WARNING - Not Found: /cadastrar-fotos/static/lib/wow/wow.min.js
+2024-10-23 04:39:57,498 - WARNING - Not Found: /cadastrar-fotos/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:39:57,500 - WARNING - Not Found: /cadastrar-fotos/static/lib/easing/easing.min.js
+2024-10-23 04:39:57,520 - WARNING - Not Found: /cadastrar-fotos/static/lib/counterup/counterup.min.js
+2024-10-23 04:39:57,569 - WARNING - Not Found: /cadastrar-fotos/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:39:57,597 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:39:57,599 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:39:57,637 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:39:57,668 - WARNING - Not Found: /cadastrar-fotos/static/js/main.js
+2024-10-23 04:40:09,813 - WARNING - Not Found: /cadastrar-fotos/static/lib/wow/wow.min.js
+2024-10-23 04:40:09,824 - WARNING - Not Found: /cadastrar-fotos/static/lib/easing/easing.min.js
+2024-10-23 04:40:09,882 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:40:09,889 - WARNING - Not Found: /cadastrar-fotos/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:40:09,912 - WARNING - Not Found: /cadastrar-fotos/static/lib/counterup/counterup.min.js
+2024-10-23 04:40:09,918 - WARNING - Not Found: /cadastrar-fotos/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:40:09,947 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:40:09,949 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:40:09,987 - WARNING - Not Found: /cadastrar-fotos/static/js/main.js
+2024-10-23 04:40:15,723 - WARNING - Not Found: /eventos/maquinas.png.png
+2024-10-23 04:40:15,755 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:40:15,784 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:40:15,804 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:40:15,807 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:40:15,818 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:40:15,827 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:40:15,859 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:40:15,888 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:40:15,934 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:40:15,958 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:47:48,615 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:48:11,478 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:48:17,375 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:48:46,664 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:49:43,387 - WARNING - Not Found: /favicon.ico
+2024-10-23 04:49:59,289 - DEBUG - Importing BlpImagePlugin
+2024-10-23 04:49:59,292 - DEBUG - Importing BmpImagePlugin
+2024-10-23 04:49:59,292 - DEBUG - Importing BufrStubImagePlugin
+2024-10-23 04:49:59,293 - DEBUG - Importing CurImagePlugin
+2024-10-23 04:49:59,294 - DEBUG - Importing DcxImagePlugin
+2024-10-23 04:49:59,297 - DEBUG - Importing DdsImagePlugin
+2024-10-23 04:49:59,304 - DEBUG - Importing EpsImagePlugin
+2024-10-23 04:49:59,307 - DEBUG - Importing FitsImagePlugin
+2024-10-23 04:49:59,309 - DEBUG - Importing FliImagePlugin
+2024-10-23 04:49:59,310 - DEBUG - Importing FpxImagePlugin
+2024-10-23 04:49:59,312 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-23 04:49:59,313 - DEBUG - Importing FtexImagePlugin
+2024-10-23 04:49:59,315 - DEBUG - Importing GbrImagePlugin
+2024-10-23 04:49:59,317 - DEBUG - Importing GifImagePlugin
+2024-10-23 04:49:59,317 - DEBUG - Importing GribStubImagePlugin
+2024-10-23 04:49:59,319 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-23 04:49:59,320 - DEBUG - Importing IcnsImagePlugin
+2024-10-23 04:49:59,325 - DEBUG - Importing IcoImagePlugin
+2024-10-23 04:49:59,327 - DEBUG - Importing ImImagePlugin
+2024-10-23 04:49:59,329 - DEBUG - Importing ImtImagePlugin
+2024-10-23 04:49:59,331 - DEBUG - Importing IptcImagePlugin
+2024-10-23 04:49:59,334 - DEBUG - Importing JpegImagePlugin
+2024-10-23 04:49:59,334 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-23 04:49:59,335 - DEBUG - Importing McIdasImagePlugin
+2024-10-23 04:49:59,336 - DEBUG - Importing MicImagePlugin
+2024-10-23 04:49:59,337 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-23 04:49:59,337 - DEBUG - Importing MpegImagePlugin
+2024-10-23 04:49:59,339 - DEBUG - Importing MpoImagePlugin
+2024-10-23 04:49:59,343 - DEBUG - Importing MspImagePlugin
+2024-10-23 04:49:59,345 - DEBUG - Importing PalmImagePlugin
+2024-10-23 04:49:59,352 - DEBUG - Importing PcdImagePlugin
+2024-10-23 04:49:59,353 - DEBUG - Importing PcxImagePlugin
+2024-10-23 04:49:59,353 - DEBUG - Importing PdfImagePlugin
+2024-10-23 04:49:59,368 - DEBUG - Importing PixarImagePlugin
+2024-10-23 04:49:59,369 - DEBUG - Importing PngImagePlugin
+2024-10-23 04:49:59,370 - DEBUG - Importing PpmImagePlugin
+2024-10-23 04:49:59,370 - DEBUG - Importing PsdImagePlugin
+2024-10-23 04:49:59,371 - DEBUG - Importing QoiImagePlugin
+2024-10-23 04:49:59,372 - DEBUG - Importing SgiImagePlugin
+2024-10-23 04:49:59,374 - DEBUG - Importing SpiderImagePlugin
+2024-10-23 04:49:59,376 - DEBUG - Importing SunImagePlugin
+2024-10-23 04:49:59,377 - DEBUG - Importing TgaImagePlugin
+2024-10-23 04:49:59,379 - DEBUG - Importing TiffImagePlugin
+2024-10-23 04:49:59,380 - DEBUG - Importing WebPImagePlugin
+2024-10-23 04:49:59,395 - DEBUG - Importing WmfImagePlugin
+2024-10-23 04:49:59,397 - DEBUG - Importing XbmImagePlugin
+2024-10-23 04:49:59,400 - DEBUG - Importing XpmImagePlugin
+2024-10-23 04:49:59,401 - DEBUG - Importing XVThumbImagePlugin
+2024-10-23 04:50:15,915 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:50:19,728 - WARNING - Not Found: /minhas-compras/static/lib/wow/wow.min.js
+2024-10-23 04:50:19,739 - WARNING - Not Found: /minhas-compras/static/lib/easing/easing.min.js
+2024-10-23 04:50:19,756 - WARNING - Not Found: /minhas-compras/static/lib/counterup/counterup.min.js
+2024-10-23 04:50:19,767 - WARNING - Not Found: /minhas-compras/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:50:19,777 - WARNING - Not Found: /minhas-compras/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:50:19,827 - WARNING - Not Found: /minhas-compras/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:50:19,839 - WARNING - Not Found: /minhas-compras/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:50:19,872 - WARNING - Not Found: /minhas-compras/static/js/main.js
+2024-10-23 04:50:19,875 - WARNING - Not Found: /minhas-compras/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:50:21,116 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:50:21,138 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:50:21,145 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:50:21,155 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:50:21,183 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:50:21,206 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:50:21,218 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:50:21,235 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:50:21,238 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:50:21,260 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:50:41,943 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:50:42,034 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:50:42,045 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:50:42,059 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:50:42,071 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:50:42,079 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:50:42,124 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:50:42,163 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:50:42,168 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:50:42,168 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:50:42,188 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:50:43,321 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:50:43,404 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:50:43,450 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:50:43,480 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:50:43,483 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:50:43,508 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:50:43,513 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:50:43,533 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:50:43,553 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:50:43,615 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:50:43,642 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:50:43,647 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:51:41,497 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:55:22,020 - DEBUG - STREAM b'IHDR' 16 13
+2024-10-23 04:55:22,020 - DEBUG - STREAM b'pHYs' 41 9
+2024-10-23 04:55:22,021 - DEBUG - STREAM b'iTXt' 62 1271
+2024-10-23 04:55:22,021 - DEBUG - STREAM b'IDAT' 1345 5368
+2024-10-23 04:55:22,021 - DEBUG - Importing BlpImagePlugin
+2024-10-23 04:55:22,022 - DEBUG - Importing BmpImagePlugin
+2024-10-23 04:55:22,023 - DEBUG - Importing BufrStubImagePlugin
+2024-10-23 04:55:22,023 - DEBUG - Importing CurImagePlugin
+2024-10-23 04:55:22,023 - DEBUG - Importing DcxImagePlugin
+2024-10-23 04:55:22,024 - DEBUG - Importing DdsImagePlugin
+2024-10-23 04:55:22,027 - DEBUG - Importing EpsImagePlugin
+2024-10-23 04:55:22,029 - DEBUG - Importing FitsImagePlugin
+2024-10-23 04:55:22,030 - DEBUG - Importing FliImagePlugin
+2024-10-23 04:55:22,030 - DEBUG - Importing FpxImagePlugin
+2024-10-23 04:55:22,031 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-23 04:55:22,031 - DEBUG - Importing FtexImagePlugin
+2024-10-23 04:55:22,032 - DEBUG - Importing GbrImagePlugin
+2024-10-23 04:55:22,032 - DEBUG - Importing GifImagePlugin
+2024-10-23 04:55:22,032 - DEBUG - Importing GribStubImagePlugin
+2024-10-23 04:55:22,033 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-23 04:55:22,033 - DEBUG - Importing IcnsImagePlugin
+2024-10-23 04:55:22,035 - DEBUG - Importing IcoImagePlugin
+2024-10-23 04:55:22,036 - DEBUG - Importing ImImagePlugin
+2024-10-23 04:55:22,042 - DEBUG - Importing ImtImagePlugin
+2024-10-23 04:55:22,043 - DEBUG - Importing IptcImagePlugin
+2024-10-23 04:55:22,044 - DEBUG - Importing JpegImagePlugin
+2024-10-23 04:55:22,044 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-23 04:55:22,044 - DEBUG - Importing McIdasImagePlugin
+2024-10-23 04:55:22,045 - DEBUG - Importing MicImagePlugin
+2024-10-23 04:55:22,046 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-23 04:55:22,047 - DEBUG - Importing MpegImagePlugin
+2024-10-23 04:55:22,047 - DEBUG - Importing MpoImagePlugin
+2024-10-23 04:55:22,053 - DEBUG - Importing MspImagePlugin
+2024-10-23 04:55:22,054 - DEBUG - Importing PalmImagePlugin
+2024-10-23 04:55:22,056 - DEBUG - Importing PcdImagePlugin
+2024-10-23 04:55:22,057 - DEBUG - Importing PcxImagePlugin
+2024-10-23 04:55:22,057 - DEBUG - Importing PdfImagePlugin
+2024-10-23 04:55:22,067 - DEBUG - Importing PixarImagePlugin
+2024-10-23 04:55:22,069 - DEBUG - Importing PngImagePlugin
+2024-10-23 04:55:22,069 - DEBUG - Importing PpmImagePlugin
+2024-10-23 04:55:22,069 - DEBUG - Importing PsdImagePlugin
+2024-10-23 04:55:22,070 - DEBUG - Importing QoiImagePlugin
+2024-10-23 04:55:22,071 - DEBUG - Importing SgiImagePlugin
+2024-10-23 04:55:22,073 - DEBUG - Importing SpiderImagePlugin
+2024-10-23 04:55:22,073 - DEBUG - Importing SunImagePlugin
+2024-10-23 04:55:22,074 - DEBUG - Importing TgaImagePlugin
+2024-10-23 04:55:22,074 - DEBUG - Importing TiffImagePlugin
+2024-10-23 04:55:22,074 - DEBUG - Importing WebPImagePlugin
+2024-10-23 04:55:22,078 - DEBUG - Importing WmfImagePlugin
+2024-10-23 04:55:22,078 - DEBUG - Importing XbmImagePlugin
+2024-10-23 04:55:22,080 - DEBUG - Importing XpmImagePlugin
+2024-10-23 04:55:22,082 - DEBUG - Importing XVThumbImagePlugin
+2024-10-23 04:55:24,054 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:55:24,076 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:55:24,102 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:55:24,116 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:55:24,127 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:55:24,147 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:55:24,165 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:55:24,170 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:55:24,195 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:55:24,196 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:55:24,206 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:56:22,726 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:56:33,596 - DEBUG - STREAM b'IHDR' 16 13
+2024-10-23 04:56:33,596 - DEBUG - STREAM b'sRGB' 41 1
+2024-10-23 04:56:33,597 - DEBUG - STREAM b'gAMA' 54 4
+2024-10-23 04:56:33,597 - DEBUG - STREAM b'pHYs' 70 9
+2024-10-23 04:56:33,597 - DEBUG - STREAM b'IDAT' 91 65445
+2024-10-23 04:56:33,600 - DEBUG - Importing BlpImagePlugin
+2024-10-23 04:56:33,601 - DEBUG - Importing BmpImagePlugin
+2024-10-23 04:56:33,601 - DEBUG - Importing BufrStubImagePlugin
+2024-10-23 04:56:33,603 - DEBUG - Importing CurImagePlugin
+2024-10-23 04:56:33,604 - DEBUG - Importing DcxImagePlugin
+2024-10-23 04:56:33,605 - DEBUG - Importing DdsImagePlugin
+2024-10-23 04:56:33,611 - DEBUG - Importing EpsImagePlugin
+2024-10-23 04:56:33,614 - DEBUG - Importing FitsImagePlugin
+2024-10-23 04:56:33,616 - DEBUG - Importing FliImagePlugin
+2024-10-23 04:56:33,617 - DEBUG - Importing FpxImagePlugin
+2024-10-23 04:56:33,619 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-23 04:56:33,620 - DEBUG - Importing FtexImagePlugin
+2024-10-23 04:56:33,622 - DEBUG - Importing GbrImagePlugin
+2024-10-23 04:56:33,622 - DEBUG - Importing GifImagePlugin
+2024-10-23 04:56:33,623 - DEBUG - Importing GribStubImagePlugin
+2024-10-23 04:56:33,625 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-23 04:56:33,626 - DEBUG - Importing IcnsImagePlugin
+2024-10-23 04:56:33,629 - DEBUG - Importing IcoImagePlugin
+2024-10-23 04:56:33,630 - DEBUG - Importing ImImagePlugin
+2024-10-23 04:56:33,631 - DEBUG - Importing ImtImagePlugin
+2024-10-23 04:56:33,632 - DEBUG - Importing IptcImagePlugin
+2024-10-23 04:56:33,633 - DEBUG - Importing JpegImagePlugin
+2024-10-23 04:56:33,634 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-23 04:56:33,634 - DEBUG - Importing McIdasImagePlugin
+2024-10-23 04:56:33,638 - DEBUG - Importing MicImagePlugin
+2024-10-23 04:56:33,642 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-23 04:56:33,643 - DEBUG - Importing MpegImagePlugin
+2024-10-23 04:56:33,644 - DEBUG - Importing MpoImagePlugin
+2024-10-23 04:56:33,648 - DEBUG - Importing MspImagePlugin
+2024-10-23 04:56:33,650 - DEBUG - Importing PalmImagePlugin
+2024-10-23 04:56:33,653 - DEBUG - Importing PcdImagePlugin
+2024-10-23 04:56:33,658 - DEBUG - Importing PcxImagePlugin
+2024-10-23 04:56:33,659 - DEBUG - Importing PdfImagePlugin
+2024-10-23 04:56:33,665 - DEBUG - Importing PixarImagePlugin
+2024-10-23 04:56:33,666 - DEBUG - Importing PngImagePlugin
+2024-10-23 04:56:33,667 - DEBUG - Importing PpmImagePlugin
+2024-10-23 04:56:33,668 - DEBUG - Importing PsdImagePlugin
+2024-10-23 04:56:33,672 - DEBUG - Importing QoiImagePlugin
+2024-10-23 04:56:33,674 - DEBUG - Importing SgiImagePlugin
+2024-10-23 04:56:33,675 - DEBUG - Importing SpiderImagePlugin
+2024-10-23 04:56:33,677 - DEBUG - Importing SunImagePlugin
+2024-10-23 04:56:33,678 - DEBUG - Importing TgaImagePlugin
+2024-10-23 04:56:33,679 - DEBUG - Importing TiffImagePlugin
+2024-10-23 04:56:33,679 - DEBUG - Importing WebPImagePlugin
+2024-10-23 04:56:33,681 - DEBUG - Importing WmfImagePlugin
+2024-10-23 04:56:33,681 - DEBUG - Importing XbmImagePlugin
+2024-10-23 04:56:33,683 - DEBUG - Importing XpmImagePlugin
+2024-10-23 04:56:33,687 - DEBUG - Importing XVThumbImagePlugin
+2024-10-23 04:56:35,397 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:56:35,418 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:56:35,436 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:56:35,444 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:56:35,450 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:56:35,459 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:56:35,468 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:56:35,480 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:56:35,508 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:56:35,518 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:56:35,524 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:56:36,308 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:56:36,329 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:56:36,340 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:56:36,355 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:56:36,358 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:56:36,372 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:56:36,386 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:56:36,404 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:56:36,418 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:56:36,427 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:56:36,439 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:56:36,928 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:56:37,001 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:56:37,004 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:56:37,008 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:56:37,012 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:56:37,021 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:56:37,024 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:56:37,033 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:56:37,044 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:56:37,057 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:56:37,061 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:56:37,219 - WARNING - Not Found: /eventos/Captura_de_tela_2024-10-22_185317.png
+2024-10-23 04:56:37,239 - WARNING - Not Found: /eventos/emots.jpeg
+2024-10-23 04:56:37,254 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:56:37,258 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:56:37,259 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:56:37,263 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:56:37,279 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:56:37,294 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:56:37,305 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:56:37,318 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:56:37,326 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:57:51,699 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 04:57:55,984 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:57:55,997 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:57:56,006 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:57:56,022 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:57:56,024 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:57:56,033 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:57:56,068 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:57:56,080 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:57:56,095 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 04:57:56,100 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:58:17,915 - DEBUG - STREAM b'IHDR' 16 13
+2024-10-23 04:58:17,915 - DEBUG - STREAM b'pHYs' 41 9
+2024-10-23 04:58:17,915 - DEBUG - STREAM b'iTXt' 62 1272
+2024-10-23 04:58:17,915 - DEBUG - STREAM b'IDAT' 1346 4174
+2024-10-23 04:58:17,916 - DEBUG - Importing BlpImagePlugin
+2024-10-23 04:58:17,916 - DEBUG - Importing BmpImagePlugin
+2024-10-23 04:58:17,917 - DEBUG - Importing BufrStubImagePlugin
+2024-10-23 04:58:17,917 - DEBUG - Importing CurImagePlugin
+2024-10-23 04:58:17,917 - DEBUG - Importing DcxImagePlugin
+2024-10-23 04:58:17,918 - DEBUG - Importing DdsImagePlugin
+2024-10-23 04:58:17,921 - DEBUG - Importing EpsImagePlugin
+2024-10-23 04:58:17,921 - DEBUG - Importing FitsImagePlugin
+2024-10-23 04:58:17,922 - DEBUG - Importing FliImagePlugin
+2024-10-23 04:58:17,922 - DEBUG - Importing FpxImagePlugin
+2024-10-23 04:58:17,923 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-23 04:58:17,923 - DEBUG - Importing FtexImagePlugin
+2024-10-23 04:58:17,923 - DEBUG - Importing GbrImagePlugin
+2024-10-23 04:58:17,924 - DEBUG - Importing GifImagePlugin
+2024-10-23 04:58:17,924 - DEBUG - Importing GribStubImagePlugin
+2024-10-23 04:58:17,924 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-23 04:58:17,925 - DEBUG - Importing IcnsImagePlugin
+2024-10-23 04:58:17,926 - DEBUG - Importing IcoImagePlugin
+2024-10-23 04:58:17,926 - DEBUG - Importing ImImagePlugin
+2024-10-23 04:58:17,927 - DEBUG - Importing ImtImagePlugin
+2024-10-23 04:58:17,928 - DEBUG - Importing IptcImagePlugin
+2024-10-23 04:58:17,928 - DEBUG - Importing JpegImagePlugin
+2024-10-23 04:58:17,928 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-23 04:58:17,928 - DEBUG - Importing McIdasImagePlugin
+2024-10-23 04:58:17,929 - DEBUG - Importing MicImagePlugin
+2024-10-23 04:58:17,930 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-23 04:58:17,930 - DEBUG - Importing MpegImagePlugin
+2024-10-23 04:58:17,930 - DEBUG - Importing MpoImagePlugin
+2024-10-23 04:58:17,932 - DEBUG - Importing MspImagePlugin
+2024-10-23 04:58:17,933 - DEBUG - Importing PalmImagePlugin
+2024-10-23 04:58:17,934 - DEBUG - Importing PcdImagePlugin
+2024-10-23 04:58:17,935 - DEBUG - Importing PcxImagePlugin
+2024-10-23 04:58:17,935 - DEBUG - Importing PdfImagePlugin
+2024-10-23 04:58:17,941 - DEBUG - Importing PixarImagePlugin
+2024-10-23 04:58:17,942 - DEBUG - Importing PngImagePlugin
+2024-10-23 04:58:17,942 - DEBUG - Importing PpmImagePlugin
+2024-10-23 04:58:17,943 - DEBUG - Importing PsdImagePlugin
+2024-10-23 04:58:17,943 - DEBUG - Importing QoiImagePlugin
+2024-10-23 04:58:17,944 - DEBUG - Importing SgiImagePlugin
+2024-10-23 04:58:17,946 - DEBUG - Importing SpiderImagePlugin
+2024-10-23 04:58:17,946 - DEBUG - Importing SunImagePlugin
+2024-10-23 04:58:17,947 - DEBUG - Importing TgaImagePlugin
+2024-10-23 04:58:17,947 - DEBUG - Importing TiffImagePlugin
+2024-10-23 04:58:17,947 - DEBUG - Importing WebPImagePlugin
+2024-10-23 04:58:17,948 - DEBUG - Importing WmfImagePlugin
+2024-10-23 04:58:17,949 - DEBUG - Importing XbmImagePlugin
+2024-10-23 04:58:17,950 - DEBUG - Importing XpmImagePlugin
+2024-10-23 04:58:17,951 - DEBUG - Importing XVThumbImagePlugin
+2024-10-23 04:58:20,245 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:58:20,265 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:58:20,272 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:58:20,286 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:58:20,297 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:58:20,316 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:58:20,329 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:58:20,341 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:58:20,355 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:58:23,617 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:58:23,619 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:58:23,629 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:58:23,638 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:58:23,641 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:58:23,649 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:58:23,666 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:58:23,671 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 04:58:23,681 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:58:23,691 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:58:24,688 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:58:24,701 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:58:24,713 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:58:24,718 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:58:24,729 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:58:24,734 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:58:24,748 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:58:24,757 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:58:24,761 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:58:24,967 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:58:24,982 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:58:24,983 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:58:24,985 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:58:25,014 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:58:25,021 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:58:25,024 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:58:25,033 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:58:25,041 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:58:54,388 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:58:54,398 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:58:54,408 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:58:54,425 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:58:54,441 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:58:54,454 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:58:54,457 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:58:54,467 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:58:54,471 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 04:59:26,837 - DEBUG - STREAM b'IHDR' 16 13
+2024-10-23 04:59:26,838 - DEBUG - STREAM b'pHYs' 41 9
+2024-10-23 04:59:26,838 - DEBUG - STREAM b'iTXt' 62 1271
+2024-10-23 04:59:26,838 - DEBUG - STREAM b'IDAT' 1345 5368
+2024-10-23 04:59:30,029 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 04:59:30,049 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 04:59:30,077 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 04:59:30,088 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 04:59:30,091 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 04:59:30,104 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 04:59:30,105 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 04:59:30,117 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 04:59:30,122 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:00:24,651 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:00:53,735 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:01:23,208 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+2024-10-23 05:01:23,209 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 86 - value: b'\x00\x00\x00\xd8\x00\x00\x00\x01'
+2024-10-23 05:01:23,209 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 94 - value: b'\x00\x00\x00\xd8\x00\x00\x00\x01'
+2024-10-23 05:01:23,209 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+2024-10-23 05:01:23,209 - DEBUG - tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+2024-10-23 05:01:23,209 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00f'
+2024-10-23 05:01:23,209 - DEBUG - Importing BlpImagePlugin
+2024-10-23 05:01:23,210 - DEBUG - Importing BmpImagePlugin
+2024-10-23 05:01:23,210 - DEBUG - Importing BufrStubImagePlugin
+2024-10-23 05:01:23,211 - DEBUG - Importing CurImagePlugin
+2024-10-23 05:01:23,211 - DEBUG - Importing DcxImagePlugin
+2024-10-23 05:01:23,211 - DEBUG - Importing DdsImagePlugin
+2024-10-23 05:01:23,217 - DEBUG - Importing EpsImagePlugin
+2024-10-23 05:01:23,220 - DEBUG - Importing FitsImagePlugin
+2024-10-23 05:01:23,221 - DEBUG - Importing FliImagePlugin
+2024-10-23 05:01:23,222 - DEBUG - Importing FpxImagePlugin
+2024-10-23 05:01:23,222 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-10-23 05:01:23,223 - DEBUG - Importing FtexImagePlugin
+2024-10-23 05:01:23,224 - DEBUG - Importing GbrImagePlugin
+2024-10-23 05:01:23,224 - DEBUG - Importing GifImagePlugin
+2024-10-23 05:01:23,225 - DEBUG - Importing GribStubImagePlugin
+2024-10-23 05:01:23,226 - DEBUG - Importing Hdf5StubImagePlugin
+2024-10-23 05:01:23,227 - DEBUG - Importing IcnsImagePlugin
+2024-10-23 05:01:23,228 - DEBUG - Importing IcoImagePlugin
+2024-10-23 05:01:23,229 - DEBUG - Importing ImImagePlugin
+2024-10-23 05:01:23,235 - DEBUG - Importing ImtImagePlugin
+2024-10-23 05:01:23,238 - DEBUG - Importing IptcImagePlugin
+2024-10-23 05:01:23,239 - DEBUG - Importing JpegImagePlugin
+2024-10-23 05:01:23,239 - DEBUG - Importing Jpeg2KImagePlugin
+2024-10-23 05:01:23,239 - DEBUG - Importing McIdasImagePlugin
+2024-10-23 05:01:23,239 - DEBUG - Importing MicImagePlugin
+2024-10-23 05:01:23,240 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-10-23 05:01:23,240 - DEBUG - Importing MpegImagePlugin
+2024-10-23 05:01:23,240 - DEBUG - Importing MpoImagePlugin
+2024-10-23 05:01:23,241 - DEBUG - Importing MspImagePlugin
+2024-10-23 05:01:23,241 - DEBUG - Importing PalmImagePlugin
+2024-10-23 05:01:23,242 - DEBUG - Importing PcdImagePlugin
+2024-10-23 05:01:23,242 - DEBUG - Importing PcxImagePlugin
+2024-10-23 05:01:23,242 - DEBUG - Importing PdfImagePlugin
+2024-10-23 05:01:23,253 - DEBUG - Importing PixarImagePlugin
+2024-10-23 05:01:23,254 - DEBUG - Importing PngImagePlugin
+2024-10-23 05:01:23,254 - DEBUG - Importing PpmImagePlugin
+2024-10-23 05:01:23,254 - DEBUG - Importing PsdImagePlugin
+2024-10-23 05:01:23,255 - DEBUG - Importing QoiImagePlugin
+2024-10-23 05:01:23,255 - DEBUG - Importing SgiImagePlugin
+2024-10-23 05:01:23,256 - DEBUG - Importing SpiderImagePlugin
+2024-10-23 05:01:23,256 - DEBUG - Importing SunImagePlugin
+2024-10-23 05:01:23,257 - DEBUG - Importing TgaImagePlugin
+2024-10-23 05:01:23,257 - DEBUG - Importing TiffImagePlugin
+2024-10-23 05:01:23,257 - DEBUG - Importing WebPImagePlugin
+2024-10-23 05:01:23,258 - DEBUG - Importing WmfImagePlugin
+2024-10-23 05:01:23,259 - DEBUG - Importing XbmImagePlugin
+2024-10-23 05:01:23,260 - DEBUG - Importing XpmImagePlugin
+2024-10-23 05:01:23,261 - DEBUG - Importing XVThumbImagePlugin
+2024-10-23 05:01:25,437 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:01:25,438 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:01:25,441 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:01:25,450 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:01:25,452 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:01:25,460 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:01:25,470 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:01:25,473 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:01:25,477 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:01:25,486 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:01:27,025 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:01:27,057 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:01:27,059 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:01:27,060 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:01:27,062 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:01:27,065 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:01:27,069 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:01:27,073 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:01:27,078 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:03:06,254 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:03:06,294 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:03:06,298 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:03:06,302 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:03:06,309 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:03:06,313 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:03:06,320 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:03:06,322 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:03:06,338 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:03:07,991 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:03:08,027 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:03:08,029 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:03:08,031 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:03:08,033 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:03:08,036 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:03:08,038 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:03:08,050 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:03:08,053 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:03:08,884 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:03:08,903 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:03:08,906 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:03:08,908 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:03:08,911 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:03:08,915 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:03:08,925 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:03:08,929 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:03:08,932 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:03:53,732 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:26:43,185 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:26:43,186 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:26:43,194 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:26:43,196 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:26:43,198 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:26:43,207 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:26:43,216 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:26:43,219 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:26:43,241 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:26:43,251 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:26:52,846 - WARNING - Not Found: /cadastrar-fotos/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:26:52,856 - WARNING - Not Found: /cadastrar-fotos/static/lib/counterup/counterup.min.js
+2024-10-23 05:26:52,859 - WARNING - Not Found: /cadastrar-fotos/static/lib/easing/easing.min.js
+2024-10-23 05:26:52,864 - WARNING - Not Found: /cadastrar-fotos/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:26:52,872 - WARNING - Not Found: /cadastrar-fotos/static/lib/wow/wow.min.js
+2024-10-23 05:26:52,876 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:26:52,878 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:26:52,881 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:26:52,884 - WARNING - Not Found: /cadastrar-fotos/static/js/main.js
+2024-10-23 05:26:52,891 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:26:59,449 - WARNING - Not Found: /cadastrar-fotos/static/lib/easing/easing.min.js
+2024-10-23 05:26:59,451 - WARNING - Not Found: /cadastrar-fotos/static/lib/wow/wow.min.js
+2024-10-23 05:26:59,466 - WARNING - Not Found: /cadastrar-fotos/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:26:59,470 - WARNING - Not Found: /cadastrar-fotos/static/lib/counterup/counterup.min.js
+2024-10-23 05:26:59,473 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:26:59,475 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:26:59,479 - WARNING - Not Found: /cadastrar-fotos/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:26:59,491 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:26:59,494 - WARNING - Not Found: /cadastrar-fotos/static/js/main.js
+2024-10-23 05:27:07,178 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:27:07,182 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:27:07,185 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:27:07,187 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:27:07,194 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:27:07,196 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:27:07,198 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:27:07,202 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:27:07,205 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:27:07,207 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:27:09,028 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:27:09,030 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:27:09,032 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:27:09,034 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:27:09,035 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:27:09,037 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:27:09,044 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:27:09,047 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:27:09,051 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:27:09,715 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:27:09,718 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:27:09,719 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:27:09,722 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:27:09,725 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:27:09,727 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:27:09,736 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:27:09,739 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:27:09,742 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:27:09,920 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:27:09,921 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:27:09,922 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:27:09,923 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:27:09,924 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:27:09,926 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:27:09,933 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:27:09,935 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:27:09,938 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:27:10,128 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:27:10,130 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:27:10,132 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:27:10,134 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:27:10,135 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:27:10,136 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:27:10,141 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:27:10,145 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:27:10,149 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:27:25,048 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:29:05,156 - INFO - /home/igor/git/site_chopp_itinerante/main/models.py changed, reloading.
+2024-10-23 05:29:12,224 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:29:12,290 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:29:12,294 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:29:12,296 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:29:12,300 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:29:12,306 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:29:12,313 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:29:12,317 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:29:12,332 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:29:12,347 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:29:28,947 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-10-23 05:29:28,950 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-10-23 05:29:28,951 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-10-23 05:29:28,953 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-10-23 05:29:28,953 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-10-23 05:29:28,954 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-10-23 05:29:28,956 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-10-23 05:29:28,960 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-10-23 05:29:28,962 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-10-23 05:29:28,966 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-10-23 05:29:28,968 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-10-23 05:29:28,983 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/endpoints.json
+2024-10-23 05:29:29,025 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/sdk-default-configuration.json
+2024-10-23 05:29:29,027 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f851238a7a0>
+2024-10-23 05:29:29,052 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/service-2.json.gz
+2024-10-23 05:29:29,063 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/service-2.sdk-extras.json
+2024-10-23 05:29:29,078 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/endpoint-rule-set-1.json.gz
+2024-10-23 05:29:29,084 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/partitions.json
+2024-10-23 05:29:29,086 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f8512498af0>
+2024-10-23 05:29:29,086 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f84f8cc09d0>
+2024-10-23 05:29:29,106 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f85124988b0>
+2024-10-23 05:29:29,107 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-10-23 05:29:29,108 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-10-23 05:29:29,108 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-10-23 05:29:29,108 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-10-23 05:29:29,109 - DEBUG - No configured endpoint found.
+2024-10-23 05:29:29,113 - DEBUG - Setting s3 timeout as (60, 60)
+2024-10-23 05:29:29,116 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/_retry.json
+2024-10-23 05:29:29,117 - DEBUG - Registering retry handlers for service: s3
+2024-10-23 05:29:29,117 - DEBUG - Registering S3 region redirector handler
+2024-10-23 05:29:29,117 - DEBUG - Registering S3Express Identity Resolver
+2024-10-23 05:29:29,118 - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-10-23 05:29:29,118 - DEBUG - Using default client. pid: 275135, thread: 140208972478016
+2024-10-23 05:29:29,120 - DEBUG - Acquiring 0
+2024-10-23 05:29:29,124 - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f84f2eb1ff0>}) about to wait for the following futures []
+2024-10-23 05:29:29,125 - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f84f2eb1ff0>}) done waiting for dependent futures
+2024-10-23 05:29:29,126 - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f84f2eb1ff0>}) with kwargs {'client': <botocore.client.S3 object at 0x7f84f2f8d4e0>, 'config': <boto3.s3.transfer.TransferConfig object at 0x7f84f2eb1420>, 'osutil': <s3transfer.utils.OSUtils object at 0x7f84f2eb13c0>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x7f84f2eb1630>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f84f2eb1ff0>}
+2024-10-23 05:29:29,126 - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/eventos/2022-05-26_13.png', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f84f2eb1630> for transfer request: 0.
+2024-10-23 05:29:29,126 - DEBUG - Acquiring 0
+2024-10-23 05:29:29,127 - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/eventos/2022-05-26_13.png', 'extra_args': {}}) about to wait for the following futures []
+2024-10-23 05:29:29,128 - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/eventos/2022-05-26_13.png', 'extra_args': {}}) done waiting for dependent futures
+2024-10-23 05:29:29,129 - DEBUG - Releasing acquire 0/None
+2024-10-23 05:29:29,129 - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/eventos/2022-05-26_13.png', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f84f2f8d4e0>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x7f84f2eb2560>, 'bucket': 'chopp-itinerante', 'key': 'eventos/eventos/2022-05-26_13.png', 'extra_args': {}}
+2024-10-23 05:29:29,131 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x7f85123a4dc0>
+2024-10-23 05:29:29,131 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x7f85123a41f0>
+2024-10-23 05:29:29,131 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x7f85123a56c0>
+2024-10-23 05:29:29,131 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x7f85123a4160>
+2024-10-23 05:29:29,131 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x7f85123a5fc0>
+2024-10-23 05:29:29,131 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x7f84f2eb12d0>>
+2024-10-23 05:29:29,132 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x7f84f8cd9480>>
+2024-10-23 05:29:29,132 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x7f851238bf40>
+2024-10-23 05:29:29,132 - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x7f85123a6170>
+2024-10-23 05:29:29,132 - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x7f84f2eb12d0>>
+2024-10-23 05:29:29,133 - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'chopp-itinerante', 'Region': 'us-east-2', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': False, 'Key': 'eventos/eventos/2022-05-26_13.png', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-10-23 05:29:29,135 - DEBUG - Endpoint provider result: https://chopp-itinerante.s3.us-east-2.amazonaws.com
+2024-10-23 05:29:29,136 - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-10-23 05:29:29,136 - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-2', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-10-23 05:29:29,137 - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x7f851260f490>
+2024-10-23 05:29:29,138 - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x7f85123a44c0>
+2024-10-23 05:29:29,138 - DEBUG - Adding expect 100 continue header to request.
+2024-10-23 05:29:29,138 - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x7f84f2eb1330>>
+2024-10-23 05:29:29,138 - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x7f851238bb50>
+2024-10-23 05:29:29,139 - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x7f85123a57e0>
+2024-10-23 05:29:29,139 - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/eventos/eventos/2022-05-26_13.png', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.35.43 md/Botocore#1.35.43 ua/2.0 os/linux#5.15.153.1-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.10.12 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.35.43', 'Content-MD5': 'QIIF2pqVna1ls34UcKjquA==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x7f84f2eb2560>, 'auth_path': '/chopp-itinerante/eventos/eventos/2022-05-26_13.png', 'url': 'https://chopp-itinerante.s3.us-east-2.amazonaws.com/eventos/eventos/2022-05-26_13.png', 'context': {'client_region': 'us-east-2', 'client_config': <botocore.config.Config object at 0x7f84f2e51c30>, 'has_streaming_input': True, 'auth_type': 'v4', 'unsigned_payload': None, 's3_redirect': {'redirected': False, 'bucket': 'chopp-itinerante', 'params': {'Bucket': 'chopp-itinerante', 'Key': 'eventos/eventos/2022-05-26_13.png', 'Body': <s3transfer.utils.ReadFileChunk object at 0x7f84f2eb2560>}}, 'input_params': {'Bucket': 'chopp-itinerante', 'Key': 'eventos/eventos/2022-05-26_13.png'}, 'signing': {'region': 'us-east-2', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-2'}]}}}
+2024-10-23 05:29:29,140 - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x7f84f2e0fc70>
+2024-10-23 05:29:29,141 - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f84f2f8d180>>
+2024-10-23 05:29:29,141 - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x7f851238bd90>
+2024-10-23 05:29:29,141 - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x7f85123a60e0>
+2024-10-23 05:29:29,141 - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x7f84f2eb1330>>
+2024-10-23 05:29:29,142 - DEBUG - Calculating signature using v4 auth.
+2024-10-23 05:29:29,142 - DEBUG - CanonicalRequest:
+PUT
+/eventos/eventos/2022-05-26_13.png
+
+content-md5:QIIF2pqVna1ls34UcKjquA==
+host:chopp-itinerante.s3.us-east-2.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20241023T052929Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-10-23 05:29:29,142 - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20241023T052929Z
+20241023/us-east-2/s3/aws4_request
+5bffee0fad2f28a45554a7fd7534b30849675afdf25fedc128924dda5d29ee6f
+2024-10-23 05:29:29,143 - DEBUG - Signature:
+988e127b81703b3f8ae845bdcf944ee809043796c2ecb92bc3693285ccbe8120
+2024-10-23 05:29:29,144 - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x7f84f2e0fd00>
+2024-10-23 05:29:29,145 - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x7f85123a5f30>
+2024-10-23 05:29:29,145 - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://chopp-itinerante.s3.us-east-2.amazonaws.com/eventos/eventos/2022-05-26_13.png, headers={'User-Agent': b'Boto3/1.35.43 md/Botocore#1.35.43 ua/2.0 os/linux#5.15.153.1-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.10.12 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.35.43', 'Content-MD5': b'QIIF2pqVna1ls34UcKjquA==', 'Expect': b'100-continue', 'X-Amz-Date': b'20241023T052929Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAZ7SALCLHLWEK5EDL/20241023/us-east-2/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=988e127b81703b3f8ae845bdcf944ee809043796c2ecb92bc3693285ccbe8120', 'amz-sdk-invocation-id': b'c7cf6f55-0de1-4e28-a953-54ea005fbd1a', 'amz-sdk-request': b'attempt=1', 'Content-Length': '151901'}>
+2024-10-23 05:29:29,147 - DEBUG - Certificate path: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/certifi/cacert.pem
+2024-10-23 05:29:29,148 - DEBUG - Starting new HTTPS connection (1): chopp-itinerante.s3.us-east-2.amazonaws.com:443
+2024-10-23 05:29:29,578 - DEBUG - Waiting for 100 Continue response.
+2024-10-23 05:29:29,711 - DEBUG - 100 Continue response seen, now sending request body.
+2024-10-23 05:29:30,247 - DEBUG - https://chopp-itinerante.s3.us-east-2.amazonaws.com:443 "PUT /eventos/eventos/2022-05-26_13.png HTTP/11" 200 0
+2024-10-23 05:29:30,247 - DEBUG - Event before-parse.s3.PutObject: calling handler <function handle_expires_header at 0x7f85123a6290>
+2024-10-23 05:29:30,248 - DEBUG - Response headers: {'x-amz-id-2': 'JyG4z5EJBrko7+ljqfNyneKhmfwKSjcPeea3rSAU24W+hC6b9+E3cFvjcX5OBwAX0C7WnU7ZzKdhpDtth0Js7A==', 'x-amz-request-id': '7P5Y67DRW5XBWRV2', 'Date': 'Wed, 23 Oct 2024 05:29:31 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"408205da9a959dad65b37e1470a8eab8"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-10-23 05:29:30,248 - DEBUG - Response body:
+b''
+2024-10-23 05:29:30,248 - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x7f84f2eb1210>
+2024-10-23 05:29:30,248 - DEBUG - No retry needed.
+2024-10-23 05:29:30,248 - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x7f84f2eb12d0>>
+2024-10-23 05:29:30,249 - DEBUG - Releasing acquire 0/None
+2024-10-23 05:29:30,323 - WARNING - Not Found: /cadastrar-fotos/static/lib/wow/wow.min.js
+2024-10-23 05:29:30,325 - WARNING - Not Found: /cadastrar-fotos/static/lib/easing/easing.min.js
+2024-10-23 05:29:30,333 - WARNING - Not Found: /cadastrar-fotos/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:29:30,355 - WARNING - Not Found: /cadastrar-fotos/static/lib/counterup/counterup.min.js
+2024-10-23 05:29:30,359 - WARNING - Not Found: /cadastrar-fotos/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:29:30,366 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:29:30,368 - WARNING - Not Found: /cadastrar-fotos/static/js/main.js
+2024-10-23 05:29:30,370 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:29:30,374 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:29:30,998 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:29:31,000 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:29:31,002 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:29:31,004 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:29:31,006 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:29:31,007 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:29:31,015 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:29:31,017 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:29:31,018 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:29:31,019 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:29:32,411 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:29:32,413 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:29:32,416 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:29:32,421 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:29:32,424 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:29:32,430 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:29:32,432 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:29:32,434 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:29:32,436 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:29:33,044 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:29:33,047 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:29:33,048 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:29:33,050 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:29:33,051 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:29:33,053 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:29:33,065 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:29:33,066 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:29:33,069 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:29:33,313 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:29:33,315 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:29:33,316 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:29:33,317 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:29:33,318 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:29:33,321 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:29:33,326 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:29:33,332 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:29:33,334 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:30:34,383 - INFO - /home/igor/git/site_chopp_itinerante/main/models.py changed, reloading.
+2024-10-23 05:31:26,150 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:31:26,152 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:31:26,157 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:31:26,171 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:31:26,174 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:31:26,179 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:31:26,182 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:31:26,186 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:31:26,189 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:31:26,198 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:31:40,231 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2024-10-23 05:31:40,233 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2024-10-23 05:31:40,234 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2024-10-23 05:31:40,235 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2024-10-23 05:31:40,235 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2024-10-23 05:31:40,236 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2024-10-23 05:31:40,236 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2024-10-23 05:31:40,238 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2024-10-23 05:31:40,238 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2024-10-23 05:31:40,238 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2024-10-23 05:31:40,239 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2024-10-23 05:31:40,244 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/endpoints.json
+2024-10-23 05:31:40,317 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/sdk-default-configuration.json
+2024-10-23 05:31:40,318 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x7f60a02e67a0>
+2024-10-23 05:31:40,347 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/service-2.json.gz
+2024-10-23 05:31:40,356 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/service-2.sdk-extras.json
+2024-10-23 05:31:40,370 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/s3/2006-03-01/endpoint-rule-set-1.json.gz
+2024-10-23 05:31:40,376 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/partitions.json
+2024-10-23 05:31:40,379 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7f60a03f8af0>
+2024-10-23 05:31:40,380 - DEBUG - Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7f6086b80f70>
+2024-10-23 05:31:40,401 - DEBUG - Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7f60a03f88b0>
+2024-10-23 05:31:40,401 - DEBUG - Looking for endpoint for s3 via: environment_service
+2024-10-23 05:31:40,401 - DEBUG - Looking for endpoint for s3 via: environment_global
+2024-10-23 05:31:40,401 - DEBUG - Looking for endpoint for s3 via: config_service
+2024-10-23 05:31:40,402 - DEBUG - Looking for endpoint for s3 via: config_global
+2024-10-23 05:31:40,402 - DEBUG - No configured endpoint found.
+2024-10-23 05:31:40,403 - DEBUG - Setting s3 timeout as (60, 60)
+2024-10-23 05:31:40,406 - DEBUG - Loading JSON file: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/botocore/data/_retry.json
+2024-10-23 05:31:40,411 - DEBUG - Registering retry handlers for service: s3
+2024-10-23 05:31:40,413 - DEBUG - Registering S3 region redirector handler
+2024-10-23 05:31:40,414 - DEBUG - Registering S3Express Identity Resolver
+2024-10-23 05:31:40,415 - DEBUG - Opting out of CRT Transfer Manager. Preferred client: auto, CRT available: False, Instance Optimized: False.
+2024-10-23 05:31:40,416 - DEBUG - Using default client. pid: 276088, thread: 140052518647360
+2024-10-23 05:31:40,416 - DEBUG - Acquiring 0
+2024-10-23 05:31:40,417 - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f606feeac50>}) about to wait for the following futures []
+2024-10-23 05:31:40,417 - DEBUG - UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f606feeac50>}) done waiting for dependent futures
+2024-10-23 05:31:40,417 - DEBUG - Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f606feeac50>}) with kwargs {'client': <botocore.client.S3 object at 0x7f6086b9e0b0>, 'config': <boto3.s3.transfer.TransferConfig object at 0x7f606feea080>, 'osutil': <s3transfer.utils.OSUtils object at 0x7f606feea020>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x7f606feea290>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x7f606feeac50>}
+2024-10-23 05:31:40,418 - DEBUG - Submitting task PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/testefig3.png', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x7f606feea290> for transfer request: 0.
+2024-10-23 05:31:40,418 - DEBUG - Acquiring 0
+2024-10-23 05:31:40,418 - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/testefig3.png', 'extra_args': {}}) about to wait for the following futures []
+2024-10-23 05:31:40,418 - DEBUG - Releasing acquire 0/None
+2024-10-23 05:31:40,419 - DEBUG - PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/testefig3.png', 'extra_args': {}}) done waiting for dependent futures
+2024-10-23 05:31:40,419 - DEBUG - Executing task PutObjectTask(transfer_id=0, {'bucket': 'chopp-itinerante', 'key': 'eventos/testefig3.png', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x7f6086b9e0b0>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x7f606feeb1c0>, 'bucket': 'chopp-itinerante', 'key': 'eventos/testefig3.png', 'extra_args': {}}
+2024-10-23 05:31:40,420 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x7f60a0300dc0>
+2024-10-23 05:31:40,420 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x7f60a03001f0>
+2024-10-23 05:31:40,420 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x7f60a03016c0>
+2024-10-23 05:31:40,420 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x7f60a0300160>
+2024-10-23 05:31:40,420 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function remove_bucket_from_url_paths_from_model at 0x7f60a0301fc0>
+2024-10-23 05:31:40,421 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x7f606fee9f30>>
+2024-10-23 05:31:40,421 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x7f60862a1660>>
+2024-10-23 05:31:40,421 - DEBUG - Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x7f60a02e7f40>
+2024-10-23 05:31:40,421 - DEBUG - Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x7f60a0302170>
+2024-10-23 05:31:40,421 - DEBUG - Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x7f606fee9f30>>
+2024-10-23 05:31:40,422 - DEBUG - Calling endpoint provider with parameters: {'Bucket': 'chopp-itinerante', 'Region': 'us-east-2', 'UseFIPS': False, 'UseDualStack': False, 'ForcePathStyle': False, 'Accelerate': False, 'UseGlobalEndpoint': False, 'Key': 'eventos/testefig3.png', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+2024-10-23 05:31:40,425 - DEBUG - Endpoint provider result: https://chopp-itinerante.s3.us-east-2.amazonaws.com
+2024-10-23 05:31:40,426 - DEBUG - Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "None"
+2024-10-23 05:31:40,426 - DEBUG - Selected auth type "v4" as "v4" with signing context params: {'region': 'us-east-2', 'signing_name': 's3', 'disableDoubleEncoding': True}
+2024-10-23 05:31:40,429 - DEBUG - Event before-call.s3.PutObject: calling handler <function conditionally_calculate_checksum at 0x7f60a0573490>
+2024-10-23 05:31:40,431 - DEBUG - Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x7f60a03004c0>
+2024-10-23 05:31:40,432 - DEBUG - Adding expect 100 continue header to request.
+2024-10-23 05:31:40,432 - DEBUG - Event before-call.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x7f606fee9f90>>
+2024-10-23 05:31:40,432 - DEBUG - Event before-call.s3.PutObject: calling handler <function add_recursion_detection_header at 0x7f60a02e7b50>
+2024-10-23 05:31:40,432 - DEBUG - Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x7f60a03017e0>
+2024-10-23 05:31:40,432 - DEBUG - Making request for OperationModel(name=PutObject) with params: {'url_path': '/eventos/testefig3.png', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.35.43 md/Botocore#1.35.43 ua/2.0 os/linux#5.15.153.1-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.10.12 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.35.43', 'Content-MD5': '0LhOmLtieqtqlB81rNLfEg==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x7f606feeb1c0>, 'auth_path': '/chopp-itinerante/eventos/testefig3.png', 'url': 'https://chopp-itinerante.s3.us-east-2.amazonaws.com/eventos/testefig3.png', 'context': {'client_region': 'us-east-2', 'client_config': <botocore.config.Config object at 0x7f606fe8a890>, 'has_streaming_input': True, 'auth_type': 'v4', 'unsigned_payload': None, 's3_redirect': {'redirected': False, 'bucket': 'chopp-itinerante', 'params': {'Bucket': 'chopp-itinerante', 'Key': 'eventos/testefig3.png', 'Body': <s3transfer.utils.ReadFileChunk object at 0x7f606feeb1c0>}}, 'input_params': {'Bucket': 'chopp-itinerante', 'Key': 'eventos/testefig3.png'}, 'signing': {'region': 'us-east-2', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-2'}]}}}
+2024-10-23 05:31:40,433 - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x7f606fe432e0>
+2024-10-23 05:31:40,433 - DEBUG - Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f6086b9c340>>
+2024-10-23 05:31:40,434 - DEBUG - Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x7f60a02e7d90>
+2024-10-23 05:31:40,434 - DEBUG - Event before-sign.s3.PutObject: calling handler <function remove_arn_from_signing_path at 0x7f60a03020e0>
+2024-10-23 05:31:40,434 - DEBUG - Event before-sign.s3.PutObject: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x7f606fee9f90>>
+2024-10-23 05:31:40,435 - DEBUG - Calculating signature using v4 auth.
+2024-10-23 05:31:40,435 - DEBUG - CanonicalRequest:
+PUT
+/eventos/testefig3.png
+
+content-md5:0LhOmLtieqtqlB81rNLfEg==
+host:chopp-itinerante.s3.us-east-2.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20241023T053140Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2024-10-23 05:31:40,435 - DEBUG - StringToSign:
+AWS4-HMAC-SHA256
+20241023T053140Z
+20241023/us-east-2/s3/aws4_request
+6fc51b1e87e78a5e040c43a80543fe1a56bb233a0644cd56af5d9d806e86fd97
+2024-10-23 05:31:40,435 - DEBUG - Signature:
+78bcd46ea782d5ab12ad83ae9dcc709c838498161fa37c79c370613e0eee6d4e
+2024-10-23 05:31:40,436 - DEBUG - Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x7f606fe43370>
+2024-10-23 05:31:40,436 - DEBUG - Event request-created.s3.PutObject: calling handler <function add_retry_headers at 0x7f60a0301f30>
+2024-10-23 05:31:40,436 - DEBUG - Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://chopp-itinerante.s3.us-east-2.amazonaws.com/eventos/testefig3.png, headers={'User-Agent': b'Boto3/1.35.43 md/Botocore#1.35.43 ua/2.0 os/linux#5.15.153.1-microsoft-standard-WSL2 md/arch#x86_64 lang/python#3.10.12 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.35.43', 'Content-MD5': b'0LhOmLtieqtqlB81rNLfEg==', 'Expect': b'100-continue', 'X-Amz-Date': b'20241023T053140Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAZ7SALCLHLWEK5EDL/20241023/us-east-2/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=78bcd46ea782d5ab12ad83ae9dcc709c838498161fa37c79c370613e0eee6d4e', 'amz-sdk-invocation-id': b'ac1a9210-11f5-450b-b891-6f0cc8b3a9cc', 'amz-sdk-request': b'attempt=1', 'Content-Length': '5536'}>
+2024-10-23 05:31:40,437 - DEBUG - Certificate path: /home/igor/git/site_chopp_itinerante/venv/lib/python3.10/site-packages/certifi/cacert.pem
+2024-10-23 05:31:40,437 - DEBUG - Starting new HTTPS connection (1): chopp-itinerante.s3.us-east-2.amazonaws.com:443
+2024-10-23 05:31:40,852 - DEBUG - Waiting for 100 Continue response.
+2024-10-23 05:31:40,988 - DEBUG - 100 Continue response seen, now sending request body.
+2024-10-23 05:31:41,115 - DEBUG - https://chopp-itinerante.s3.us-east-2.amazonaws.com:443 "PUT /eventos/testefig3.png HTTP/11" 200 0
+2024-10-23 05:31:41,115 - DEBUG - Event before-parse.s3.PutObject: calling handler <function handle_expires_header at 0x7f60a0302290>
+2024-10-23 05:31:41,116 - DEBUG - Response headers: {'x-amz-id-2': 'lLQ9vM4bL+H+EBPvDMQyarO8DVDLSbtWFCl557uxDzKbeCxbKdrwi1rRKQyEY89tBBwBMX7tzzNjVWb+YC20VyUXyK2TfC/NsxlOaJUVxzU=', 'x-amz-request-id': 'JS9V3D9CW14C8S3T', 'Date': 'Wed, 23 Oct 2024 05:31:42 GMT', 'x-amz-server-side-encryption': 'AES256', 'ETag': '"d0b84e98bb627aab6a941f35acd2df12"', 'Server': 'AmazonS3', 'Content-Length': '0'}
+2024-10-23 05:31:41,116 - DEBUG - Response body:
+b''
+2024-10-23 05:31:41,117 - DEBUG - Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x7f606fee9e70>
+2024-10-23 05:31:41,117 - DEBUG - No retry needed.
+2024-10-23 05:31:41,118 - DEBUG - Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x7f606fee9f30>>
+2024-10-23 05:31:41,118 - DEBUG - Releasing acquire 0/None
+2024-10-23 05:31:41,202 - WARNING - Not Found: /cadastrar-fotos/static/lib/wow/wow.min.js
+2024-10-23 05:31:41,204 - WARNING - Not Found: /cadastrar-fotos/static/lib/easing/easing.min.js
+2024-10-23 05:31:41,213 - WARNING - Not Found: /cadastrar-fotos/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:31:41,216 - WARNING - Not Found: /cadastrar-fotos/static/lib/counterup/counterup.min.js
+2024-10-23 05:31:41,221 - WARNING - Not Found: /cadastrar-fotos/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:31:41,224 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:31:41,229 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:31:41,232 - WARNING - Not Found: /cadastrar-fotos/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:31:41,236 - WARNING - Not Found: /cadastrar-fotos/static/js/main.js
+2024-10-23 05:31:54,062 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:31:54,065 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:31:54,067 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:31:54,075 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:31:54,077 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:31:54,080 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:31:54,084 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:31:54,088 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:31:54,095 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:31:59,767 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:31:59,768 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:31:59,769 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:31:59,770 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:31:59,771 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:31:59,773 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:31:59,781 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:31:59,787 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:31:59,791 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:33:49,943 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:33:51,848 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:33:53,668 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:33:56,755 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:33:58,649 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:34:07,462 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:34:07,472 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:34:07,490 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:34:07,501 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:34:07,506 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:34:07,523 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:34:07,586 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:34:07,597 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:34:07,600 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:34:07,609 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:34:16,897 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:34:18,796 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:34:18,810 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:34:18,816 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:34:18,821 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:34:18,834 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:34:18,856 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:34:18,863 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:34:18,866 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:34:18,899 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:34:18,910 - WARNING - Not Found: /static/img/bg-hero.jpg
+2024-10-23 05:34:30,257 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 05:34:31,846 - WARNING - Not Found: /galeria/static/lib/wow/wow.min.js
+2024-10-23 05:34:31,855 - WARNING - Not Found: /galeria/static/lib/easing/easing.min.js
+2024-10-23 05:34:31,864 - WARNING - Not Found: /galeria/static/lib/waypoints/waypoints.min.js
+2024-10-23 05:34:31,871 - WARNING - Not Found: /galeria/static/lib/counterup/counterup.min.js
+2024-10-23 05:34:31,880 - WARNING - Not Found: /galeria/static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 05:34:31,897 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment.min.js
+2024-10-23 05:34:31,912 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 05:34:31,928 - WARNING - Not Found: /galeria/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 05:34:31,937 - WARNING - Not Found: /galeria/static/js/main.js
+2024-10-23 05:39:10,267 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 05:39:20,243 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 05:39:23,055 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 05:39:37,041 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 05:39:40,852 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 05:39:45,739 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 05:39:53,591 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 05:39:55,493 - INFO - /home/igor/git/site_chopp_itinerante/pagamento/models.py changed, reloading.
+2024-10-23 06:00:18,292 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:00:19,787 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:00:20,925 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:00:21,959 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:00:38,278 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:00:40,975 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:00:51,992 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:00:56,085 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:01:08,917 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:01:13,491 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:01:15,267 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:02:02,701 - WARNING - Not Found: /static/img/IMG_7798.mp4
+2024-10-23 06:02:04,538 - WARNING - Not Found: /static/lib/animate/animate.min.css
+2024-10-23 06:02:04,544 - WARNING - Not Found: /static/lib/owlcarousel/assets/owl.carousel.min.css
+2024-10-23 06:02:04,559 - WARNING - Not Found: /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+2024-10-23 06:02:04,568 - WARNING - Not Found: /static/css/style.css
+2024-10-23 06:02:04,572 - WARNING - Not Found: /static/css/bootstrap.min.css
+2024-10-23 06:02:04,586 - WARNING - Not Found: /static/img/IMG_7775.jpg
+2024-10-23 06:02:04,587 - WARNING - Not Found: /static/img/logo_chopp-removebg.png
+2024-10-23 06:02:04,601 - WARNING - Not Found: /static/img/IMG_7119.jpg
+2024-10-23 06:02:04,604 - WARNING - Not Found: /static/img/IMG_7118.jpg
+2024-10-23 06:02:04,675 - WARNING - Not Found: /static/lib/animate/animate.min.css
+2024-10-23 06:02:04,686 - WARNING - Not Found: /static/css/style.css
+2024-10-23 06:02:04,687 - WARNING - Not Found: /static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css
+2024-10-23 06:02:04,695 - WARNING - Not Found: /static/lib/owlcarousel/assets/owl.carousel.min.css
+2024-10-23 06:02:04,706 - WARNING - Not Found: /static/css/bootstrap.min.css
+2024-10-23 06:02:04,710 - WARNING - Not Found: /static/lib/wow/wow.min.js
+2024-10-23 06:02:04,734 - WARNING - Not Found: /static/lib/counterup/counterup.min.js
+2024-10-23 06:02:04,748 - WARNING - Not Found: /static/lib/waypoints/waypoints.min.js
+2024-10-23 06:02:04,755 - WARNING - Not Found: /static/lib/easing/easing.min.js
+2024-10-23 06:02:04,759 - WARNING - Not Found: /static/lib/tempusdominus/js/moment.min.js
+2024-10-23 06:02:04,769 - WARNING - Not Found: /static/lib/owlcarousel/owl.carousel.min.js
+2024-10-23 06:02:04,774 - WARNING - Not Found: /static/lib/tempusdominus/js/moment-timezone.min.js
+2024-10-23 06:02:04,822 - WARNING - Not Found: /static/img/IMG_7115.jpg
+2024-10-23 06:02:04,835 - WARNING - Not Found: /static/img/logo_chopp-removebg.png
+2024-10-23 06:02:04,864 - WARNING - Not Found: /static/js/main.js
+2024-10-23 06:02:04,866 - WARNING - Not Found: /static/img/IMG_7723.jpg
+2024-10-23 06:02:04,869 - WARNING - Not Found: /static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js
+2024-10-23 06:02:04,875 - WARNING - Not Found: /static/img/IMG_7692.jpg
+2024-10-23 06:02:04,895 - WARNING - Not Found: /static/img/IMG_7730.jpg
+2024-10-23 06:02:04,904 - WARNING - Not Found: /static/img/IMG_7567.jpg
+2024-10-23 06:02:04,943 - WARNING - Not Found: /static/img/vitor.png
+2024-10-23 06:02:04,942 - WARNING - Not Found: /static/img/rambo.jpg
+2024-10-23 06:02:04,958 - WARNING - Not Found: /static/img/IMG_7798.mp4
+2024-10-23 06:02:04,959 - WARNING - Not Found: /static/img/jiordane_p.jpg
+2024-10-23 06:02:04,966 - WARNING - Not Found: /static/img/testimonial-1.jpg
+2024-10-23 06:02:05,080 - WARNING - Not Found: /static/img/logo_chopp-removebg.png
+2024-10-23 06:02:12,909 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:14,663 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:16,471 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:18,186 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:19,927 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:28,119 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:02:36,013 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:38,859 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:47,791 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:50,463 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:53,392 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:02:57,370 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:03:02,541 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:03:48,829 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:04:13,718 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:04:32,509 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:05:12,835 - WARNING - Not Found: /favicon.ico
+2024-10-23 06:05:22,281 - INFO - /home/igor/git/site_chopp_itinerante/core/settings.py changed, reloading.
+2024-10-23 06:05:28,387 - WARNING - Not Found: /favicon.ico
