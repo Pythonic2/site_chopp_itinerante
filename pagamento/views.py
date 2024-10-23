@@ -5,7 +5,6 @@ import json
 from .models import Transacao, Produto
 from authentication.models import Carrinho, Usuario,Evento
 import mercadopago
-import pandas as pd
 from .busca_pagameto import buscar_pagamento_mercado_pago
 from notifications import send_email
 from dotenv import load_dotenv
