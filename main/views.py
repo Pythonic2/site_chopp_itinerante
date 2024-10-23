@@ -60,7 +60,6 @@ from django.contrib.auth.decorators import login_required
 
 
 
-@method_decorator(cache_page(60 * 60 * 24), name='dispatch')
 class GaleriaView(TemplateView):
     template_name = 'galeria.html'
 

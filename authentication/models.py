@@ -2,17 +2,33 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from pagamento.models import Produto
+from django.contrib.auth.models import AbstractUser, Group, Permission
 
 class Usuario(AbstractUser):
     nome = models.CharField(max_length=100)
     email = models.EmailField(max_length=100, blank=True, null=True)
+
+    groups = models.ManyToManyField(
+        Group,
+        related_name='usuarios',  # Nome único para evitar conflito
+        blank=True,
+        help_text='The groups this user belongs to.',
+        verbose_name='groups',
+    )
+
+    user_permissions = models.ManyToManyField(
+        Permission,
+        related_name='usuarios',  # Nome único para evitar conflito
+        blank=True,
+        help_text='Specific permissions for this user.',
+        verbose_name='user permissions',
+    )
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
 
     def __str__(self):
         return self.username
-
 
 class Carrinho(models.Model):
     data = models.DateTimeField(auto_now_add=True)

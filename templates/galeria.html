@@ -55,18 +55,19 @@
                 <div id="categoria-{{ categoria.id }}" class="categoria-section {% if forloop.first %}active{% endif %}">
                     <h2>{{ categoria.nome }}</h2>
                     <div class="row">
-                        {% for evento in eventos %}
-                            {% if evento.categoria.id == categoria.id %}
-                                {% for imagem in evento.imagens.all %}
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card">
-                                            <img src="{{ imagem.imagem.url }}" class="card-img-top" alt="{{ evento.nome }}" style="height: 200px; object-fit: cover;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">{{ evento.nome }}</h5>
+                            {% for evento in eventos %}
+                                {% if evento.categoria.id == categoria.id %}
+                                    {% for imagem in evento.imagens.all %}
+                                        <div class="col-md-4 mb-4">
+                                            <div class="card">
+                                                <img src="{{ imagem.imagem.url }}" class="card-img-top" alt="{{ evento.nome }}" style="height: 200px; object-fit: cover;">
+                                                
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{ evento.nome }}</h5>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                {% endfor %}
+                                    {% endfor %}
                             {% endif %}
                         {% endfor %}
                     </div>
