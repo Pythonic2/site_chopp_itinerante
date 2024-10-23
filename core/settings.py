@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-bg)ybva($%u6l_^eoc!xkwffy2hqh&%^&t_@@wzik%ao6(89gn
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['*']
-#ALLOWED_HOSTS = ['choppitinerante.com.br', 'www.choppitinerante.com.br']
+ALLOWED_HOSTS = ['choppitinerante.com.br', 'www.choppitinerante.com.br']
 CSRF_TRUSTED_ORIGINS = ['https://choppitinerante.com.br', 'https://www.choppitinerante.com.br']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = True
@@ -59,7 +58,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'core.urls'
 
-TEMPLATES = [ 
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR,'templates')],
@@ -83,30 +82,25 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'gesttech$teste',  # Verifique se esse nome está correto
-#         'USER': 'gesttech',
-#         'PASSWORD': '37192541aaSS@',
-#         'HOST': 'gesttech.mysql.pythonanywhere-services.com',
-#         'PORT': '3306',  # O padrão para MySQL
-#         'OPTIONS': {
-#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-#         }
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# Password validation
-# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
-
+DATABASES = {
+'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'cloudbooster_db',
+    'USER': os.getenv('DB_USER'),
+    'PASSWORD':'37192541aaSS@',
+    'HOST':  '192.168.0.3',
+    'PORT': os.getenv('DB_PORT'),
+    'OPTIONS': {
+        'options': '-c search_path=cecilie'
+    }
+}
+}
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -143,32 +137,12 @@ USE_TZ = True
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MERCADOPAGO_ACCESS_TOKEN = 'TEST-1760381132114687-090312-969ed10bb8987a4c2f15dd151d4b76be-162016798'
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
 
+STATIC_URL = '/static/'
 
-
-# # Definir o diretório onde os arquivos estáticos serão coletados
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# # URL para acessar arquivos estáticos
-# STATIC_URL = '/static/'
-
-# # Configuração para o WhiteNoise servir arquivos comprimidos e cacheados
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# # Permitir ou desabilitar o uso de Brotli (padrão é True)
-# WHITENOISE_USE_FINDERS = True
-
-# # Permitir compressão de arquivos usando Gzip e Brotli
-# WHITENOISE_AUTOREFRESH = False  # Desabilitar o auto-refresh em produção
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-STATIC_URL = "static/"
-STATIC_ROOT = os.path.join(BASE_DIR / 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
@@ -182,6 +156,5 @@ AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/'
 
