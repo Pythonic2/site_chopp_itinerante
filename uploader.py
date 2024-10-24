@@ -15,8 +15,8 @@ AWS_STORAGE_BUCKET_NAME = settings.AWS_STORAGE_BUCKET_NAME
 AWS_S3_REGION_NAME = settings.AWS_S3_REGION_NAME
 
 # Caminho do arquivo local e nome do arquivo no R2
-local_file_path = 'eventos/emots.jpeg'  # Substitua pelo caminho do seu arquivo
-s3_file_name = 'emots.jpeg'  # Nome com o qual o arquivo será salvo no R2
+local_file_path = 'chopps/testefig3.png'  # Substitua pelo caminho do seu arquivo
+s3_file_name = 'media/chopps/testefig3.png'  # Nome com o qual o arquivo será salvo no R2
 
 # Função para upload
 def upload_to_r2(local_file, bucket, s3_file):
