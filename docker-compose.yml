@@ -13,6 +13,7 @@ services:
     networks:
       - pi_default
     volumes:
+      - .:/app            # MONTA O CÓDIGO FONTE DO HOST DENTRO DO CONTAINER
       - chopp_data:/var/lib/postgresql/data
       - chopp_app:/app/media
 volumes:
